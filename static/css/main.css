@@ -1,0 +1,29 @@
+@font-face {
+    font-family: Adlery;
+    src: url('../fonts/Adlery-Swash-trial.ttf') format('truetype');
+}
+
+body {
+    background-color: #fdd1d9a6 !important;
+    font-family: Adlery !important;
+}
+
+nav {
+    border-bottom: 1px solid #e2c5ca !important;
+}
+
+nav .nav-link {
+    color: #fff !important;
+    font-weight: 400;
+    font-size: 45px;
+    text-shadow: 1px 1px #777
+}
+
+nav.bg-dark {
+    background-color: transparent !important;
+}
+
+div.marginsH80 {
+    margin-left: 80px !important;
+    margin-right: 80px !important;
+}
