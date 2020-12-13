@@ -151,6 +151,7 @@ $(document).ready(function () {
         $(itemElem).find('.grid-card').css('background', 'url(' + background + ')')
         $(itemElem).find('.grid-card').css('background-size', 'cover')
         $(itemElem).find('.grid-card').css('background-position', 'center')
+        $(itemElem).find('.gallery-caption').attr('href', background);
 
         return itemElem;
     }
