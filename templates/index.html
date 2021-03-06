@@ -1,116 +1,303 @@
 {% extends 'base.html' %}
 
-{% block content %}
 
-    <div class="container-fluid">
+{% block content %}
+<body class="demo-3">
+<main id="main" data-scroll-container="" data-scroll-section-inview=""
+      style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -192, 0, 1); opacity: 1; pointer-events: all;">
+
+    <section class="tiles tiles--perspective tiles--darker">
+        <div class="tiles__wrap">
+            <div class="tiles__line is-inview" data-scroll="" data-scroll-speed="2" data-scroll-direction="horizontal"
+                 style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -32.4179, 0, 0, 1);">
+                <div class="tiles__line-img"></div>
+                <div class="tiles__line-img"></div>
+                <div class="tiles__line-img"></div>
+                <div class="tiles__line-img"></div>
+                <div class="tiles__line-img"></div>
+                <div class="tiles__line-img"></div>
+                <div class="tiles__line-img"></div>
+                <div class="tiles__line-img"></div>
+            </div>
+            <div class="tiles__line is-inview" data-scroll="" data-scroll-speed="-2" data-scroll-direction="horizontal"
+                 style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 25.0709, 0, 0, 1);">
+                <div class="tiles__line-img"></div>
+                <div class="tiles__line-img"></div>
+                <div class="tiles__line-img"></div>
+                <div class="tiles__line-img"></div>
+                <div class="tiles__line-img"></div>
+                <div class="tiles__line-img"></div>
+                <div class="tiles__line-img"></div>
+                <div class="tiles__line-img"></div>
+            </div>
+            <div class="tiles__line is-inview" data-scroll="" data-scroll-speed="2" data-scroll-direction="horizontal"
+                 style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -14.7465, 0, 0, 1);">
+                <div class="tiles__line-img"></div>
+                <div class="tiles__line-img"></div>
+                <div class="tiles__line-img"></div>
+                <div class="tiles__line-img"></div>
+                <div class="tiles__line-img"></div>
+                <div class="tiles__line-img"></div>
+                <div class="tiles__line-img"></div>
+                <div class="tiles__line-img"></div>
+            </div>
+            <div class="tiles__line is-inview" data-scroll="" data-scroll-speed="-2" data-scroll-direction="horizontal"
+                 style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.53154, 0, 0, 1);">
+                <div class="tiles__line-img"></div>
+                <div class="tiles__line-img"></div>
+                <div class="tiles__line-img"></div>
+                <div class="tiles__line-img"></div>
+                <div class="tiles__line-img"></div>
+                <div class="tiles__line-img"></div>
+                <div class="tiles__line-img"></div>
+                <div class="tiles__line-img"></div>
+            </div>
+        </div>
+        <h2 class="tiles__title tiles__title--intro is-inview" data-scroll="" data-scroll-speed="4"
+            style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -31.2, 0, 1);"><a class="mx-auto"
+                                                                                                href="#">
+            <img width="100%" src="/static/images/sign_nobg.png" class="rounded-circle">
+        </a></h2>
+    </section>
+    <section class="content">
+        <ul class="main-ul-rene">
+            <li>About</li>
+            <li>News</li>
+            <li>Instagram</li>
+        </ul>
+    </section>
+    <section class="content" style="margin-top:280px">
         <div class="row">
             <div class="col">
-                <div class="grid-controls">
-                    <div class="grid-control search" style="visibility: hidden; width: 0">
-                        <input class="grid-control-field search-field form-control" type="text" name="search"
-                               placeholder="Search...">
-                        <div class="grid-control-icon">
-                            <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg"
-                                 viewBox="0 0 512 512">
-                                <path fill="currentColor"
-                                      d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="grid-control filter">
-                        <select class="grid-control-field filter-field ">
-                            <option value="" selected="">All</option>
-                            <option value="red">Red</option>
-                            <option value="blue">Blue</option>
-                            <option value="green">Green</option>
-                        </select>
-                        <div class="grid-control-icon">
-                            <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg"
-                                 viewBox="0 0 512 512">
-                                <path fill="currentColor"
-                                      d="M463.952 0H48.057C5.419 0-16.094 51.731 14.116 81.941L176 243.882V416c0 15.108 7.113 29.335 19.2 40l64 47.066c31.273 21.855 76.8 1.538 76.8-38.4V243.882L497.893 81.941C528.042 51.792 506.675 0 463.952 0zM288 224v240l-64-48V224L48 48h416L288 224z"></path>
-                            </svg>
-                        </div>
-                        <div class="grid-select-arrow">
-                            <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg"
-                                 viewBox="0 0 256 512">
-                                <path fill="currentColor"
-                                      d="M119.5 326.9L3.5 209.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 287.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 327c-4.7 4.6-12.3 4.6-17-.1z"></path>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="grid-control sort">
-                        <select class="grid-control-field sort-field">
-                            <option value="order" selected="">Drag</option>
-                            <option value="title">Title (drag disabled)</option>
-                            <option value="color">Color (drag disabled)</option>
-                        </select>
-                        <div class="grid-control-icon">
-                            <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg"
-                                 viewBox="0 0 512 512">
-                                <path fill="currentColor"
-                                      d="M244 192h184a20 20 0 0 0 20-20V52a20 20 0 0 0-20-20H244a20 20 0 0 0-20 20v120a20 20 0 0 0 20 20zm28-112h128v64H272zm212 176H252a28 28 0 0 0-28 28v168a28 28 0 0 0 28 28h232a28 28 0 0 0 28-28V284a28 28 0 0 0-28-28zm-20 176H272V304h192zm-300-48h-44V48a16 16 0 0 0-16-16H88a16 16 0 0 0-16 16v336H28a12 12 0 0 0-8.73 20.24l68 72a12 12 0 0 0 17.44 0l68-72A12 12 0 0 0 164 384z"></path>
-                            </svg>
-                        </div>
-                        <div class="grid-select-arrow">
-                            <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg"
-                                 viewBox="0 0 256 512">
-                                <path fill="currentColor"
-                                      d="M119.5 326.9L3.5 209.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 287.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 327c-4.7 4.6-12.3 4.6-17-.1z"></path>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="grid-control layout">
-                        <select class="grid-control-field layout-field">
-                            <option value="left-top" selected="">Left Top</option>
-                            <option value="left-top-fillgaps">Left Top (fill gaps)</option>
-                            <option value="right-top">Right Top</option>
-                            <option value="right-top-fillgaps">Right Top (fill gaps)</option>
-                            <option value="left-bottom">Left Bottom</option>
-                            <option value="left-bottom-fillgaps">Left Bottom (fill gaps)</option>
-                            <option value="right-bottom">Right Bottom</option>
-                            <option value="right-bottom-fillgaps">Right Bottom (fill gaps)</option>
-                        </select>
-                        <div class="grid-control-icon">
-                            <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg"
-                                 viewBox="0 0 512 512">
-                                <path fill="currentColor"
-                                      d="M480 0H32A32 32 0 0 0 0 32v448a32 32 0 0 0 32 32h448a32 32 0 0 0 32-32V32a32 32 0 0 0-32-32zm-16 464H48V48h416zm-48-48V256H256v160zM256 96H96v160h160z"></path>
-                            </svg>
-                        </div>
-                        <div class="grid-select-arrow">
-                            <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg"
-                                 viewBox="0 0 256 512">
-                                <path fill="currentColor"
-                                      d="M119.5 326.9L3.5 209.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 287.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 327c-4.7 4.6-12.3 4.6-17-.1z"></path>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid">
-
-                </div>
+                <p class="content__text is-inview" data-scroll="" data-scroll-speed="2"
+                   style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 33.2, 0, 1);">We have
+                    the money, the power,
+                    the medical understanding, the scientific know-how, the love and the community to produce a kind of
+                    human
+                    paradise. But we are led by the least among us – the least intelligent, the least noble, the least
+                    visionary. We are led by the least among us and we do not fight back against the dehumanizing values
+                    that
+                    are handed down as control icons.</p>
+                <img width="80%" src="static/images/renata/120194759_340353170520989_7329137475801138262_n.jpg" alt="">
             </div>
+            <div class="col"><img src="static/images/renata/121495992_856165791788188_6599592335180247370_n.jpg" style="width: 70%;
+    position: absolute;
+    bottom: 26%;
+    left: 0;" alt="">
+            </div>
+        </div>
+
+
+    </section>
+    <section class="tiles tiles--oneline" id="grid2">
+        <div class="tiles__wrap">
+            <div class="tiles__line is-inview" data-scroll="" data-scroll-speed="2" data-scroll-target="#grid2"
+                 data-scroll-direction="horizontal"
+                 style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 149.237, 0, 0, 1);">
+                <div class="tiles__line-img"></div>
+                <div class="tiles__line-img"></div>
+                <div class="tiles__line-img"></div>
+                <div class="tiles__line-img"></div>
+            </div>
+        </div>
+        <h2 class="tiles__title tiles__title--right tiles__title--full tiles__title--alt is-inview" data-scroll=""
+            data-scroll-speed="2" style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 149.237, 0, 1);">
+            Civilization</h2>
+    </section>
+    <section class="tiles tiles--oneline" id="grid3">
+        <div class="tiles__wrap">
+            <div class="tiles__line" data-scroll="" data-scroll-speed="-2" data-scroll-target="#grid3"
+                 data-scroll-direction="horizontal"
+                 style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -394.956, 0, 0, 1);">
+                <div class="tiles__line-img"></div>
+                <div class="tiles__line-img"></div>
+                <div class="tiles__line-img"></div>
+                <div class="tiles__line-img"></div>
+            </div>
+        </div>
+        <h2 class="tiles__title tiles__title--left tiles__title--full tiles__title--alt" data-scroll=""
+            data-scroll-speed="2" style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 394.956, 0, 1);">
+            Empowerment</h2>
+    </section>
+    <section class="tiles tiles--oneline" id="grid4">
+        <div class="tiles__wrap">
+            <div class="tiles__line" data-scroll="" data-scroll-speed="2" data-scroll-target="#grid4"
+                 data-scroll-direction="horizontal"
+                 style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 515.916, 0, 0, 1);">
+                <div class="tiles__line-img"></div>
+                <div class="tiles__line-img"></div>
+                <div class="tiles__line-img"></div>
+                <div class="tiles__line-img"></div>
+            </div>
+        </div>
+        <h2 class="tiles__title tiles__title--right tiles__title--full tiles__title--alt" data-scroll=""
+            data-scroll-speed="2" style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 515.916, 0, 1);">
+            Apocalypse</h2>
+    </section>
+    <section class="content">
+        <div class="row">
+            <div class="col">
+                <p class="content__text content__text--wide" data-scroll="" data-scroll-speed="1"
+                   style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 318.038, 0, 1);">We have to create
+                    culture,
+                    don’t watch TV, don’t read magazines, don’t even listen to NPR. Create your own roadshow. The nexus
+                    of space
+                    and time where you are now is the most immediate sector of your universe, and if you’re worrying
+                    about
+                    Michael Jackson or Bill Clinton or somebody else, then you are <em>disempowered</em>, you’re giving
+                    it all
+                    away to icons, icons which are maintained by an electronic media so that you want to dress like X or
+                    have
+                    lips like Y. </p>
+            </div>
+            <div class="col">
+                <img width="70%" src="static/images/renata/109206913_3077524425694766_3066399280182564367_n.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <br>
+                <hr>
+                <br>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <img width="100%" src="static/images/renata/118854470_365296781152724_1652691179958758565_n.jpg" alt="">
+            </div>
+
+            <div class="col">
+                <img width="100%" src="static/images/renata/119601710_2752875208335249_4360704359128655186_n.jpg"
+                     alt="">
+            </div>
+
+            <div class="col">
+                <img width="100%" src="static/images/renata/104720526_199087664714159_7041134595956830066_n.jpg" alt="">
+            </div>
+
+            <div class="col">
+                <img width="100%" src="static/images/renata/124926046_291278122081809_4377307909009890155_n.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <br>
+                <hr>
+                <br>
+            </div>
+        </div>
+
+    </section>
+    <section class="content content--feature">
+        <p class="content__breakout content__breakout--big" data-scroll="" data-scroll-speed="20"
+           data-scroll-direction="horizontal"
+           style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8074.12, 0, 0, 1);">Culture is not your
+            friend</p>
+        <p class="content__breakout content__breakout--medium" data-scroll="" data-scroll-speed="5"
+           data-scroll-direction="horizontal"
+           style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2122.03, 0, 0, 1);">express ourselves through
+            creative activity</p>
+    </section>
+    <section class="content">
+        <div class="row">
+            <div class="col text-center">
+                <img width="70%" src="static/images/renata/104827249_268154084518342_7074067090816969707_n.jpg" alt="">
+            </div>
+            <div class="col">
+                <p class="content__text content__text--right content__text--wide" data-scroll="" data-scroll-speed="1"
+                   style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 463.856, 0, 1);">This is
+                    shit-brained, this
+                    kind of thinking. That is all cultural diversion, and what is real is you and your friends and your
+                    associations, your highs, your orgasms, your hopes, your plans, your fears. And we are told ‘no’,
+                    we’re
+                    unimportant, we’re peripheral. ‘Get a degree, get a job, get a this, get a that.’ And then you’re a
+                    player,
+                    you don’t want to even play in that game. You want to reclaim your mind and get it out of the hands
+                    of the
+                    cultural engineers who want to turn you into a half-baked moron consuming all this trash that’s
+                    being
+                    manufactured out of the bones of a dying world.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="row">
+        <div class="col">
+            <br>
+            <hr>
+            <br>
         </div>
     </div>
 
-    <template class="grid-item-template">
-        <div class="grid-item">
-            <div class="grid-item-content">
-                <div class="grid-card">
-                    <div class="grid-card-title"></div>
-                    <div class="grid-card-handle">
-                        <a data-magnify="gallery-caption"
-                           data-caption="Image Caption 1"
-                           data-group=""
-                           href="">
-                            <img class="paint">
-                        </a>
-
-                    </div>
-                </div>
+    <section class="tiles tiles--fixed">
+        <div class="tiles__wrap">
+            <div class="tiles__line">
+                <div class="tiles__line-img"
+                     style=" transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1715.77, 0, 0, 1);"
+                     data-scroll="" data-scroll-speed="3" data-scroll-direction="horizontal"></div>
+                <div class="tiles__line-img"
+                     style=" transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1143.85, 0, 0, 1);"
+                     data-scroll="" data-scroll-speed="2" data-scroll-direction="horizontal"></div>
+                <div class="tiles__line-img"
+                     style=" transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 571.925, 0, 0, 1);"
+                     data-scroll="" data-scroll-speed="1" data-scroll-direction="horizontal"></div>
+                <div class="tiles__line-img"
+                     style=" transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -571.925, 0, 0, 1);"
+                     data-scroll="" data-scroll-speed="-1" data-scroll-direction="horizontal"></div>
+                <div class="tiles__line-img"
+                     style=" transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1143.85, 0, 0, 1);"
+                     data-scroll="" data-scroll-speed="-2" data-scroll-direction="horizontal"></div>
+                <div class="tiles__line-img"
+                     style=" transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1715.77, 0, 0, 1);"
+                     data-scroll="" data-scroll-speed="-3" data-scroll-direction="horizontal"></div>
+            </div>
+            <div class="tiles__line">
+                <div class="tiles__line-img"
+                     style=" transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1842.08, 0, 0, 1);"
+                     data-scroll="" data-scroll-speed="3" data-scroll-direction="horizontal"></div>
+                <div class="tiles__line-img"
+                     style=" transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1228.05, 0, 0, 1);"
+                     data-scroll="" data-scroll-speed="2" data-scroll-direction="horizontal"></div>
+                <div class="tiles__line-img"
+                     style=" transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 614.025, 0, 0, 1);"
+                     data-scroll="" data-scroll-speed="1" data-scroll-direction="horizontal"></div>
+                <div class="tiles__line-img"
+                     style=" transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -614.025, 0, 0, 1);"
+                     data-scroll="" data-scroll-speed="-1" data-scroll-direction="horizontal"></div>
+                <div class="tiles__line-img"
+                     style=" transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1228.05, 0, 0, 1);"
+                     data-scroll="" data-scroll-speed="-2" data-scroll-direction="horizontal"></div>
+                <div class="tiles__line-img"
+                     style=" transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1842.08, 0, 0, 1);"
+                     data-scroll="" data-scroll-speed="-3" data-scroll-direction="horizontal"></div>
+            </div>
+            <div class="tiles__line">
+                <div class="tiles__line-img"
+                     style=" transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1968.38, 0, 0, 1);"
+                     data-scroll="" data-scroll-speed="3" data-scroll-direction="horizontal"></div>
+                <div class="tiles__line-img"
+                     style=" transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1312.25, 0, 0, 1);"
+                     data-scroll="" data-scroll-speed="2" data-scroll-direction="horizontal"></div>
+                <div class="tiles__line-img"
+                     style=" transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 656.125, 0, 0, 1);"
+                     data-scroll="" data-scroll-speed="1" data-scroll-direction="horizontal"></div>
+                <div class="tiles__line-img"
+                     style=" transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -656.125, 0, 0, 1);"
+                     data-scroll="" data-scroll-speed="-1" data-scroll-direction="horizontal"></div>
+                <div class="tiles__line-img"
+                     style=" transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1312.25, 0, 0, 1);"
+                     data-scroll="" data-scroll-speed="-2" data-scroll-direction="horizontal"></div>
+                <div class="tiles__line-img"
+                     style=" transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1968.38, 0, 0, 1);"
+                     data-scroll="" data-scroll-speed="-3" data-scroll-direction="horizontal"></div>
             </div>
         </div>
-    </template>
+    </section>
+
+</main>
+</body>
 
 {% endblock %}
