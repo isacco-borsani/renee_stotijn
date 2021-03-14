@@ -6,6 +6,17 @@
 <main id="main" data-scroll-container="" data-scroll-section-inview=""
       style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -192, 0, 1); opacity: 1; pointer-events: all;">
 
+    <section>
+        <div class="row">
+            <div class="col-md-12 text-right mr-5">
+                <ul class="lang-drop">
+                    <li><a href="/language/en"> <img src="/static/images/flags/nl.svg" alt="it" class="flag"></a></li>
+                    <li><a href="/language/nl"> <img src="/static/images/flags/en.svg" alt="ja" class="flag"></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
     <section class="tiles tiles--perspective tiles--darker">
         <div class="tiles__wrap">
             <div class="tiles__line is-inview" data-scroll="" data-scroll-speed="2" data-scroll-direction="horizontal"
@@ -60,33 +71,29 @@
         </a></h2>
     </section>
     <section class="content">
-        <ul class="main-ul-rene">
-            <li>About</li>
-            <li>News</li>
-            <li>Instagram</li>
-        </ul>
-    </section>
-    <section class="content" style="margin-top:280px">
         <div class="row">
-            <div class="col">
-                <p class="content__text is-inview" data-scroll="" data-scroll-speed="2"
-                   style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 33.2, 0, 1);">We have
-                    the money, the power,
-                    the medical understanding, the scientific know-how, the love and the community to produce a kind of
-                    human
-                    paradise. But we are led by the least among us – the least intelligent, the least noble, the least
-                    visionary. We are led by the least among us and we do not fight back against the dehumanizing values
-                    that
-                    are handed down as control icons.</p>
-                <img width="80%" src="static/images/renata/120194759_340353170520989_7329137475801138262_n.jpg" alt="">
-            </div>
-            <div class="col"><img src="static/images/renata/121495992_856165791788188_6599592335180247370_n.jpg" style="width: 70%;
-    position: absolute;
-    bottom: 26%;
-    left: 0;" alt="">
+            <div class="col-md-12">
+                <ul class="main-ul-rene">
+                    <li>{{_('About')}}</li>
+                    <li>{{_('News')}}</li>
+                    <li>{{_('Instagram')}}</li>
+                </ul>
             </div>
         </div>
-
+    </section>
+    <section class="content">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="content__text is-inview" data-scroll="" data-scroll-speed="2"
+                   style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 33.2, 0, 1);">
+                    {{_('FIRST_INTRO')}}</p>
+                <img width="80%" src="static/images/renata/120194759_340353170520989_7329137475801138262_n.jpg" alt="">
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="static/images/renata/121495992_856165791788188_6599592335180247370_n.jpg"
+                     style="width: 70%;" alt="">
+            </div>
+        </div>
 
     </section>
     <section class="tiles tiles--oneline" id="grid2">
@@ -102,7 +109,7 @@
         </div>
         <h2 class="tiles__title tiles__title--right tiles__title--full tiles__title--alt is-inview" data-scroll=""
             data-scroll-speed="2" style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 149.237, 0, 1);">
-            Civilization</h2>
+            {{_('FIRST_TITLE_HORIZONTAL_SCROLL')}}</h2>
     </section>
     <section class="tiles tiles--oneline" id="grid3">
         <div class="tiles__wrap">
@@ -117,7 +124,7 @@
         </div>
         <h2 class="tiles__title tiles__title--left tiles__title--full tiles__title--alt" data-scroll=""
             data-scroll-speed="2" style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 394.956, 0, 1);">
-            Empowerment</h2>
+            {{_('SECOND_TITLE_HORIZONTAL_SCROLL')}}</h2>
     </section>
     <section class="tiles tiles--oneline" id="grid4">
         <div class="tiles__wrap">
@@ -132,25 +139,16 @@
         </div>
         <h2 class="tiles__title tiles__title--right tiles__title--full tiles__title--alt" data-scroll=""
             data-scroll-speed="2" style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 515.916, 0, 1);">
-            Apocalypse</h2>
+            {{_('THIRD_TITLE_HORIZONTAL_SCROLL')}}</h2>
     </section>
     <section class="content">
         <div class="row">
-            <div class="col">
+            <div class="col-md-6">
                 <p class="content__text content__text--wide" data-scroll="" data-scroll-speed="1"
-                   style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 318.038, 0, 1);">We have to create
-                    culture,
-                    don’t watch TV, don’t read magazines, don’t even listen to NPR. Create your own roadshow. The nexus
-                    of space
-                    and time where you are now is the most immediate sector of your universe, and if you’re worrying
-                    about
-                    Michael Jackson or Bill Clinton or somebody else, then you are <em>disempowered</em>, you’re giving
-                    it all
-                    away to icons, icons which are maintained by an electronic media so that you want to dress like X or
-                    have
-                    lips like Y. </p>
+                   style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 318.038, 0, 1);">
+                    {{_('SECOND_INTRO')}}</p>
             </div>
-            <div class="col">
+            <div class="col-md-6 text-center">
                 <img width="70%" src="static/images/renata/109206913_3077524425694766_3066399280182564367_n.jpg" alt="">
             </div>
         </div>
@@ -163,21 +161,21 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col">
+        <div class="row ">
+            <div class="col-md-3">
                 <img width="100%" src="static/images/renata/118854470_365296781152724_1652691179958758565_n.jpg" alt="">
             </div>
 
-            <div class="col">
+            <div class="col-md-3">
                 <img width="100%" src="static/images/renata/119601710_2752875208335249_4360704359128655186_n.jpg"
                      alt="">
             </div>
 
-            <div class="col">
+            <div class="col-md-3">
                 <img width="100%" src="static/images/renata/104720526_199087664714159_7041134595956830066_n.jpg" alt="">
             </div>
 
-            <div class="col">
+            <div class="col-md-3">
                 <img width="100%" src="static/images/renata/124926046_291278122081809_4377307909009890155_n.jpg" alt="">
             </div>
         </div>
@@ -194,32 +192,22 @@
     <section class="content content--feature">
         <p class="content__breakout content__breakout--big" data-scroll="" data-scroll-speed="20"
            data-scroll-direction="horizontal"
-           style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8074.12, 0, 0, 1);">Culture is not your
-            friend</p>
+           style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8074.12, 0, 0, 1);">
+            {{_('FIRST_BIG_TITLE_HORIZONTAL_SCROLL')}}</p>
         <p class="content__breakout content__breakout--medium" data-scroll="" data-scroll-speed="5"
            data-scroll-direction="horizontal"
-           style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2122.03, 0, 0, 1);">express ourselves through
-            creative activity</p>
+           style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2122.03, 0, 0, 1);">
+            {{_('SECOND_BIG_TITLE_HORIZONTAL_SCROLL')}}</p>
     </section>
     <section class="content">
         <div class="row">
-            <div class="col text-center">
+            <div class="col-md-6 text-center">
                 <img width="70%" src="static/images/renata/104827249_268154084518342_7074067090816969707_n.jpg" alt="">
             </div>
-            <div class="col">
+            <div class="col-md-6 text-left">
                 <p class="content__text content__text--right content__text--wide" data-scroll="" data-scroll-speed="1"
-                   style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 463.856, 0, 1);">This is
-                    shit-brained, this
-                    kind of thinking. That is all cultural diversion, and what is real is you and your friends and your
-                    associations, your highs, your orgasms, your hopes, your plans, your fears. And we are told ‘no’,
-                    we’re
-                    unimportant, we’re peripheral. ‘Get a degree, get a job, get a this, get a that.’ And then you’re a
-                    player,
-                    you don’t want to even play in that game. You want to reclaim your mind and get it out of the hands
-                    of the
-                    cultural engineers who want to turn you into a half-baked moron consuming all this trash that’s
-                    being
-                    manufactured out of the bones of a dying world.</p>
+                   style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 463.856, 0, 1);">
+                    {{_('THIRD_INTRO')}}</p>
             </div>
         </div>
     </section>

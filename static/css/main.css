@@ -64,7 +64,7 @@ div.marginsH80 {
     transition: transform .5s;
 }
 
-.main-ul-rene li:hover {
+.main-ul-rene li:hover, .lang-drop li:hover {
     transform: scale(1.1);
 }
 
@@ -276,9 +276,30 @@ main {
     margin: 10vh 0 0;
 }
 
+
 .tiles--fixed {
     --tiles-height: 65vw;
-    margin-top: 25vh;
+}
+
+.lang-drop {
+    list-style: none;
+    margin-right: 20px;
+    margin-top: 10px
+}
+
+.lang-drop li {
+    display: inline-block;
+    /* border: 5px solid #ccc; */
+    /* border-radius: 100px; */
+    overflow: hidden;
+    border-radius: 100px;
+    margin-right: 5px;
+    transition: transform .5s
+}
+
+
+.flag {
+    width: 50px;
 }
 
 .tiles--perspective {
@@ -295,6 +316,10 @@ main {
     left: 50%;
     top: 50%;
     transform: translate3d(-50%, -50%, 0);
+}
+
+.mr-5 {
+    margin-right: 5px
 }
 
 .tiles--rotated .tiles__wrap {
@@ -603,7 +628,6 @@ html.has-scroll-dragging {
     }
 
     .content__text--wide {
-        max-width: 1000px;
         width: 65vw;
     }
 
