@@ -174,7 +174,7 @@ main {
 
 .content {
     padding: 3rem;
-    min-height: 700px;
+    min-height: 300px;
     display: flex;
     position: relative;
     flex-direction: column;
