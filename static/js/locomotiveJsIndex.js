@@ -833,7 +833,7 @@ var defaults = {
   offset: [0, 0],
   repeat: false,
   smooth: false,
-  smoothMobile: false,
+  smoothMobile: true,
   direction: 'vertical',
   lerp: 0.1,
   "class": 'is-inview',

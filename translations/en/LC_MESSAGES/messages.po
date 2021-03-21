@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-14 18:42+0100\n"
-"PO-Revision-Date: 2021-03-14 18:42+0100\n"
+"PO-Revision-Date: 2021-03-21 18:26+0100\n"
 "Last-Translator: \n"
 "Language: en\n"
 "Language-Team: en <LL@li.org>\n"
@@ -34,34 +34,46 @@ msgstr ""
 #: templates/index.html:89
 msgid "FIRST_INTRO"
 msgstr ""
+"For decades Renée Stotijn's artworks had not been visible. Neither to the public, nor to\n"
+"acquaintances. Even her own daughters were not aware of their mother's extensive collection.\n"
+"When Renée died in June 2020, they discovered numerous works of art in their childhood home,\n"
+"each more beautiful than the last."
 
 #: templates/index.html:112
 msgid "FIRST_TITLE_HORIZONTAL_SCROLL"
-msgstr ""
+msgstr "Dozens of drawings, pastels, watercolours and oil paintings"
 
 #: templates/index.html:127
 msgid "SECOND_TITLE_HORIZONTAL_SCROLL"
-msgstr ""
+msgstr "... had been hidden in closets and behind walls"
 
 #: templates/index.html:142
 msgid "THIRD_TITLE_HORIZONTAL_SCROLL"
-msgstr ""
+msgstr "This discovery was so exceptional that it had to be shared!"
 
 #: templates/index.html:149
 msgid "SECOND_INTRO"
 msgstr ""
+"Renée Stotijn is born on February 7, 1940 in Hilversum, as the eldest daughter in a family of\n"
+"four children. Soon after her birth Renée’s parents move to the south of Amsterdam, and come\n"
+"to live behind the Concertgebouw (concert hall). It is a practical choice for the family, as her\n"
+"father, Haakon Stotijn, is appointed as a solo oboist in the Concertgebouw orchestra"
 
 #: templates/index.html:196
 msgid "FIRST_BIG_TITLE_HORIZONTAL_SCROLL"
-msgstr ""
+msgstr "Renée starts drawing at the age of five"
 
 #: templates/index.html:200
 msgid "SECOND_BIG_TITLE_HORIZONTAL_SCROLL"
-msgstr ""
+msgstr "after receiving a book from her father on early renaissance Italian painting"
 
 #: templates/index.html:210
 msgid "THIRD_INTRO"
 msgstr ""
+"The first physical exhibition of the hidden artworks of Renée Stotijn in Amsterdam will take place\n"
+"from April 1st until May 9th 2021. The visitor will experience the artworks the way they looked\n"
+"when they were found. Here and there rips, dust, dents, damp spots or cracks will be visible. It is\n"
+"a selection of the works in their purest form: ‘what you see is what you get.’"
 
 #~ msgid "We have the money, the power, the medical understanding, the scientific know-how, the love and the community to produce a kind of human paradise. But we are led by the least among us – the least intelligent, the least noble, the least visionary. We are led by the least among us and we do not fight back against the dehumanizing values that are handed down as control icons."
 #~ msgstr "asd"

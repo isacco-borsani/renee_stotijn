@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+
 *,
 *::after,
 *::before {
@@ -23,15 +25,14 @@ body {
     font-family: neuzeit-grotesk, sans-serif;
 }
 
-
 @font-face {
-    font-family: Adlery;
-    src: url('../fonts/Adlery-Swash-trial.ttf') format('truetype');
+    font-family: belinda_script;
+    src: url('../fonts/belinda_script.ttf') format('truetype');
 }
 
 body {
     background-color: #fdd1d9a6 !important;
-    font-family: Adlery !important;
+    font-family: belinda_script !important;
 }
 
 @media screen and (min-width: 1900px) {
@@ -45,6 +46,14 @@ body {
 div.marginsH80 {
     margin-left: 80px !important;
     margin-right: 80px !important;
+}
+
+.nopadding {
+    padding: 0 !important
+}
+
+.nomargin {
+    margin: 0 !important
 }
 
 .main-ul-rene {
@@ -221,6 +230,7 @@ main {
 .content__text {
     font-size: 2.25rem;
     font-size: clamp(1rem, 4vw, 2.25rem);
+    line-height: 10vh
 }
 
 .content__text--right {
@@ -242,12 +252,16 @@ main {
 }
 
 .content__breakout--big {
-    font-size: 13vw;
+    font-size: 9vw;
     font-weight: 200;
 }
 
 .content__breakout--medium {
-    font-size: 5vw;
+    font-size: 3vw;
+}
+
+.content__breakout--medium_plus {
+    font-size: 6vw;
 }
 
 .tiles {
@@ -465,7 +479,7 @@ main {
 
 .tiles__title--alt {
     font-size: 9vw;
-    font-size: clamp(2rem, 9vw, 7.25rem);
+    font-size: clamp(2rem, 9vw, 4.25rem);
 }
 
 .tiles__title--intro {
@@ -623,12 +637,7 @@ html.has-scroll-dragging {
 
     .content__text {
         max-width: 800px;
-        width: 50vw;
         min-width: calc(300px - 6rem);
-    }
-
-    .content__text--wide {
-        width: 65vw;
     }
 
     .tiles--small {

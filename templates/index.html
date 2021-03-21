@@ -1,5 +1,16 @@
 {% extends 'base.html' %}
 
+{% block css_header %}
+    <link rel="stylesheet" href="https://use.typekit.net/rmd7deq.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/index.css">
+    <link rel="stylesheet" href="../static/css/grid.css">
+    <link rel="stylesheet" href="../static/css/jquery.magnify.min.css">
+{% endblock %}
+{% block script_header %}
+    <script src="/static/js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="../static/js/locomotiveJsIndex.js"></script>
+{% endblock %}
 
 {% block content %}
 <body class="demo-3">
@@ -76,7 +87,9 @@
                 <ul class="main-ul-rene">
                     <li onclick="location.href='about'">{{_('About')}}</li>
                     <li>{{_('News')}}</li>
-                    <li onclick="window.open('https://www.instagram.com/schilderij_renee_stotijn/')">{{_('Instagram')}}</li>
+                    <li onclick="window.open('https://www.instagram.com/schilderij_renee_stotijn/')">
+                        {{_('Instagram')}}
+                    </li>
                 </ul>
             </div>
         </div>
@@ -92,6 +105,7 @@
             <div class="col-md-6 text-center">
                 <img src="static/images/renata/121495992_856165791788188_6599592335180247370_n.jpg"
                      style="width: 70%;" alt="">
+                <img src="static/images/renata/68_Affiche_de_Typisten.jpeg" style="width: 410px; margin-top: 70px" alt="">
             </div>
         </div>
 
@@ -107,9 +121,10 @@
                 <div class="tiles__line-img"></div>
             </div>
         </div>
-        <h2 class="tiles__title tiles__title--right tiles__title--full tiles__title--alt is-inview" data-scroll=""
-            data-scroll-speed="2" style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 149.237, 0, 1);">
-            {{_('FIRST_TITLE_HORIZONTAL_SCROLL')}}</h2>
+        <p class="tiles__title tiles__title--left tiles__title--full tiles__title--alt" data-scroll="" data-scroll-speed="10"
+           data-scroll-direction="horizontal"
+           style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8074.12, 0, 0, 1);">
+            {{_('FIRST_TITLE_HORIZONTAL_SCROLL')}}</p>
     </section>
     <section class="tiles tiles--oneline" id="grid3">
         <div class="tiles__wrap">
@@ -122,9 +137,10 @@
                 <div class="tiles__line-img"></div>
             </div>
         </div>
-        <h2 class="tiles__title tiles__title--left tiles__title--full tiles__title--alt" data-scroll=""
+
+        <p class="tiles__title tiles__title--full tiles__title--alt" data-scroll=""
             data-scroll-speed="2" style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 394.956, 0, 1);">
-            {{_('SECOND_TITLE_HORIZONTAL_SCROLL')}}</h2>
+            {{_('SECOND_TITLE_HORIZONTAL_SCROLL')}}</p>
     </section>
     <section class="tiles tiles--oneline" id="grid4">
         <div class="tiles__wrap">
@@ -137,7 +153,7 @@
                 <div class="tiles__line-img"></div>
             </div>
         </div>
-        <h2 class="tiles__title tiles__title--right tiles__title--full tiles__title--alt" data-scroll=""
+        <h2 class="tiles__title tiles__title--full tiles__title--alt" data-scroll=""
             data-scroll-speed="2" style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 515.916, 0, 1);">
             {{_('THIRD_TITLE_HORIZONTAL_SCROLL')}}</h2>
     </section>
@@ -194,7 +210,7 @@
            data-scroll-direction="horizontal"
            style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8074.12, 0, 0, 1);">
             {{_('FIRST_BIG_TITLE_HORIZONTAL_SCROLL')}}</p>
-        <p class="content__breakout content__breakout--medium" data-scroll="" data-scroll-speed="5"
+        <p class="content__breakout content__breakout--medium" data-scroll="" data-scroll-speed="10"
            data-scroll-direction="horizontal"
            style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2122.03, 0, 0, 1);">
             {{_('SECOND_BIG_TITLE_HORIZONTAL_SCROLL')}}</p>
