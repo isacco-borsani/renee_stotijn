@@ -4,12 +4,31 @@
 <link rel="stylesheet" type="text/css" href="../static/css/index.css">
 <link rel="stylesheet" href="../static/css/locomotive-scroll.min.css">
 <link rel="stylesheet" href="../static/css/about.css">
+
+<!-- Core CSS file -->
+<link rel="stylesheet" href="../static/css/photoswipe.css">
+
+<!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+     In the folder of skin CSS file there are also:
+     - .png and .svg icons sprite,
+     - preloader.gif (for browsers that do not support CSS animations) -->
+<link rel="stylesheet" href="../static/css/photoswipe_default.css">
+
 {% endblock %}
 {% block script_header %}
 <script src="../static/js/locomotive-scroll.min.js"></script>
 <script src="../static/js/ScrollTrigger.min.js"></script>
 <script src="../static/js/gsap.min.js"></script>
+
+<!-- Core JS file -->
+<script src="../static/js/photoswipe.js"></script>
+
+<!-- UI JS file -->
+<script src="../static/js/photoswipe.ui.js"></script>
+
 {% endblock %}
+
+{% include 'modules/photoswipe.html' %}
 
 {% block content %}
 <body>
@@ -78,31 +97,38 @@
                              alt="">
                     </div>
                     <div class="col-md-6">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/bwimages%2Fbca413679414c189fdff16e15edd7726.jpg?alt=media&token=23dfcb96-b5b0-47ac-8105-e2c9a08c437b" alt="">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/bwimages%2Fbca413679414c189fdff16e15edd7726.jpg?alt=media&token=23dfcb96-b5b0-47ac-8105-e2c9a08c437b"
+                             alt="">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/bwimages%2F24cf1a08cbaabf899d9d9872e20452b6.jpg?alt=media&token=7d44f884-e4dc-4775-b15d-001b9868de38" alt="">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/bwimages%2F24cf1a08cbaabf899d9d9872e20452b6.jpg?alt=media&token=7d44f884-e4dc-4775-b15d-001b9868de38"
+                             alt="">
                     </div>
                     <div class="col-md-6">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/bwimages%2F37ff280cdb9a9ff5a8aebb482a7c1b73.jpg?alt=media&token=611f6188-574c-4456-bdd1-c20b2e024b0a" alt="">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/bwimages%2F81c20e1c1c9e380395bff6ff651fc2e7.jpg?alt=media&token=d0fa44b4-b518-4754-ae1d-929a08972c25" alt="">
-                    </div>
-                    <div class="col-md-6">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/bwimages%2Fbca413679414c189fdff16e15edd7726.jpg?alt=media&token=23dfcb96-b5b0-47ac-8105-e2c9a08c437b" alt="">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/bwimages%2F37ff280cdb9a9ff5a8aebb482a7c1b73.jpg?alt=media&token=611f6188-574c-4456-bdd1-c20b2e024b0a"
+                             alt="">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/bwimages%2Fb4a0ce2c6d0e9ffd4792561e122bfb1e.jpg?alt=media&token=d32ec2b6-0902-4cb5-ae28-d22c87858407" alt="">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/bwimages%2F81c20e1c1c9e380395bff6ff651fc2e7.jpg?alt=media&token=d0fa44b4-b518-4754-ae1d-929a08972c25"
+                             alt="">
                     </div>
                     <div class="col-md-6">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/bwimages%2Fd137584c758fd75b3191220df2934ce9.jpg?alt=media&token=34fcda56-27ea-43f5-a8c0-256783a053f8" alt="">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/bwimages%2Fbca413679414c189fdff16e15edd7726.jpg?alt=media&token=23dfcb96-b5b0-47ac-8105-e2c9a08c437b"
+                             alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/bwimages%2Fb4a0ce2c6d0e9ffd4792561e122bfb1e.jpg?alt=media&token=d32ec2b6-0902-4cb5-ae28-d22c87858407"
+                             alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/bwimages%2Fd137584c758fd75b3191220df2934ce9.jpg?alt=media&token=34fcda56-27ea-43f5-a8c0-256783a053f8"
+                             alt="">
                     </div>
                 </div>
 
@@ -133,6 +159,9 @@
 {% block script_footer %}
 <script>
     $(document).ready(function () {
+        //https://photoswipe.com/
+
+
         console.log('a');
         const scroller = new LocomotiveScroll({
             el: document.querySelector('[data-scroll-container]'),
