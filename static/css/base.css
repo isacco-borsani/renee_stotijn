@@ -1,0 +1,54 @@
+.with-full-size img {
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.with-full-size img:hover {
+    transform: scale(1.2) !important;
+}
+
+.img-full-width {
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+    text-align: center;
+    background: #000000bd;
+    height: 100%
+}
+
+.hidden {
+    display: none !important
+}
+
+.img-full-width p.caption {
+    position: absolute;
+    width: 100%;
+    color: white;
+    font-family: 'neuzeit-grotesk';
+    font-size: 25px;
+    margin-top: 15px;
+    cursor: default;
+}
+
+svg.bi-x {
+    font-size: 90px;
+    width: 55px;
+    color: white;
+    height: 100px;
+    float: right;
+    cursor: pointer;
+    position: absolute;
+    top: -30px;
+    right: 0
+}
+
+.img-full-width img {
+    margin-top: 40px;
+    max-height: 885px;
+}
+
+@media screen and (max-width: 765px) {
+    .img-full-width img {
+        width: 85%
+    }
+}

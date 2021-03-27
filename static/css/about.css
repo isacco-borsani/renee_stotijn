@@ -1,192 +1,204 @@
 
 * {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Cormorant Garamond';
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Cormorant Garamond';
 }
 
 .about-container {
-  background: inherit;
+    background: inherit;
 }
 
 .about-container .hero {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 60% 40%;
-      grid-template-columns: 60% 40%;
-  height: 100vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 60% 40%;
+    grid-template-columns: 60% 40%;
+    height: 100vh;
 }
 
 .about-container .hero .copy {
-  display: -ms-grid;
-  display: grid;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  padding: 0 1rem;
-  height: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    padding: 0 1rem;
+    height: 100%;
 }
 
 .about-container .hero .copy blockquote {
-  font-size: 6vmin;
-  font-weight: 300;
+    font-size: 6vmin;
+    font-weight: 300;
 }
 
 .about-container .hero .copy blockquote span {
-  font-style: italic;
-  font-weight: 400;
+    font-style: italic;
+    font-weight: 400;
 }
 
 .about-container .hero .copy blockquote cite {
-  font-weight: 300;
-  font-style: italic;
-  font-size: 4.5vmin;
-  display: block;
-  padding: 8px 0;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 4.5vmin;
+    display: block;
+    padding: 8px 0;
 }
 
 .about-container .hero .image-wrapper {
-  height: 100vh;
-  width: 100%;
+    height: 100vh;
+    width: 100%;
 }
 
 .about-container .hero .image-wrapper img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
 }
 
 .about-container .section-0 {
-  margin-top: 20vh;
-  text-align: center;
+    margin-top: 20vh;
+    text-align: center;
 }
 
 .about-container .section-0 p {
-  font-size: 5vw;
+    font-size: 5vw;
 }
 
 .about-container .section-0 cite {
-  font-size: 3vw;
+    font-size: 3vw;
 }
 
 .about-container .section-1 {
-  height: 100vh;
-  display: -ms-grid;
-  display: grid;
-  place-content: center;
-  padding: 0 1rem;
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
+    padding: 0 1rem;
+    margin-bottom: 100px
 }
 
 .about-container .section-1 .image-mask {
-  width: 80vw;
-  height: 80vh;
-  background: url("https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/bwimages%2Ftumblr_n92tblyC8d1s3sziio1_1280.jpg?alt=media&token=c5d75884-4bc3-46bb-815d-414d2ec68e4b");
-  background-size: cover;
-  background-position-x: 50%;
-  background-position-y: 90%;
-  background-size: 100%;
+    width: 10vw;
+    background: url("https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/bwimages%2Ftumblr_n92tblyC8d1s3sziio1_1280.jpg?alt=media&token=c5d75884-4bc3-46bb-815d-414d2ec68e4b");
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 90%;
+    background-size: 100%;
 }
 
 .about-container .section-1 .image-mask img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.section-1 .row img {
+    max-height: 680px;
+}
+
+.section-2 img {
+    max-width: 520px;
+}
+
+.section-2 .col-md-6 {
+    overflow: hidden;
+    margin-top: 10px
 }
 
 .about-container .section-1 blockquote {
-  font-size: 9vmin;
-  font-weight: 300;
+    font-size: 9vmin;
+    font-weight: 300;
 }
 
 .about-container .section-1 blockquote span {
-  font-style: italic;
-  font-weight: 400;
+    font-style: italic;
+    font-weight: 400;
 }
 
 .about-container .section-1 blockquote cite {
-  font-weight: 300;
-  font-style: italic;
-  font-size: 7.5vmin;
-  display: block;
-  padding: 8px 0;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 7.5vmin;
+    display: block;
+    padding: 8px 0;
 }
 
 .about-container .section-2 {
-  height: calc(300vh + 32px + 16px);
+    height: calc(300vh + 32px + 16px);
 }
 
 .about-container .section-2 blockquote {
-  font-size: 5vmin;
-  padding: 16px 16px 0 16px;
+    font-size: 5vmin;
+    padding: 16px 16px 0 16px;
 }
 
 .about-container .section-2 blockquote cite {
-  display: block;
+    display: block;
 }
 
 .about-container .section-2 .images-about-container {
-  display: -ms-grid;
-  display: grid;
-  /*-ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);*/
-  padding: 0 8px;
-  gap: 8px;
-  margin-top: 16px;
+    display: -ms-grid;
+    display: grid;
+    /*-ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);*/
+    padding: 0 8px;
+    gap: 8px;
+    margin-top: 16px;
 }
 
 .about-container .section-2 .images-about-container img {
-  width: 100%;
-  max-height: 75vh;
-  height: 100%;
-  -ms-flex-item-align: stretch;
-      -ms-grid-row-align: stretch;
-      align-self: stretch;
-  -o-object-fit: cover;
-     object-fit: cover;
+    width: 100%;
+    max-height: 75vh;
+    height: 100%;
+    -ms-flex-item-align: stretch;
+    -ms-grid-row-align: stretch;
+    align-self: stretch;
+    -o-object-fit: cover;
+    object-fit: cover;
 }
 
 .about-container .section-3 {
-  height: 100vh;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 40% 60%;
-      grid-template-columns: 40% 60%;
-  position: relative;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 40% 60%;
+    grid-template-columns: 40% 60%;
+    position: relative;
 }
 
 .about-container .section-3 .image-wrapper {
-  height: 100%;
-  width: 100%;
+    height: 100%;
+    width: 100%;
 }
 
 .about-container .section-3 .image-wrapper img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
 }
 
 .about-container .section-3 .copy {
-  font-size: 8vmin;
-  height: 100vh;
-  width: 100%;
-  display: -ms-grid;
-  display: grid;
-  -ms-flex-line-pack: center;
-      align-content: center;
+    font-size: 8vmin;
+    height: 100vh;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-line-pack: center;
+    align-content: center;
 }
 
 .about-container .section-3 .copy blockquote {
-  margin: 0 32px;
+    margin: 0 32px;
 }
 
 .about-container .section-3 .copyright {
-  position: absolute;
-  bottom: 5%;
-  left: 50%;
-  font-size: 4vmin !important;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    font-size: 4vmin !important;
 }
+
 /*# sourceMappingURL=main.css.map */

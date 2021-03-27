@@ -306,14 +306,13 @@ main {
     /* border: 5px solid #ccc; */
     /* border-radius: 100px; */
     overflow: hidden;
-    border-radius: 100px;
     margin-right: 5px;
     transition: transform .5s
 }
 
 
 .flag {
-    width: 50px;
+    width: 30px;
 }
 
 .tiles--perspective {
@@ -406,6 +405,8 @@ main {
     margin: var(--tile-margin);
     background-size: cover;
     background-position: 50% 50%;
+    cursor: pointer;
+
 }
 
 .tiles--perspective .tiles__line-img {

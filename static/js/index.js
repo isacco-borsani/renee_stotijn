@@ -3,7 +3,9 @@ $(document).ready(function () {
         url: '/get_paints',
     }).done(function (data) {
         $('.tiles__line-img').each(function () {
-            $(this).css('background-image', 'url(static/images/quadri/' + data['content'][Math.floor(Math.random() * data['content'].length)] + ')')
+            let index = Math.floor(Math.random() * data['content'].length);
+            $(this).attr('data-paint-location', '/static/images/quadri/' + data['content'][index]);
+            $(this).css('background-image', 'url(static/images/quadri/' + data['content'][index] + ')')
         })
     });
 
