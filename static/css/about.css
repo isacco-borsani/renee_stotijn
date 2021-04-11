@@ -126,9 +126,10 @@
     padding: 8px 0;
 }
 
-.about-container .section-2 {
-    height: calc(300vh + 32px + 16px);
+.w-80 {
+    width: 80% !important
 }
+
 
 .about-container .section-2 blockquote {
     font-size: 5vmin;

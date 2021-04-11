@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden !important
+}
+
 .with-full-size img {
     transition: transform .2s;
     cursor: pointer;
@@ -18,6 +22,33 @@
 
 .hidden {
     display: none !important
+}
+
+.ft-20 {
+    font-size: 22px;
+}
+
+.big-h1 {
+    font-size: 60px
+}
+
+.grid {
+    border-radius: 20px;
+    background-color: #32323259
+}
+
+.grid img {
+    width: 100%;
+    border-radius: 14px;
+    margin: 7px;
+}
+
+.grid .col-md-3 {
+    padding: 14px;
+}
+
+.bg-transparent {
+    background: transparent !important;
 }
 
 .img-full-width p.caption {
