@@ -56,10 +56,15 @@ def about():
     return render_template('about.html')
 
 
+@app.route('/news')
+def news():
+    return render_template('news.html')
+
+
 @app.route('/get_paints', methods=['GET'])
 def get_paints():
     try:
-        file_paints = [str(f) for f in listdir('static/images/quadri/') if isfile(join('static/images/quadri', f))]
+        file_paints = [str(f) for f in listdir('static/images/quadri/web') if isfile(join('static/images/quadri/web', f))]
     except FileNotFoundError:
         return {'ret': False, 'content': None}
     return {'ret': True, 'content': file_paints}
