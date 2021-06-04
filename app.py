@@ -15,7 +15,7 @@ app.config['BABEL_DEFAULT_LOCALE'] = 'en'
 babel = Babel(app)
 
 app.config['BABEL_DEFAULT_LOCALE'] = 'en'
-app.run(debug=True, host='192.168.200.131')
+#app.run(debug=True, host='192.168.200.131')
 
 @babel.localeselector
 def get_locale():

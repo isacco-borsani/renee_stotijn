@@ -8,6 +8,4 @@ $(document).ready(function () {
             $(this).css('background-image', 'url(static/images/quadri/web/' + data['content'][index] + ')')
         })
     });
-
-
 })

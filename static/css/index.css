@@ -230,7 +230,9 @@ main {
 .content__text {
     font-size: 2.25rem;
     font-size: clamp(1rem, 4vw, 2.25rem);
-    line-height: 10vh
+    line-height: 10vh;
+    letter-spacing: 2px;
+    font-size: 35px
 }
 
 .content__text--right {
@@ -643,5 +645,13 @@ html.has-scroll-dragging {
 
     .tiles--small {
         --tiles-height: 240px;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .mix-imgs-rene-dick img {
+        width: 70% !important;
+        margin-top: 5px
     }
 }
