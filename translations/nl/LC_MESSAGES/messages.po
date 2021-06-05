@@ -7,58 +7,392 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-03-14 18:42+0100\n"
-"PO-Revision-Date: 2021-03-14 18:43+0100\n"
+"POT-Creation-Date: 2021-06-05 13:21+0200\n"
+"PO-Revision-Date: 2021-06-05 12:54+0200\n"
+"Last-Translator: \n"
 "Language: nl\n"
 "Language-Team: nl <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
-"Last-Translator: \n"
-"X-Generator: Poedit 2.4.2\n"
 
-#: templates/index.html:77
+#: templates/about.html:49
+msgid "Test"
+msgstr ""
+
+#: templates/about.html:66
+msgid "Photo by: Jeroen Koning."
+msgstr ""
+
+#: templates/about.html:86
+msgid ""
+"Renée Stotijn is born on February 7, 1940 in Hilversum, as the eldest "
+"daughter in a family of\n"
+"                        four children. Soon after her birth Renée’s "
+"parents move to the south of Amsterdam, and come\n"
+"                        to live behind the Concertgebouw (concert hall). "
+"It is a practical choice for the family, as her\n"
+"                        father, Haakon Stotijn, is appointed as a solo "
+"oboist in the Concertgebouw orchestra.\n"
+"                        Renée starts drawing at the age of five after "
+"receiving a book from her father on early\n"
+"                        renaissance Italian painting. She is fascinated "
+"by this art and memorizes all the painters.\n"
+"                        At this point already she has made up her mind; "
+"she will become a painter.\n"
+"                        Unfortunately, problems arise in the family and "
+"her parents divorce in 1952 when she is 12\n"
+"                        years old. Renée is determined to leave with her "
+"father because of a difficult relationship\n"
+"                        between her mother and herself. Her younger "
+"sister Marion decides to go with Renee and her\n"
+"                        father. They wander across the city for years in "
+"search of accommodation. At this time Renée\n"
+"                        and Marion stay with various caretakers at "
+"different addresses. In 1957 Haakon and his two\n"
+"                        daughters eventually settle on the Weesperzijde "
+"in the east of Amsterdam."
+msgstr ""
+
+#: templates/about.html:158
+msgid "Art Academy"
+msgstr ""
+
+#: templates/about.html:163
+msgid ""
+"After her graduation at the Montessori Lyceum, Renée Stotijn takes six\n"
+"                    years of\n"
+"                    intensive\n"
+"                    lessons at the Rijksacademie (art academy) in "
+"Amsterdam."
+msgstr ""
+
+#: templates/about.html:187
+msgid ""
+"She takes various subjects such\n"
+"                    as letter drawing and costume drawing, art and style "
+"history, sculpting and anatomy. As an\n"
+"                    exceptionally talented student, Renée gets access to "
+"a ‘loge’."
+msgstr ""
+
+#: templates/about.html:210
+msgid ""
+"That is a private studio at the\n"
+"                    top of the academy building.\n"
+"                    Because Renée wants to learn to paint decors, she "
+"works for one year in a decor studio and\n"
+"                    then six years as a restorer at the Central "
+"Laboratory of the Rijksmuseum."
+msgstr ""
+
+#: templates/about.html:236
+msgid ""
+"At the same time,\n"
+"                    she is teaching and gives guided tours in the "
+"Stedelijk Museum, the Van Gogh Museum and\n"
+"                    the Rijksmuseum, to both children and adults."
+msgstr ""
+
+#: templates/about.html:272
+msgid ""
+"Throughout her life Renée maintains a great passion for antique dolls. "
+"She\n"
+"                    has a small collection\n"
+"                    of dolls in her house in closed glass display cases. "
+"In 1970, an article about Renée's love for\n"
+"                    antique dolls with a number of remarkable photos was "
+"published in Panorama magazine."
+msgstr ""
+
+#: templates/about.html:293
+msgid ""
+"The way in which Renée portrays the dolls is remarkable. It seems like "
+"the\n"
+"                    dolls have been given\n"
+"                    souls. Because of the facial expressions and the way "
+"in which the dolls are positioned, they\n"
+"                    almost resemble people in a lively scene: busy "
+"conversing, pondering or enthusiastic. It remains\n"
+"                    unclear where her love for dolls comes from. Perhaps "
+"it stems from a longing in her childhood. Be\n"
+"                    that as it may, it is a subject that she portrays "
+"many times in different ways."
+msgstr ""
+
+#: templates/about.html:363
+msgid ""
+"Although born in Hilversum, Renée Stotijn is an ‘Amsterdammer’ in heart\n"
+"                    and soul. She loves\n"
+"                    the city very much and also fights for the "
+"preservation of her ‘Mokum.’"
+msgstr ""
+
+#: templates/about.html:383
+msgid ""
+"She organizes\n"
+"                    neighbourhood campaigns and writes appeals against, "
+"among other things, the demolition of\n"
+"                    the Eerste Oosterparkstraat and a part of the "
+"Weesperzijde, which is known as 'het Streekje'."
+msgstr ""
+
+#: templates/about.html:404
+msgid ""
+"Thanks to her, houses that would be demolished are actually restored in\n"
+"                    modern style. Renée's\n"
+"                    greatest victory is the preservation of the New "
+"Amstel Bridge by the architects Leguyt and\n"
+"                    Berlage."
+msgstr ""
+
+#: templates/about.html:425
+msgid ""
+"Thanks to her, the bridge continues to exist and is not replaced by a\n"
+"                    modern variant.\n"
+"                    Her love for the nineteenth century is immense"
+msgstr ""
+
+#: templates/about.html:454
+msgid "Landscapes and village scenes"
+msgstr ""
+
+#: templates/about.html:459
+msgid ""
+"Renée goes out every now and then to visit other cities and landscapes in"
+"\n"
+"                    the\n"
+"                    Netherlands. In the open air she mainly paints "
+"watercolours. She is fond of the colours\n"
+"                    and light of the Dutch landscape, which she tries to "
+"capture in a rich colour palette."
+msgstr ""
+
+#: templates/about.html:483
+msgid ""
+"She adores Durgerdam and Marken and has a fascination for the traditional"
+"\n"
+"                    costumes\n"
+"                    from those villages. She also visits abroad. France "
+"and Italy are very dear to her and were\n"
+"                    a source of inspiration. However, due to a lack of "
+"financial resources, she does not\n"
+"                    manage to go there often, at least not as often as "
+"she would have liked."
+msgstr ""
+
+#: templates/about.html:517
+msgid "Still lives"
+msgstr ""
+
+#: templates/about.html:522
+msgid ""
+"Renée makes countless still lives from objects in her own home such as\n"
+"                    vases, fans and\n"
+"                    hats. She often places these objects on a wooden "
+"table. One such table is the one that she\n"
+"                    received from acquaintances from Schoorl. Flowers are"
+" her favourite subject. She paints\n"
+"                    and draws flowers of all shapes and sizes with "
+"different materials. This subject will continue\n"
+"                    to play a major role in her oeuvre until the end of "
+"her life."
+msgstr ""
+
+#: templates/about.html:553
+msgid ""
+"Remarkable are Renée's often dynamic compositions and rich use of colour."
+"\n"
+"                    There always\n"
+"                    seems to be movement in the works. Her still lives "
+"are anything but static."
+msgstr ""
+
+#: templates/about.html:586
+msgid "Relationship and posters"
+msgstr ""
+
+#: templates/about.html:591
+msgid ""
+"Starting in the 1970s, Renée has a relationship with violinist and\n"
+"                    concertmaster Dick Bor\n"
+"                    (1944-2007). Together they form a well-known artistic"
+" couple and they are the first couple\n"
+"                    who have a LAT (living apart together) relationship "
+"in the Netherlands. This means that they\n"
+"                    deliberately do not live together and are not "
+"married. They do have two daughters together.\n"
+"                    Several articles appear about this in the newspaper, "
+"which also discusses their artistic\n"
+"                    projects"
+msgstr ""
+
+#: templates/about.html:616
+msgid ""
+"In 1978 Dick and Renée organize a concert series in the Concertgebouw "
+"with\n"
+"                    the name\n"
+"                    ‘Scherts Concerts’ in which Dick presents jokes and "
+"oddities on stage together with Polo de\n"
+"                    Haas and other musicians. In combination with the "
+"concerts, an exhibition of Renée's work\n"
+"                    takes place in the Spiegelzaal of the Concertgebouw. "
+"Renée then exhibits her work a few more\n"
+"                    times, including in 1994 in the artists' society De "
+"Kring."
+msgstr ""
+
+#: templates/about.html:642
+msgid ""
+"Renée designs the posters for Dick's concerts. She does this in an old-"
+"fashioned way in\n"
+"                    collaboration with Gielijn (Ghislain) Escher. During "
+"this collaboration Renée creates the design\n"
+"                    and Escher cuts the letters. Subsequently, the "
+"posters are screen printed."
+msgstr ""
+
+#: templates/about.html:659
+msgid "Photo’s Renée Stotijn and Dick Bor"
+msgstr ""
+
+#: templates/about.html:695
+msgid ""
+"The greatest discovery in Renée's house are the countless portraits she "
+"painted, most of them with oil\n"
+"paint. Nobody, knew about the portraits, or could imagine the vast "
+"amount. The artworks have spent\n"
+"decades laying in the tops of cabinets in the kitchen. They lay between "
+"double ceilings and in cavities\n"
+"within the wall that turned out to be several meters deep. When closets "
+"were emptied by her\n"
+"daughters, they found one surprise after another. It was as if a treasure"
+" had been discovered."
+msgstr ""
+
+#: templates/about.html:732
+msgid ""
+"It is very likely that Renée made these portraits at the Rijksacademie. "
+"In one of the few interviews she\n"
+"gives, she refers to the portraits she painted in the ‘loge’ that was "
+"assigned to her. Here she had all\n"
+"the materials available. Who the models are ultimately remains a guess, "
+"just like the answers to many\n"
+"other questions about the how, what, where and when with regard to her "
+"artworks. These answers\n"
+"are left up to the imagination."
+msgstr ""
+
+#: templates/about.html:774
+msgid "Photo’s exhibition and concert Spiegelzaal - Concertgebouw"
+msgstr ""
+
+#: templates/about.html:805
+msgid "Articles Dick Bor and Renée Stotijn"
+msgstr ""
+
+#: templates/about.html:841
+msgid ""
+"There is an unfortunate event in Renée's life that causes a change: she "
+"gets sick. In 1972, at the age\n"
+"of 32, she is diagnosed with breast cancer. She has surgery, but "
+"afterwards she is in so much pain\n"
+"that she is unable to use her arm, let alone paint, for a long time. This"
+" is a nightmare for Renée."
+msgstr ""
+
+#: templates/about.html:896
+msgid ""
+"In the period after the operation, Renée mainly works on subjects she "
+"loves. In France at ‘the\n"
+"Bastide’ she creates watercolours of the area. She is also frequently "
+"engaged in watercolours of\n"
+"peonies, especially in the last years of her life. Finally, she portrays "
+"her grandchildren with much\n"
+"love and is often inspired by the works of Peter Paul Rubens."
+msgstr ""
+
+#: templates/index.html:96 templates/news.html:17
 msgid "About"
 msgstr "Over"
 
-#: templates/index.html:78
+#: templates/index.html:97
 msgid "News"
-msgstr ""
+msgstr "Nieuws"
 
-#: templates/index.html:79
+#: templates/index.html:99
 msgid "Instagram"
-msgstr ""
+msgstr "Instagram"
 
-#: templates/index.html:89
+#: templates/index.html:110
 msgid "FIRST_INTRO"
 msgstr ""
+"Decennialang waren de kunstwerken van Renée Stotijn niet zichtbaar. Noch "
+"voor publiek, noch\n"
+"voor bekenden. Zelfs haar dochters hadden geen flauw benul van de "
+"omvangrijke collectie van\n"
+"hun moeder. Nadat Renée Stotijn overleed in juni 2020, wisten zij niet "
+"wat hen overkwam: ze\n"
+"ontdekten in hun ouderlijk huis een schat aan kunstwerken, de een nog "
+"bijzonderder dan de\n"
+"andere."
 
-#: templates/index.html:112
+#: templates/index.html:137
 msgid "FIRST_TITLE_HORIZONTAL_SCROLL"
-msgstr ""
+msgstr "Talloze tekeningen, pastellen, aquarellen en olieverfschilderijen"
 
-#: templates/index.html:127
+#: templates/index.html:153
 msgid "SECOND_TITLE_HORIZONTAL_SCROLL"
 msgstr ""
+"hadden verborgen gelegen in\n"
+"kasten, achter muren en tussen dubbele plafonds."
 
-#: templates/index.html:142
+#: templates/index.html:168
 msgid "THIRD_TITLE_HORIZONTAL_SCROLL"
-msgstr ""
+msgstr "De vondst was zo bijzonder, dat moest gedeeld worden!"
 
-#: templates/index.html:149
+#: templates/index.html:175
 msgid "SECOND_INTRO"
 msgstr ""
+"Op 7 februari 1940 wordt Renée Stotijn geboren in Hilversum, als oudste "
+"dochter in een gezin van\n"
+"vier kinderen. Spoedig na haar geboorte verhuizen de ouders van Renée "
+"naar Amsterdam-Zuid, vlak\n"
+"achter het Concertgebouw. Dit is een praktische keuze voor het gezin, "
+"aangezien vader Haakon\n"
+"Stotijn in datzelfde jaar een aanstelling krijgt als solo-hoboïst van het"
+" Concertgebouworkest."
 
-#: templates/index.html:196
+#: templates/index.html:222
 msgid "FIRST_BIG_TITLE_HORIZONTAL_SCROLL"
-msgstr ""
+msgstr "Renée begint op haar vijfde"
 
-#: templates/index.html:200
+#: templates/index.html:226
 msgid "SECOND_BIG_TITLE_HORIZONTAL_SCROLL"
 msgstr ""
+"te tekenen nadat ze van haar vader een boek over Italiaanse\n"
+"schilderkunst uit de vroege renaissance krijgt."
 
-#: templates/index.html:210
+#: templates/index.html:236
 msgid "THIRD_INTRO"
 msgstr ""
+"De eerste fysieke tentoonstelling in Amsterdam van de verborgen kunst van"
+" Renée Stotijn vindt\n"
+"plaats van 25 juni t/m 19 september 2021. De bezoeker ervaart de "
+"kunstwerken zoals ze eruitzagen toen\n"
+"ze werden gevonden. Her en der zullen strepen, stof, deukjes, "
+"vochtplekken en scheurtjes\n"
+"zichtbaar zijn. Er is een selectie gemaakt van de kunstwerken in hun "
+"puurste vorm: ‘what you see\n"
+"is what you get.’"
+
+#: templates/news.html:15
+msgid "Home"
+msgstr "Homepage"
+
+#: templates/news.html:16
+msgid "Latest News and Events"
+msgstr "Laatste nieuws en evenementen"
+
