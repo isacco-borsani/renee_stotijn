@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-06-05 13:21+0200\n"
+"POT-Creation-Date: 2021-06-07 11:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
 
-#: templates/about.html:49
+#: templates/about.html:48
 msgid "Test"
 msgstr ""
 
-#: templates/about.html:66
+#: templates/about.html:65
 msgid "Photo by: Jeroen Koning."
 msgstr ""
 
-#: templates/about.html:86
+#: templates/about.html:85
 msgid ""
 "Renée Stotijn is born on February 7, 1940 in Hilversum, as the eldest "
 "daughter in a family of\n"
@@ -55,11 +55,11 @@ msgid ""
 "in the east of Amsterdam."
 msgstr ""
 
-#: templates/about.html:158
+#: templates/about.html:157
 msgid "Art Academy"
 msgstr ""
 
-#: templates/about.html:163
+#: templates/about.html:162
 msgid ""
 "After her graduation at the Montessori Lyceum, Renée Stotijn takes six\n"
 "                    years of\n"
@@ -68,7 +68,7 @@ msgid ""
 "Amsterdam."
 msgstr ""
 
-#: templates/about.html:187
+#: templates/about.html:186
 msgid ""
 "She takes various subjects such\n"
 "                    as letter drawing and costume drawing, art and style "
@@ -77,7 +77,7 @@ msgid ""
 "a ‘loge’."
 msgstr ""
 
-#: templates/about.html:210
+#: templates/about.html:209
 msgid ""
 "That is a private studio at the\n"
 "                    top of the academy building.\n"
@@ -87,7 +87,7 @@ msgid ""
 "Laboratory of the Rijksmuseum."
 msgstr ""
 
-#: templates/about.html:236
+#: templates/about.html:235
 msgid ""
 "At the same time,\n"
 "                    she is teaching and gives guided tours in the "
@@ -95,7 +95,7 @@ msgid ""
 "                    the Rijksmuseum, to both children and adults."
 msgstr ""
 
-#: templates/about.html:272
+#: templates/about.html:271
 msgid ""
 "Throughout her life Renée maintains a great passion for antique dolls. "
 "She\n"
@@ -106,7 +106,7 @@ msgid ""
 "published in Panorama magazine."
 msgstr ""
 
-#: templates/about.html:293
+#: templates/about.html:292
 msgid ""
 "The way in which Renée portrays the dolls is remarkable. It seems like "
 "the\n"
@@ -121,7 +121,7 @@ msgid ""
 "many times in different ways."
 msgstr ""
 
-#: templates/about.html:363
+#: templates/about.html:362
 msgid ""
 "Although born in Hilversum, Renée Stotijn is an ‘Amsterdammer’ in heart\n"
 "                    and soul. She loves\n"
@@ -129,7 +129,7 @@ msgid ""
 "preservation of her ‘Mokum.’"
 msgstr ""
 
-#: templates/about.html:383
+#: templates/about.html:382
 msgid ""
 "She organizes\n"
 "                    neighbourhood campaigns and writes appeals against, "
@@ -138,7 +138,7 @@ msgid ""
 "Weesperzijde, which is known as 'het Streekje'."
 msgstr ""
 
-#: templates/about.html:404
+#: templates/about.html:403
 msgid ""
 "Thanks to her, houses that would be demolished are actually restored in\n"
 "                    modern style. Renée's\n"
@@ -147,18 +147,18 @@ msgid ""
 "                    Berlage."
 msgstr ""
 
-#: templates/about.html:425
+#: templates/about.html:424
 msgid ""
 "Thanks to her, the bridge continues to exist and is not replaced by a\n"
 "                    modern variant.\n"
 "                    Her love for the nineteenth century is immense"
 msgstr ""
 
-#: templates/about.html:454
+#: templates/about.html:453
 msgid "Landscapes and village scenes"
 msgstr ""
 
-#: templates/about.html:459
+#: templates/about.html:458
 msgid ""
 "Renée goes out every now and then to visit other cities and landscapes in"
 "\n"
@@ -169,7 +169,7 @@ msgid ""
 "capture in a rich colour palette."
 msgstr ""
 
-#: templates/about.html:483
+#: templates/about.html:482
 msgid ""
 "She adores Durgerdam and Marken and has a fascination for the traditional"
 "\n"
@@ -182,11 +182,11 @@ msgid ""
 "she would have liked."
 msgstr ""
 
-#: templates/about.html:517
+#: templates/about.html:516
 msgid "Still lives"
 msgstr ""
 
-#: templates/about.html:522
+#: templates/about.html:521
 msgid ""
 "Renée makes countless still lives from objects in her own home such as\n"
 "                    vases, fans and\n"
@@ -200,7 +200,7 @@ msgid ""
 "her life."
 msgstr ""
 
-#: templates/about.html:553
+#: templates/about.html:552
 msgid ""
 "Remarkable are Renée's often dynamic compositions and rich use of colour."
 "\n"
@@ -209,11 +209,11 @@ msgid ""
 "are anything but static."
 msgstr ""
 
-#: templates/about.html:586
+#: templates/about.html:585
 msgid "Relationship and posters"
 msgstr ""
 
-#: templates/about.html:591
+#: templates/about.html:590
 msgid ""
 "Starting in the 1970s, Renée has a relationship with violinist and\n"
 "                    concertmaster Dick Bor\n"
@@ -228,7 +228,7 @@ msgid ""
 "                    projects"
 msgstr ""
 
-#: templates/about.html:616
+#: templates/about.html:615
 msgid ""
 "In 1978 Dick and Renée organize a concert series in the Concertgebouw "
 "with\n"
@@ -243,7 +243,7 @@ msgid ""
 "Kring."
 msgstr ""
 
-#: templates/about.html:642
+#: templates/about.html:641
 msgid ""
 "Renée designs the posters for Dick's concerts. She does this in an old-"
 "fashioned way in\n"
@@ -253,11 +253,11 @@ msgid ""
 "posters are screen printed."
 msgstr ""
 
-#: templates/about.html:659
+#: templates/about.html:658
 msgid "Photo’s Renée Stotijn and Dick Bor"
 msgstr ""
 
-#: templates/about.html:695
+#: templates/about.html:694
 msgid ""
 "The greatest discovery in Renée's house are the countless portraits she "
 "painted, most of them with oil\n"
@@ -271,7 +271,7 @@ msgid ""
 " had been discovered."
 msgstr ""
 
-#: templates/about.html:732
+#: templates/about.html:731
 msgid ""
 "It is very likely that Renée made these portraits at the Rijksacademie. "
 "In one of the few interviews she\n"
@@ -284,15 +284,15 @@ msgid ""
 "are left up to the imagination."
 msgstr ""
 
-#: templates/about.html:774
+#: templates/about.html:773
 msgid "Photo’s exhibition and concert Spiegelzaal - Concertgebouw"
 msgstr ""
 
-#: templates/about.html:805
+#: templates/about.html:804
 msgid "Articles Dick Bor and Renée Stotijn"
 msgstr ""
 
-#: templates/about.html:841
+#: templates/about.html:840
 msgid ""
 "There is an unfortunate event in Renée's life that causes a change: she "
 "gets sick. In 1972, at the age\n"
@@ -302,7 +302,18 @@ msgid ""
 " is a nightmare for Renée."
 msgstr ""
 
-#: templates/about.html:896
+#: templates/about.html:863
+msgid ""
+"After a while she tries to pick it up again, and makes drawings, pastels "
+"and watercolours, though at\n"
+"an admittedly slower pace than before. Due to the hard labour and process"
+" required to create an\n"
+"oil painting, she is no longer able to make them. Her style is clearly "
+"recognizable in her newer\n"
+"works."
+msgstr ""
+
+#: templates/about.html:895
 msgid ""
 "In the period after the operation, Renée mainly works on subjects she "
 "loves. In France at ‘the\n"
