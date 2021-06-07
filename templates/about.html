@@ -44,12 +44,8 @@
 <div data-scroll-container class="about-container">
     <div class="hero">
         <div data-scroll data-scroll-speed="3" class="copy">
-            <blockquote>
-                “{{ _('Test') }}”
-                <cite>
-                    — Vincent van Gogh
-                </cite>
-            </blockquote>
+            <a id="scrollToDolls" href="#">Dolls</a>
+
         </div>
         <div class="image-wrapper">
             <img src="/static/images/renata/104827249_268154084518342_7074067090816969707_n.jpg"
@@ -263,7 +259,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h1 class="big-h1">Dolls</h1>
+                <h1 id="dolls" class="big-h1">Dolls</h1>
             </div>
         </div>
         <div class="row">
@@ -938,6 +934,10 @@ love and is often inspired by the works of Peter Paul Rubens.")}}</p><br>
         const scroller = new LocomotiveScroll({
             el: document.querySelector('[data-scroll-container]'),
             smooth: true
+        })
+
+        $('#scrollToDolls').on('click', function() {
+            scroller.scrollTo('#dolls');
         })
 
         gsap.registerPlugin(ScrollTrigger)
