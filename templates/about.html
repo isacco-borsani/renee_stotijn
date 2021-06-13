@@ -32,6 +32,9 @@
 
 {% block content %}
 <body>
+
+<button class="anchortop btn btn-primary scrollTo" data-target="#start"><img src="/static/images/up.png" alt=""></button>
+
 <div class="img-full-width hidden">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
          class="bi bi-x close-full-width-image"
@@ -41,11 +44,23 @@
     <img src="/static/images/renata/121495992_856165791788188_6599592335180247370_n.jpg" alt="">
     <p class="caption"></p>
 </div>
-<div data-scroll-container class="about-container">
+<div id="start" data-scroll-container class="about-container">
     <div class="hero">
         <div data-scroll data-scroll-speed="3" class="copy">
-            <a id="scrollToDolls" href="#">Dolls</a>
-
+            <a class="scrollTo" data-target="#intro" href="#">{{_('Introduction')}}</a>
+            <a class="scrollTo" data-target="#artacademy" href="#">{{_('Art Academy')}}</a>
+            <a class="scrollTo" data-target="#dolls" href="#">{{_('Dolls')}}</a>
+            <a class="scrollTo" data-target="#article" href="#">{{_('Article')}}</a>
+            <a class="scrollTo" data-target="#amsterdam" href="#">{{_('Amsterdam')}}</a>
+            <a class="scrollTo" data-target="#landscapes" href="#">{{_('Landscapes')}}</a>
+            <a class="scrollTo" data-target="#stilives" href="#">{{_('Still Lives')}}</a>
+            <a class="scrollTo" data-target="#relationship" href="#">{{_('Relationship and posters')}}</a>
+            <a class="scrollTo" data-target="#mixph" href="#">{{_('Photo’s Renée Stotijn and Dick Bor')}}</a>
+            <a class="scrollTo" data-target="#portraits" href="#">{{_('Portraits')}}</a>
+            <a class="scrollTo" data-target="#mixph2" href="#">{{_('Photo’s exhibition and concert Spiegelzaal -
+                Concertgebouw')}}</a>
+            <a class="scrollTo" data-target="#articles2" href="#">{{_('Articles Dick Bor and Renée Stotijn')}}</a>
+            <a class="scrollTo" data-target="#laterwork" href="#">{{_('Later Work')}}</a>
         </div>
         <div class="image-wrapper">
             <img src="/static/images/renata/104827249_268154084518342_7074067090816969707_n.jpg"
@@ -77,8 +92,9 @@
         <div class="row">
             <div class="col-md-5">
                 <div id="pinSection" class="pinned-quote">
-                    <blockquote data-scroll data-scroll-sticky data-scroll-target="#pinSection">
-                        {{_('Renée Stotijn is born on February 7, 1940 in Hilversum, as the eldest daughter in a family of
+                    <blockquote id="intro" data-scroll data-scroll-sticky data-scroll-target="#pinSection">
+                        {{_('Renée Stotijn is born on February 7, 1940 in Hilversum, as the eldest daughter in a family
+                        of
                         four children. Soon after her birth Renée’s parents move to the south of Amsterdam, and come
                         to live behind the Concertgebouw (concert hall). It is a practical choice for the family, as her
                         father, Haakon Stotijn, is appointed as a solo oboist in the Concertgebouw orchestra.
@@ -150,12 +166,13 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h1 class="big-h1">{{_('Art Academy')}}</h1>
+                <h1 id="artacademy" class="big-h1">{{_('Art Academy')}}</h1>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
-                <p class="ft-20 text-justify">{{_('After her graduation at the Montessori Lyceum, Renée Stotijn takes six
+                <p class="ft-20 text-justify">{{_('After her graduation at the Montessori Lyceum, Renée Stotijn takes
+                    six
                     years of
                     intensive
                     lessons at the Rijksacademie (art academy) in Amsterdam.')}}</p><br>
@@ -164,16 +181,16 @@
 
         <div class="row with-full-size grid">
             <div class="col-md-3 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/art_academy/11._Dame_met_slofjes.jpeg"
+                    src="/static/images/extracted/web/art_academy/Dame_met_slofjes.jpeg"
                     alt=""></div>
             <div class="col-md-3 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/art_academy/13._Liggende_dame_op_divan.jpeg"
+                    src="/static/images/extracted/web/art_academy/Liggende_dame_op_divan.jpeg"
                     alt=""></div>
             <div class="col-md-3 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/art_academy/12._Achterzijde_man.jpeg"
+                    src="/static/images/extracted/web/art_academy/Achterzijde_man.jpeg"
                     alt=""></div>
             <div class="col-md-3 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/art_academy/14._Zittende_dame.jpeg"
+                    src="/static/images/extracted/web/art_academy/Zittende_dame.jpeg"
                     alt=""></div>
         </div>
 
@@ -187,16 +204,16 @@
 
         <div class="row with-full-size grid">
             <div class="col-md-3 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/art_academy/15._Naakte_staande_vrouw.jpeg"
+                    src="/static/images/extracted/web/art_academy/Naakte_staande_vrouw.jpeg"
                     alt=""></div>
             <div class="col-md-3 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/art_academy/18._Verlangende_man_ofwel_Oedipus.jpeg"
+                    src="/static/images/extracted/web/art_academy/Verlangende_man_ofwel_Oedipus.jpeg"
                     alt=""></div>
             <div class="col-md-3 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/art_academy/19._Man_met_een_drankje.jpeg"
+                    src="/static/images/extracted/web/art_academy/Man_met_een_drankje.jpeg"
                     alt=""></div>
             <div class="col-md-3 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/art_academy/22._Het_paard.jpeg"
+                    src="/static/images/extracted/web/art_academy/Het_paard.jpeg"
                     alt=""></div>
         </div>
 
@@ -214,10 +231,10 @@
                     src="/static/images/extracted/web/art_academy/Renée_Stotijn_werkt_in_1964_aan_een_mozaïek_2.jpg"
                     alt=""></div>
             <div class="col-md-3 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/art_academy/25._Roze_en_paarse_bloemen_in_vaas.jpeg"
+                    src="/static/images/extracted/web/art_academy/Roze_en_paarse_bloemen_in_vaas.jpeg"
                     alt=""></div>
             <div class="col-md-3 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/art_academy/26._Stilleven_van_3_appels.jpeg"
+                    src="/static/images/extracted/web/art_academy/Stilleven_van_3_appels.jpeg"
                     alt=""></div>
             <div class="col-md-3 d-flex align-items-center justify-content-center"><img
                     src="/static/images/extracted/web/art_academy/Renée_Stotijn_werkt_in_1964_aan_een_mozaïek.jpg"
@@ -264,7 +281,8 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <p class="ft-20 text-justify">{{_("Throughout her life Renée maintains a great passion for antique dolls. She
+                <p class="ft-20 text-justify">{{_("Throughout her life Renée maintains a great passion for antique
+                    dolls. She
                     has a small collection
                     of dolls in her house in closed glass display cases. In 1970, an article about Renée's love for
                     antique dolls with a number of remarkable photos was published in Panorama magazine.")}}</p><br>
@@ -273,19 +291,20 @@
 
         <div class="row with-full-size grid">
             <div class="col-md-4 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/dolls/27._Pastel_met_2_antieke_poppen.jpeg"
+                    src="/static/images/extracted/web/dolls/Pastel_met_2_antieke_poppen.jpeg"
                     alt=""></div>
             <div class="col-md-4 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/dolls/29._Popje_in_zwart_wit.jpeg"
+                    src="/static/images/extracted/web/dolls/Popje_in_zwart_wit.jpeg"
                     alt=""></div>
             <div class="col-md-4 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/dolls/30._Pop_met_kanten_jurkje.jpeg"
+                    src="/static/images/extracted/web/dolls/Pop_met_kanten_jurkje.jpeg"
                     alt=""></div>
         </div>
 
         <div class="row">
             <div class="col-md-12"><br>
-                <p class="ft-20 text-justify">{{_('The way in which Renée portrays the dolls is remarkable. It seems like the
+                <p class="ft-20 text-justify">{{_('The way in which Renée portrays the dolls is remarkable. It seems
+                    like the
                     dolls have been given
                     souls. Because of the facial expressions and the way in which the dolls are positioned, they
                     almost resemble people in a lively scene: busy conversing, pondering or enthusiastic. It remains
@@ -296,13 +315,13 @@
 
         <div class="row with-full-size grid">
             <div class="col-md-4 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/dolls/31._Pop_in_geel_jurkje.jpeg"
+                    src="/static/images/extracted/web/dolls/Pop_in_geel_jurkje.jpeg"
                     alt=""></div>
             <div class="col-md-4 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/dolls/32._Pop_in_zwarte_kledij.jpeg"
+                    src="/static/images/extracted/web/dolls/Pop_in_zwarte_kledij.jpeg"
                     alt=""></div>
             <div class="col-md-4 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/dolls/33._Leunende_pop.jpeg"
+                    src="/static/images/extracted/web/dolls/Leunende_pop.jpeg"
                     alt=""></div>
         </div>
 
@@ -317,7 +336,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h1 class="big-h1">Article</h1>
+                <h1 id="article" class="big-h1">Article</h1>
                 <cite class="ft-20">‘De Poppewereld van Renée Stotijn’ (The Doll World of Renée Stotijn). Panorama
                     1970.</cite>
             </div>
@@ -350,12 +369,13 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h1 class="big-h1">Amsterdam</h1>
+                <h1 id="amsterdam" class="big-h1">Amsterdam</h1>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
-                <p class="ft-20 text-justify">{{_('Although born in Hilversum, Renée Stotijn is an ‘Amsterdammer’ in heart
+                <p class="ft-20 text-justify">{{_('Although born in Hilversum, Renée Stotijn is an ‘Amsterdammer’ in
+                    heart
                     and soul. She loves
                     the city very much and also fights for the preservation of her ‘Mokum.’')}}</p><br>
             </div>
@@ -363,13 +383,13 @@
 
         <div class="row with-full-size grid">
             <div class="col-md-4 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/amsterdam/35._Sint_Willibrordus_Buiten_de_Veste_Kathedraal.jpeg"
+                    src="/static/images/extracted/web/amsterdam/Sint_Willibrordus_Buiten_de_Veste_Kathedraal.jpeg"
                     alt=""></div>
             <div class="col-md-4 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/amsterdam/36._Winter_aan_de_Amstel.jpeg"
+                    src="/static/images/extracted/web/amsterdam/Winter_aan_de_Amstel.jpeg"
                     alt=""></div>
             <div class="col-md-4 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/amsterdam/37._Panden_bij_de_Zuiderkerk.jpeg"
+                    src="/static/images/extracted/web/amsterdam/Panden_bij_de_Zuiderkerk.jpeg"
                     alt=""></div>
         </div>
 
@@ -378,25 +398,26 @@
                 <p class="ft-20 text-justify">{{_("She organizes
                     neighbourhood campaigns and writes appeals against, among other things, the demolition of
                     the Eerste Oosterparkstraat and a part of the Weesperzijde, which is known as 'het Streekje'.")}}/p>
-                <br>
+                    <br>
             </div>
         </div>
 
         <div class="row with-full-size grid">
             <div class="col-md-4 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/amsterdam/38._Ergens_in_Amsterdam.jpeg"
+                    src="/static/images/extracted/web/amsterdam/Ergens_in_Amsterdam.jpeg"
                     alt=""></div>
             <div class="col-md-4 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/amsterdam/39._Dame_aan_de_kade.jpeg"
+                    src="/static/images/extracted/web/amsterdam/Dame_aan_de_kade.jpeg"
                     alt=""></div>
             <div class="col-md-4 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/amsterdam/40._Winter_aan_de_grachten.jpeg"
+                    src="/static/images/extracted/web/amsterdam/Winter_aan_de_grachten.jpeg"
                     alt=""></div>
         </div>
 
         <div class="row">
             <div class="col-md-12"><br>
-                <p class="ft-20 text-justify">{{_("Thanks to her, houses that would be demolished are actually restored in
+                <p class="ft-20 text-justify">{{_("Thanks to her, houses that would be demolished are actually restored
+                    in
                     modern style. Renée's
                     greatest victory is the preservation of the New Amstel Bridge by the architects Leguyt and
                     Berlage.")}}</p><br>
@@ -405,13 +426,13 @@
 
         <div class="row with-full-size grid">
             <div class="col-md-4 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/amsterdam/41._Stadsgezicht_Prins_Hendrikkade.jpeg"
+                    src="/static/images/extracted/web/amsterdam/Stadsgezicht_Prins_Hendrikkade.jpeg"
                     alt=""></div>
             <div class="col-md-4 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/amsterdam/42._Achterhuizen_bij_de_Nieuwmarkt.jpeg"
+                    src="/static/images/extracted/web/amsterdam/Achterhuizen_bij_de_Nieuwmarkt.jpeg"
                     alt=""></div>
             <div class="col-md-4 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/amsterdam/43._Weesperzijde_zomers_uitzicht.jpeg"
+                    src="/static/images/extracted/web/amsterdam/Weesperzijde_zomers_uitzicht.jpeg"
                     alt=""></div>
         </div>
 
@@ -425,7 +446,7 @@
 
         <div class="row with-full-size grid">
             <div class="col-md-4 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/amsterdam/44._Weesperzijde_winters_uitzicht.jpeg"
+                    src="/static/images/extracted/web/amsterdam/Weesperzijde_winters_uitzicht.jpeg"
                     alt=""></div>
             <div class="col-md-4 d-flex align-items-center justify-content-center"><img
                     src="/static/images/extracted/web/amsterdam/renée_1.png"
@@ -446,12 +467,13 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h1 class="big-h1">{{_('Landscapes and village scenes')}}</h1>
+                <h1 id="landscapes" class="big-h1">{{_('Landscapes and village scenes')}}</h1>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
-                <p class="ft-20 text-justify">{{_('Renée goes out every now and then to visit other cities and landscapes in
+                <p class="ft-20 text-justify">{{_('Renée goes out every now and then to visit other cities and
+                    landscapes in
                     the
                     Netherlands. In the open air she mainly paints watercolours. She is fond of the colours
                     and light of the Dutch landscape, which she tries to capture in a rich colour palette.')}}</p><br>
@@ -460,22 +482,23 @@
 
         <div class="row with-full-size grid">
             <div class="col-md-3 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/landscapes/45._Schoorl,_tuin_van_“de_Boshut”.jpeg"
+                    src="/static/images/extracted/web/landscapes/Schoorl,_tuin_van_“de_Boshut”.jpeg"
                     alt=""></div>
             <div class="col-md-3 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/landscapes/47._Kranen_aan_het_kanaal.jpeg"
+                    src="/static/images/extracted/web/landscapes/Kranen_aan_het_kanaal.jpeg"
                     alt=""></div>
             <div class="col-md-3 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/landscapes/48._Aan_de_kade.jpeg"
+                    src="/static/images/extracted/web/landscapes/Aan_de_kade.jpeg"
                     alt=""></div>
             <div class="col-md-3 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/landscapes/49._Boerenhuisje_met_kruiwagen.jpeg"
+                    src="/static/images/extracted/web/landscapes/Boerenhuisje_met_kruiwagen.jpeg"
                     alt=""></div>
         </div>
 
         <div class="row">
             <div class="col-md-12"><br>
-                <p class="ft-20 text-justify">{{_('She adores Durgerdam and Marken and has a fascination for the traditional
+                <p class="ft-20 text-justify">{{_('She adores Durgerdam and Marken and has a fascination for the
+                    traditional
                     costumes
                     from those villages. She also visits abroad. France and Italy are very dear to her and were
                     a source of inspiration. However, due to a lack of financial resources, she does not
@@ -485,16 +508,16 @@
 
         <div class="row with-full-size grid">
             <div class="col-md-3 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/landscapes/50._Zicht_op_Durgerdam.jpeg"
+                    src="/static/images/extracted/web/landscapes/Zicht_op_Durgerdam.jpeg"
                     alt=""></div>
             <div class="col-md-3 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/landscapes/51._Pier_bij_Ameland.jpeg"
+                    src="/static/images/extracted/web/landscapes/Pier_bij_Ameland.jpeg"
                     alt=""></div>
             <div class="col-md-3 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/landscapes/53._Aquarel_Ameland.jpeg"
+                    src="/static/images/extracted/web/landscapes/Aquarel_Ameland.jpeg"
                     alt=""></div>
             <div class="col-md-3 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/landscapes/54._Mediterraans_Balkon.jpeg"
+                    src="/static/images/extracted/web/landscapes/Mediterraans_Balkon.jpeg"
                     alt=""></div>
         </div>
 
@@ -509,12 +532,13 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h1 class="big-h1">{{_('Still lives')}}</h1>
+                <h1 id="stilives" class="big-h1">{{_('Still lives')}}</h1>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
-                <p class="ft-20 text-justify">{{_('Renée makes countless still lives from objects in her own home such as
+                <p class="ft-20 text-justify">{{_('Renée makes countless still lives from objects in her own home such
+                    as
                     vases, fans and
                     hats. She often places these objects on a wooden table. One such table is the one that she
                     received from acquaintances from Schoorl. Flowers are her favourite subject. She paints
@@ -526,26 +550,27 @@
         <div class="row with-full-size grid">
             <div class="col-md-1 bg-transparent"></div>
             <div class="col-md-2 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/still_lives/55._Gele_bloemen_met_fruit.jpeg"
+                    src="/static/images/extracted/web/still_lives/Gele_bloemen_met_fruit.jpeg"
                     alt=""></div>
             <div class="col-md-2 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/still_lives/56._Bloesem_met_bakje.jpeg"
+                    src="/static/images/extracted/web/still_lives/Bloesem_met_bakje.jpeg"
                     alt=""></div>
             <div class="col-md-2 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/still_lives/57-1._Stilleven_met_hoed_en_doek.jpeg"
+                    src="/static/images/extracted/web/still_lives/Stilleven_met_hoed_en_doek.jpeg"
                     alt=""></div>
             <div class="col-md-2 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/still_lives/59._Stilleven_met_doeken_en_fruit.jpeg"
+                    src="/static/images/extracted/web/still_lives/Stilleven_met_doeken_en_fruit.jpeg"
                     alt=""></div>
             <div class="col-md-2 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/still_lives/61._Schilders_stilleven.jpeg"
+                    src="/static/images/extracted/web/still_lives/Schilders_stilleven.jpeg"
                     alt=""></div>
             <div class="col-md-1 bg-transparent"></div>
         </div>
 
         <div class="row">
             <div class="col-md-12"><br>
-                <p class="ft-20 text-justify">{{_("Remarkable are Renée's often dynamic compositions and rich use of colour.
+                <p class="ft-20 text-justify">{{_("Remarkable are Renée's often dynamic compositions and rich use of
+                    colour.
                     There always
                     seems to be movement in the works. Her still lives are anything but static.")}}</p><br>
             </div>
@@ -553,16 +578,16 @@
 
         <div class="row with-full-size grid">
             <div class="col-md-3 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/still_lives/62._Stilleven_met_theepot_en_hoed.jpeg"
+                    src="/static/images/extracted/web/still_lives/Stilleven_met_theepot_en_hoed.jpeg"
                     alt=""></div>
             <div class="col-md-3 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/still_lives/64._Stilleven_met_pauwenveren.jpeg"
+                    src="/static/images/extracted/web/still_lives/Stilleven_met_pauwenveren.jpeg"
                     alt=""></div>
             <div class="col-md-3 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/still_lives/65._Stilleven_met_onbekende_voorwerpen.jpeg"
+                    src="/static/images/extracted/web/still_lives/Stilleven_met_onbekende_voorwerpen.jpeg"
                     alt=""></div>
             <div class="col-md-3 d-flex align-items-center justify-content-center"><img
-                    src="/static/images/extracted/web/still_lives/66._Twee_vissen_op_een_krant.jpeg"
+                    src="/static/images/extracted/web/still_lives/Twee_vissen_op_een_krant.jpeg"
                     alt=""></div>
         </div>
 
@@ -578,7 +603,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h1 class="big-h1">{{_('Relationship and posters')}}</h1>
+                <h1 id="relationship" class="big-h1">{{_('Relationship and posters')}}</h1>
             </div>
         </div>
         <div class="row">
@@ -608,7 +633,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12"><br>
-                <p class="ft-20 text-justify">{{_("In 1978 Dick and Renée organize a concert series in the Concertgebouw with
+                <p class="ft-20 text-justify">{{_("In 1978 Dick and Renée organize a concert series in the Concertgebouw
+                    with
                     the name
                     ‘Scherts Concerts’ in which Dick presents jokes and oddities on stage together with Polo de
                     Haas and other musicians. In combination with the concerts, an exhibition of Renée's work
@@ -651,7 +677,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h1 class="big-h1">{{_("Photo’s Renée Stotijn and Dick Bor")}}</h1>
+                <h1 id="mixph" class="big-h1">{{_("Photo’s Renée Stotijn and Dick Bor")}}</h1>
             </div>
         </div>
     </div>
@@ -682,16 +708,19 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h1 class="big-h1">Portraits</h1>
+                <h1 id="portraits" class="big-h1">Portraits</h1>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
-                <p class="ft-20 text-justify">{{_("The greatest discovery in Renée's house are the countless portraits she painted, most of them with oil
-paint. Nobody, knew about the portraits, or could imagine the vast amount. The artworks have spent
-decades laying in the tops of cabinets in the kitchen. They lay between double ceilings and in cavities
-within the wall that turned out to be several meters deep. When closets were emptied by her
-daughters, they found one surprise after another. It was as if a treasure had been discovered.")}}</p><br>
+                <p class="ft-20 text-justify">{{_("The greatest discovery in Renée's house are the countless portraits
+                    she painted, most of them with oil
+                    paint. Nobody, knew about the portraits, or could imagine the vast amount. The artworks have spent
+                    decades laying in the tops of cabinets in the kitchen. They lay between double ceilings and in
+                    cavities
+                    within the wall that turned out to be several meters deep. When closets were emptied by her
+                    daughters, they found one surprise after another. It was as if a treasure had been
+                    discovered.")}}</p><br>
             </div>
         </div>
 
@@ -724,11 +753,14 @@ daughters, they found one surprise after another. It was as if a treasure had be
 
         <div class="row">
             <div class="col-md-12"><br>
-                <p class="ft-20 text-justify">{{_("It is very likely that Renée made these portraits at the Rijksacademie. In one of the few interviews she
-gives, she refers to the portraits she painted in the ‘loge’ that was assigned to her. Here she had all
-the materials available. Who the models are ultimately remains a guess, just like the answers to many
-other questions about the how, what, where and when with regard to her artworks. These answers
-are left up to the imagination.")}}</p><br>
+                <p class="ft-20 text-justify">{{_("It is very likely that Renée made these portraits at the
+                    Rijksacademie. In one of the few interviews she
+                    gives, she refers to the portraits she painted in the ‘loge’ that was assigned to her. Here she had
+                    all
+                    the materials available. Who the models are ultimately remains a guess, just like the answers to
+                    many
+                    other questions about the how, what, where and when with regard to her artworks. These answers
+                    are left up to the imagination.")}}</p><br>
             </div>
         </div>
 
@@ -766,7 +798,7 @@ are left up to the imagination.")}}</p><br>
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h2>{{_("Photo’s exhibition and concert Spiegelzaal - Concertgebouw")}}</h2>
+                <h2 id="mixph2">{{_("Photo’s exhibition and concert Spiegelzaal - Concertgebouw")}}</h2>
             </div>
         </div>
     </div>
@@ -797,7 +829,7 @@ are left up to the imagination.")}}</p><br>
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h1 class="big-h1">{{_("Articles Dick Bor and Renée Stotijn")}}</h1>
+                <h1 id="articles2" class="big-h1">{{_("Articles Dick Bor and Renée Stotijn")}}</h1>
             </div>
         </div>
     </div>
@@ -828,14 +860,16 @@ are left up to the imagination.")}}</p><br>
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h1 class="big-h1">Later work</h1>
+                <h1 id="laterwork" class="big-h1">Later work</h1>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
-                <p class="ft-20 text-justify">{{_("There is an unfortunate event in Renée's life that causes a change: she gets sick. In 1972, at the age
-of 32, she is diagnosed with breast cancer. She has surgery, but afterwards she is in so much pain
-that she is unable to use her arm, let alone paint, for a long time. This is a nightmare for Renée.")}}</p><br>
+                <p class="ft-20 text-justify">{{_("There is an unfortunate event in Renée's life that causes a change:
+                    she gets sick. In 1972, at the age
+                    of 32, she is diagnosed with breast cancer. She has surgery, but afterwards she is in so much pain
+                    that she is unable to use her arm, let alone paint, for a long time. This is a nightmare for
+                    Renée.")}}</p><br>
             </div>
         </div>
     </div>
@@ -856,10 +890,11 @@ that she is unable to use her arm, let alone paint, for a long time. This is a n
     <div class="container">
         <div class="row">
             <div class="col-md-12"><br>
-                <p class="ft-20 text-justify">{{_('After a while she tries to pick it up again, and makes drawings, pastels and watercolours, though at
-an admittedly slower pace than before. Due to the hard labour and process required to create an
-oil painting, she is no longer able to make them. Her style is clearly recognizable in her newer
-works.')}}</p><br>
+                <p class="ft-20 text-justify">{{_('After a while she tries to pick it up again, and makes drawings,
+                    pastels and watercolours, though at
+                    an admittedly slower pace than before. Due to the hard labour and process required to create an
+                    oil painting, she is no longer able to make them. Her style is clearly recognizable in her newer
+                    works.')}}</p><br>
             </div>
         </div>
 
@@ -888,10 +923,11 @@ works.')}}</p><br>
 
     <div class="container">
         <div class="col-md-12">
-            <p class="ft-20 text-justify">{{_("In the period after the operation, Renée mainly works on subjects she loves. In France at ‘the
-Bastide’ she creates watercolours of the area. She is also frequently engaged in watercolours of
-peonies, especially in the last years of her life. Finally, she portrays her grandchildren with much
-love and is often inspired by the works of Peter Paul Rubens.")}}</p><br>
+            <p class="ft-20 text-justify">{{_("In the period after the operation, Renée mainly works on subjects she
+                loves. In France at ‘the
+                Bastide’ she creates watercolours of the area. She is also frequently engaged in watercolours of
+                peonies, especially in the last years of her life. Finally, she portrays her grandchildren with much
+                love and is often inspired by the works of Peter Paul Rubens.")}}</p><br>
         </div>
     </div>
 
@@ -936,8 +972,9 @@ love and is often inspired by the works of Peter Paul Rubens.")}}</p><br>
             smooth: true
         })
 
-        $('#scrollToDolls').on('click', function() {
-            scroller.scrollTo('#dolls');
+        $('.scrollTo').on('click', function () {
+            console.log('a');
+            scroller.scrollTo($(this).attr('data-target'));
         })
 
         gsap.registerPlugin(ScrollTrigger)

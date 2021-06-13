@@ -7,6 +7,34 @@
     font-family: 'Cormorant Garamond';
 }
 
+.anchortop {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 28px;
+    font-size: 22px;
+    border-radius: 100px;
+    opacity: 1 !important;
+    z-index: 99999
+}
+
+#start a:before {
+    content:" • ";
+}
+
+#start a {
+    text-decoration: none;
+    color: black;
+    font-size: 27px;
+    line-height: 50px;
+    margin-left: 25px;
+    transition: transform .2s;
+}
+
+#start a:hover {
+    transform: scale(1.1)
+}
+
 .about-container {
     background: inherit;
 }
@@ -97,6 +125,7 @@
 
 .section-1 .row img {
     max-height: 680px;
+    margin: 10px;
 }
 
 .section-2 img {
