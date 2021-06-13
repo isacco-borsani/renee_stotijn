@@ -15,12 +15,14 @@
 {% block content %}
 <body class="demo-3">
 <div class="img-full-width hidden">
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x close-full-width-image"
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+         class="bi bi-x close-full-width-image"
          viewBox="0 0 16 16">
         <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
     </svg>
     <img src="/static/images/renata/121495992_856165791788188_6599592335180247370_n.jpg" alt="">
-    <p class="caption">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+    <p class="caption">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+        totam rem aperiam</p>
 </div>
 <main id="main" data-scroll-container="" data-scroll-section-inview=""
       style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -192, 0, 1); opacity: 1; pointer-events: all;">
@@ -86,10 +88,10 @@
         <h2 class="tiles__title tiles__title--intro is-inview" data-scroll="" data-scroll-speed="4"
             style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -31.2, 0, 1);"><a class="mx-auto"
                                                                                                 href="#">
-            <img width="100%" src="/static/images/sign_nobg.png" class="rounded-circle">
+            <img src="/static/images/sign_nobg.png" class="sign-image rounded-circle">
         </a></h2>
     </section>
-    <section class="content">
+    <section class="content nopadding">
         <div class="row">
             <div class="col-md-12">
                 <ul class="main-ul-rene">
@@ -104,20 +106,22 @@
     </section>
     <section class="content">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-4 col-sm-12 fix-width">
                 <p class="content__text is-inview" data-scroll="" data-scroll-speed="2"
                    style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 33.2, 0, 1);">
                     {{_('FIRST_INTRO')}}</p>
-                <img width="80%" src="static/images/renata/120194759_340353170520989_7329137475801138262_n.jpg" alt="">
             </div>
-            <div class="col-md-6 text-center">
-                <img src="static/images/renata/121495992_856165791788188_6599592335180247370_n.jpg"
-                     style="width: 70%;" alt="">
-                <img src="static/images/renata/68_Affiche_de_Typisten.jpeg" style="width: 410px; margin-top: 70px"
-                     alt="">
+            <div class="col-md-8 col-sm-12 first-set-images fix-width">
+                <img src="static/images/renata/120194759_340353170520989_7329137475801138262_n.jpg" alt="">
+
+                <img src="static/images/renata/121495992_856165791788188_6599592335180247370_n.jpg" alt="">
             </div>
         </div>
-
+        <div class="row">
+            <div class="col-md-12">
+                <hr>
+            </div>
+        </div>
     </section>
     <section class="tiles tiles--oneline" id="grid2">
         <div class="tiles__wrap">
@@ -130,11 +134,14 @@
                 <div class="tiles__line-img"></div>
             </div>
         </div>
-        <p class="tiles__title tiles__title--left tiles__title--full tiles__title--alt" data-scroll=""
-           data-scroll-speed="10"
-           data-scroll-direction="horizontal"
-           style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8074.12, 0, 0, 1);">
-            {{_('FIRST_TITLE_HORIZONTAL_SCROLL')}}</p>
+        <div class="text-container">
+            <h2 class="tiles__title tiles__title--left tiles__title--full tiles__title--alt" data-scroll=""
+               data-scroll-speed="10"
+               data-scroll-direction="horizontal"
+               style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 8074.12, 0, 0, 1);">
+                {{_('FIRST_TITLE_HORIZONTAL_SCROLL')}}</h2>
+        </div>
+
     </section>
     <section class="tiles tiles--oneline" id="grid3">
         <div class="tiles__wrap">
@@ -148,9 +155,11 @@
             </div>
         </div>
 
-        <p class="tiles__title tiles__title--full tiles__title--alt" data-scroll=""
-           data-scroll-speed="2" style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 394.956, 0, 1);">
-            {{_('SECOND_TITLE_HORIZONTAL_SCROLL')}}</p>
+        <div class="text-container">
+            <h2 class="tiles__title tiles__title--full tiles__title--alt" data-scroll=""
+               data-scroll-speed="2" style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 394.956, 0, 1);">
+                {{_('SECOND_TITLE_HORIZONTAL_SCROLL')}}</h2>
+        </div>
     </section>
     <section class="tiles tiles--oneline" id="grid4">
         <div class="tiles__wrap">
@@ -163,19 +172,22 @@
                 <div class="tiles__line-img"></div>
             </div>
         </div>
-        <h2 class="tiles__title tiles__title--full tiles__title--alt" data-scroll=""
+        <div class="text-container">
+            <h2 class="tiles__title tiles__title--full tiles__title--alt" data-scroll=""
             data-scroll-speed="2" style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 515.916, 0, 1);">
             {{_('THIRD_TITLE_HORIZONTAL_SCROLL')}}</h2>
+        </div>
     </section>
     <section class="content">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-sm-12 col-md-6 fix-intro-container">
                 <p class="content__text content__text--wide" data-scroll="" data-scroll-speed="1"
                    style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 318.038, 0, 1);">
                     {{_('SECOND_INTRO')}}</p>
             </div>
-            <div class="col-md-6 text-center">
+            <div class="col-md-6 fix-intro-container-img text-center">
                 <img width="70%" src="static/images/renata/109206913_3077524425694766_3066399280182564367_n.jpg" alt="">
+
             </div>
         </div>
 
@@ -227,86 +239,13 @@
     </section>
     <section class="content">
         <div class="row">
-            <div class="col-md-6 text-center">
+            <div class="col-md-6 text-center fix-intro-container-img">
                 <img width="70%" src="static/images/renata/104827249_268154084518342_7074067090816969707_n.jpg" alt="">
             </div>
-            <div class="col-md-6 text-left">
+            <div class="col-md-6 fix-intro-container text-left">
                 <p class="content__text content__text--right content__text--wide" data-scroll="" data-scroll-speed="1"
                    style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 463.856, 0, 1);">
                     {{_('THIRD_INTRO')}}</p>
-            </div>
-        </div>
-    </section>
-
-    <div class="row">
-        <div class="col">
-            <br>
-            <hr>
-            <br>
-        </div>
-    </div>
-
-    <section class="tiles tiles--fixed hidden">
-        <div class="tiles__wrap">
-            <div class="tiles__line">
-                <div class="tiles__line-img with-full-size"
-                     style=" transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1715.77, 0, 0, 1);"
-                     data-scroll="" data-scroll-speed="3" data-scroll-direction="horizontal"></div>
-                <div class="tiles__line-img with-full-size"
-                     style=" transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1143.85, 0, 0, 1);"
-                     data-scroll="" data-scroll-speed="2" data-scroll-direction="horizontal"></div>
-                <div class="tiles__line-img with-full-size"
-                     style=" transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 571.925, 0, 0, 1);"
-                     data-scroll="" data-scroll-speed="1" data-scroll-direction="horizontal"></div>
-                <div class="tiles__line-img with-full-size"
-                     style=" transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -571.925, 0, 0, 1);"
-                     data-scroll="" data-scroll-speed="-1" data-scroll-direction="horizontal"></div>
-                <div class="tiles__line-img with-full-size"
-                     style=" transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1143.85, 0, 0, 1);"
-                     data-scroll="" data-scroll-speed="-2" data-scroll-direction="horizontal"></div>
-                <div class="tiles__line-img with-full-size"
-                     style=" transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1715.77, 0, 0, 1);"
-                     data-scroll="" data-scroll-speed="-3" data-scroll-direction="horizontal"></div>
-            </div>
-            <div class="tiles__line">
-                <div class="tiles__line-img with-full-size"
-                     style=" transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1842.08, 0, 0, 1);"
-                     data-scroll="" data-scroll-speed="3" data-scroll-direction="horizontal"></div>
-                <div class="tiles__line-img with-full-size"
-                     style=" transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1228.05, 0, 0, 1);"
-                     data-scroll="" data-scroll-speed="2" data-scroll-direction="horizontal"></div>
-                <div class="tiles__line-img with-full-size"
-                     style=" transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 614.025, 0, 0, 1);"
-                     data-scroll="" data-scroll-speed="1" data-scroll-direction="horizontal"></div>
-                <div class="tiles__line-img with-full-size"
-                     style=" transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -614.025, 0, 0, 1);"
-                     data-scroll="" data-scroll-speed="-1" data-scroll-direction="horizontal"></div>
-                <div class="tiles__line-img with-full-size"
-                     style=" transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1228.05, 0, 0, 1);"
-                     data-scroll="" data-scroll-speed="-2" data-scroll-direction="horizontal"></div>
-                <div class="tiles__line-img with-full-size"
-                     style=" transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1842.08, 0, 0, 1);"
-                     data-scroll="" data-scroll-speed="-3" data-scroll-direction="horizontal"></div>
-            </div>
-            <div class="tiles__line">
-                <div class="tiles__line-img with-full-size"
-                     style=" transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1968.38, 0, 0, 1);"
-                     data-scroll="" data-scroll-speed="3" data-scroll-direction="horizontal"></div>
-                <div class="tiles__line-img with-full-size"
-                     style=" transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1312.25, 0, 0, 1);"
-                     data-scroll="" data-scroll-speed="2" data-scroll-direction="horizontal"></div>
-                <div class="tiles__line-img with-full-size"
-                     style=" transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 656.125, 0, 0, 1);"
-                     data-scroll="" data-scroll-speed="1" data-scroll-direction="horizontal"></div>
-                <div class="tiles__line-img with-full-size"
-                     style=" transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -656.125, 0, 0, 1);"
-                     data-scroll="" data-scroll-speed="-1" data-scroll-direction="horizontal"></div>
-                <div class="tiles__line-img with-full-size"
-                     style=" transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1312.25, 0, 0, 1);"
-                     data-scroll="" data-scroll-speed="-2" data-scroll-direction="horizontal"></div>
-                <div class="tiles__line-img with-full-size"
-                     style=" transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1968.38, 0, 0, 1);"
-                     data-scroll="" data-scroll-speed="-3" data-scroll-direction="horizontal"></div>
             </div>
         </div>
     </section>
@@ -323,7 +262,7 @@
             $('.img-full-width').removeClass('hidden');
             $('.img-full-width').find('img').attr('src', $(this).attr('data-paint-location'))
         })
-        $('.close-full-width-image').on('click', function() {
+        $('.close-full-width-image').on('click', function () {
             $(this).parent().addClass('hidden')
         })
     })

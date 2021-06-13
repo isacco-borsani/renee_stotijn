@@ -15,7 +15,7 @@ a:hover, img:hover, li:hover {
 }
 
 .heading-title h1 {
-    margin-left:40px;
+    margin-left: 40px;
     margin-right: 40px;
     font-size: 2.5rem;
 }
@@ -42,15 +42,16 @@ a:hover, img:hover, li:hover {
 
 .news-big p {
     font-family: 'span';
-    font-size: 32px
+    font-size: 3vh
 }
 
 .news-big h2 {
     font-weight: 100;
+    font-size: 4vh;
 }
 
 .news-big h1 {
-    font-size: 62px
+    font-size: 9vh
 }
 
 .list-contents {
@@ -75,7 +76,7 @@ a:hover, img:hover, li:hover {
 .main-link {
     font-family: 'span', serif;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 1vw;
     line-height: 48px;
     /* font-weight: 600; */
     color: #202020;
@@ -85,4 +86,43 @@ a:hover, img:hover, li:hover {
 .row {
     padding-top: 50px;
     padding-bottom: 50px
+}
+
+.logo {
+    margin: 20px
+}
+
+.last-row {
+    margin-bottom: 50px
+}
+
+.pt50 {
+    padding-top: 50px !important
+}
+
+@media screen and (max-width: 1400px) {
+    .row .col-md-3, .row .col-md-4, .row .col-md-5{
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: auto !important
+    }
+    .news-big:first-child {
+        text-align: center
+    }
+    .news-big img {
+        width: 50%;
+    }
+    .main-link {
+        font-size: 3vw;
+    }
+    .row a, .row h2, .row h1, .row p {
+        margin-top: 30px;
+        margin-bottom: 30px
+    }
+}
+
+@media screen and (max-width: 600px){
+    .news-big img {
+        width: 80%;
+    }
 }

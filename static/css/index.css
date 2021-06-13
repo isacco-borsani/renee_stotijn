@@ -62,6 +62,38 @@ div.marginsH80 {
     margin-top: 215px
 }
 
+.fix-width {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: auto !important;
+    text-align: center
+}
+
+
+@media screen and (max-width: 1300px) {
+    .fix-intro-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: auto !important
+    }
+
+    .fix-intro-container-img {
+        width: 100%;
+        flex: 0 0 100%;
+        max-width: 100%
+    }
+
+    .fix-intro-container-img img {
+        width: 60vw
+    }
+}
+
+.first-set-images img {
+    display: inline-block;
+    width: 30vw;
+    margin: 63px;
+}
+
 .main-ul-rene li {
     display: inline-block;
     margin-right: 9vw;
@@ -182,13 +214,13 @@ main {
 }
 
 .content {
-    padding: 3rem;
     min-height: 300px;
     display: flex;
     position: relative;
     flex-direction: column;
     align-content: center;
     justify-content: space-between;
+    padding: 0 3rem 3rem;
 }
 
 .content--auto {
@@ -254,7 +286,7 @@ main {
 }
 
 .content__breakout--big {
-    font-size: 9vw;
+    font-size: 7vw;
     font-weight: 200;
 }
 
@@ -416,7 +448,7 @@ main {
     outline: 1px solid transparent;
     --tile-margin: 1vw;
     width: calc(16.6666% - var(--tile-margin) * 2);
-    height: calc(16.666vw * 1.3);
+    height: calc(16.666vw * 1.2);
 }
 
 .tiles--oneline .tiles__line-img {
@@ -481,8 +513,7 @@ main {
 }
 
 .tiles__title--alt {
-    font-size: 9vw;
-    font-size: clamp(2rem, 9vw, 4.25rem);
+    font-size: clamp(1.5rem, 7vw, 3.25rem);
 }
 
 .tiles__title--intro {
@@ -575,10 +606,25 @@ html.has-scroll-dragging {
     cursor: grabbing;
 }
 
+@media screen and (min-width: 1001px) and (max-width: 1350px) {
+    .tiles--perspective .tiles__line-img {
+        width: calc(25.6666% - var(--tile-margin) * 2);
+        height: calc(20.666vw * 1.3);
+    }
+
+    .tiles__title--alt {
+        font-size: clamp(1.2rem, 5.5vw, 2.25rem);
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .tiles--perspective .tiles__line-img {
         width: calc(46.6666% - var(--tile-margin) * 2);
-        height: calc(46.666vw * 1.3);
+        height: calc(30.666vw * 1.3);
+    }
+
+    .tiles__title--alt {
+        font-size: clamp(1.2rem, 5.5vw, 2.25rem);
     }
 }
 
@@ -639,7 +685,6 @@ html.has-scroll-dragging {
     }
 
     .content__text {
-        max-width: 800px;
         min-width: calc(300px - 6rem);
     }
 
@@ -649,9 +694,85 @@ html.has-scroll-dragging {
 }
 
 
+.mix-imgs-rene-dick img {
+    height: auto;
+    width: inherit
+}
+
+.mix-imgs-rene-dick div.col-md-3 {
+    max-height: fit-content
+}
+
+@media screen and (max-width: 1312px) {
+    .main-ul-rene li {
+        font-size: 6vw
+    }
+}
+
 @media screen and (max-width: 767px) {
+    .content__text {
+        font-size: 6vw;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 767px) {
     .mix-imgs-rene-dick img {
         width: 70% !important;
         margin-top: 5px
     }
+
+    .content__text {
+        font-size: 4vw;
+    }
+
+    .tiles--perspective .tiles__line-img {
+        width: calc(46.6666% - var(--tile-margin) * 2);
+        height: calc(40.666vw * 1.3);
+    }
+
+    .main-ul-rene li {
+        font-size: 8vw
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .tiles--perspective .tiles__line-img {
+        width: calc(60.6666% - var(--tile-margin) * 2);
+        height: calc(60.666vw * 1.3);
+    }
+
+    .main-ul-rene li {
+        font-size: 12vw
+    }
+
+    .first-set-images img {
+        display: inline-block;
+        width: 60vw;
+        margin: 8px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .tiles--perspective .tiles__line-img {
+        width: calc(80.6666% - var(--tile-margin) * 2);
+        height: calc(80.666vw * 1.3);
+    }
+}
+
+.sign-image {
+    width: 100%;
+    position: relative;
+    top: -10vw
+}
+
+.text-container {
+    height: 210px;
+    background: #0000007a;
+    z-index: 99999999;
+    position: absolute;
+    width: 100%;
+    top: 80px;
+    /* opacity: 0.7; */
+    backdrop-filter: blur(5px) saturate(125%);
+    -webkit-backdrop-filter: blur(5px) saturate(125%)
 }
