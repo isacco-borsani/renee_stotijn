@@ -33,7 +33,8 @@
 {% block content %}
 <body>
 
-<button class="anchortop btn btn-primary scrollTo" data-target="#start"><img src="/static/images/up.png" alt=""></button>
+<button class="anchortop btn btn-primary scrollTo" data-target="#start"><img src="/static/images/up.png" alt="">
+</button>
 
 <div class="img-full-width hidden">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -47,20 +48,23 @@
 <div id="start" data-scroll-container class="about-container">
     <div class="hero">
         <div data-scroll data-scroll-speed="3" class="copy">
-            <a class="scrollTo" data-target="#intro" href="#">{{_('Introduction')}}</a>
+            <a class="scrollTo" data-target="#intro" href="#"><b>{{_('Introduction')}}</b></a>
+            <hr>
             <a class="scrollTo" data-target="#artacademy" href="#">{{_('Art Academy')}}</a>
             <a class="scrollTo" data-target="#dolls" href="#">{{_('Dolls')}}</a>
             <a class="scrollTo" data-target="#article" href="#">{{_('Article')}}</a>
             <a class="scrollTo" data-target="#amsterdam" href="#">{{_('Amsterdam')}}</a>
             <a class="scrollTo" data-target="#landscapes" href="#">{{_('Landscapes')}}</a>
             <a class="scrollTo" data-target="#stilives" href="#">{{_('Still Lives')}}</a>
+            <hr>
             <a class="scrollTo" data-target="#relationship" href="#">{{_('Relationship and posters')}}</a>
             <a class="scrollTo" data-target="#mixph" href="#">{{_('Photo’s Renée Stotijn and Dick Bor')}}</a>
+            <hr>
             <a class="scrollTo" data-target="#portraits" href="#">{{_('Portraits')}}</a>
-            <a class="scrollTo" data-target="#mixph2" href="#">{{_('Photo’s exhibition and concert Spiegelzaal -
-                Concertgebouw')}}</a>
+            <a class="scrollTo" data-target="#mixph2" href="#">{{_('Photo’s exhibition and concert Spiegelzaal')}}</a>
             <a class="scrollTo" data-target="#articles2" href="#">{{_('Articles Dick Bor and Renée Stotijn')}}</a>
             <a class="scrollTo" data-target="#laterwork" href="#">{{_('Later Work')}}</a>
+            <a class="scrollTo" data-target="#extra" href="#">{{_('Extra')}}</a>
         </div>
         <div class="image-wrapper">
             <img src="/static/images/renata/104827249_268154084518342_7074067090816969707_n.jpg"
@@ -860,7 +864,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h1 id="laterwork" class="big-h1">Later work</h1>
+                <h1 id="laterwork" class="big-h1">{{_('Later work')}}</h1>
             </div>
         </div>
         <div class="row">
@@ -931,7 +935,7 @@
         </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container">
         <div class="row with-full-size grid">
             <div class="col-md-2"></div>
             <div class="col-md-3 d-flex align-items-center justify-content-center"><img
@@ -943,7 +947,186 @@
             <div class="col-md-3 d-flex align-items-center justify-content-center"><img
                     src="/static/images/extracted/web/later_work/Peonies_in_red-black__Ca__2010__Watercolour_on_paper__8,7_x_14_cm.jpeg"
                     alt=""></div>
+        </div>
+        <div class="row with-full-size grid mt-5">
+            <div class="col-md-2"></div>
+            <div class="col-md-3 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/later_work/Flowers.jpeg" style="max-height: 313px"
+                    alt=""></div>
+            <div class="col-md-3 d-flex align-items-center justify-content-center"><img style="max-height: 313px"
+                                                                                        src="/static/images/extracted/web/later_work/Flowers2.jpeg"
+                                                                                        alt=""></div>
+            <div class="col-md-3 d-flex align-items-center justify-content-center"><img style="max-height: 313px"
+                                                                                        src="/static/images/extracted/web/later_work/Flowers3.jpeg"
+                                                                                        alt=""></div>
+        </div>
+    </div>
 
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 id="extra" class="big-h1">{{_('Extra')}}</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row with-full-size grid">
+            <div class="col-md-2 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file1.jpeg"
+                    alt=""></div>
+            <div class="col-md-2 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file2.jpeg"
+                    alt=""></div>
+            <div class="col-md-2 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file3.jpeg"
+                    alt=""></div>
+            <div class="col-md-2 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file4.jpeg"
+                    alt=""></div>
+            <div class="col-md-2 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file5.jpeg"
+                    alt=""></div>
+            <div class="col-md-2 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file6.jpeg"
+                    alt=""></div>
+        </div>
+        <div class="row with-full-size grid mt-5">
+            <div class="col-md-2 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file7.jpeg"
+                    alt=""></div>
+            <div class="col-md-2 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file8.jpeg"
+                    alt=""></div>
+            <div class="col-md-2 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file9.jpeg"
+                    alt=""></div>
+            <div class="col-md-2 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file10.jpeg"
+                    alt=""></div>
+            <div class="col-md-2 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file11.jpeg"
+                    alt=""></div>
+            <div class="col-md-2 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file12.jpeg"
+                    alt=""></div>
+        </div>
+        <div class="row with-full-size grid mt-5">
+            <div class="col-md-2 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file13.jpeg"
+                    alt=""></div>
+            <div class="col-md-2 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file14.jpeg"
+                    alt=""></div>
+            <div class="col-md-2 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file15.jpeg"
+                    alt=""></div>
+            <div class="col-md-2 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file16.jpeg"
+                    alt=""></div>
+            <div class="col-md-2 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file17.jpeg"
+                    alt=""></div>
+            <div class="col-md-2 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file18.jpeg"
+                    alt=""></div>
+        </div>
+        <div class="row with-full-size grid mt-5">
+            <div class="col-md-2 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file19.jpeg"
+                    alt=""></div>
+            <div class="col-md-2 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file20.jpeg"
+                    alt=""></div>
+            <div class="col-md-2 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file21.jpeg"
+                    alt=""></div>
+            <div class="col-md-2 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file22.jpeg"
+                    alt=""></div>
+            <div class="col-md-2 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file23.jpeg"
+                    alt=""></div>
+            <div class="col-md-2 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file24.jpeg"
+                    alt=""></div>
+        </div>
+        <div class="row with-full-size grid mt-5">
+            <div class="col-md-2 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file25.jpeg"
+                    alt=""></div>
+            <div class="col-md-2 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file26.jpeg"
+                    alt=""></div>
+            <div class="col-md-2 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file27.jpeg"
+                    alt=""></div>
+            <div class="col-md-2 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file28.jpeg"
+                    alt=""></div>
+            <div class="col-md-2 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file29.jpeg"
+                    alt=""></div>
+            <div class="col-md-2 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file30.jpeg"
+                    alt=""></div>
+        </div>
+        <div class="row with-full-size grid mt-5">
+            <div class="col-md-2 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file31.jpeg"
+                    alt=""></div>
+            <div class="col-md-2 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file32.jpeg"
+                    alt=""></div>
+            <div class="col-md-2 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file33.jpeg"
+                    alt=""></div>
+            <div class="col-md-2 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file34.jpeg"
+                    alt=""></div>
+            <div class="col-md-2 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file35.jpeg"
+                    alt=""></div>
+            <div class="col-md-2 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file36.jpeg"
+                    alt=""></div>
+        </div>
+        <div class="row with-full-size grid mt-5">
+            <div class="col-md-2 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file37.jpeg"
+                    alt=""></div>
+            <div class="col-md-2 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file38.jpeg"
+                    alt=""></div>
+            <div class="col-md-2 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file39.jpeg"
+                    alt=""></div>
+            <div class="col-md-2 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file40.jpeg"
+                    alt=""></div>
+            <div class="col-md-2 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file41.jpeg"
+                    alt=""></div>
+            <div class="col-md-2 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file42.jpeg"
+                    alt=""></div>
+        </div>
+        <div class="row with-full-size grid mt-5">
+            <div class="col-md-2"></div>
+            <div class="col-md-3 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file43.jpeg"
+                    alt=""></div>
+            <div class="col-md-3 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file44.jpeg"
+                    alt=""></div>
+            <div class="col-md-3 d-flex align-items-center justify-content-center"><img
+                    src="/static/images/extracted/web/extra/file45.jpeg"
+                    alt=""></div>
         </div>
     </div>
 
@@ -960,7 +1143,7 @@
             $('.img-full-width').removeClass('hidden');
             $('.img-full-width').find('img').attr('src', $(this).attr('src'))
             let splitted_path = $(this).attr('src').replaceAll("_", " ").split("/");
-            let title = splitted_path[splitted_path.length - 1].split(".png")[0].replace(".jpg", "").replace(".jpeg", "").replace(new RegExp("[0-9\.]+", "g"), "")
+            let title = splitted_path[splitted_path.length - 1].split(".png")[0].replace(".jpg", "").replace(".jpeg", "").replace(/file\d{1,}/g, "")
             $('.img-full-width').find('.caption').html(title)
         })
         $('.close-full-width-image').on('click', function () {
