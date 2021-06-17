@@ -88,6 +88,10 @@ div.marginsH80 {
     }
 }
 
+.bshadow-border {
+    box-shadow: 1px 3px 3px #e4bec5
+}
+
 .first-set-images img {
     display: inline-block;
     width: 30vw;
