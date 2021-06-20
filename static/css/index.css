@@ -280,12 +280,8 @@ main {
 }
 
 .content__breakout {
-    margin: 0 -3rem;
     white-space: nowrap;
-    text-transform: uppercase;
-    font-family: span, serif;
     font-weight: 200;
-    font-style: italic;
     color: #211f1b;
 }
 

@@ -47,6 +47,10 @@ body {
     padding: 14px;
 }
 
+.row.with-full-size.grid * {
+    overflow: hidden;
+}
+
 .bg-transparent {
     background: transparent !important;
 }
