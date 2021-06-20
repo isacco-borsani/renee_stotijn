@@ -18,7 +18,9 @@ app.config['BABEL_DEFAULT_LOCALE'] = 'en'
 babel = Babel(app)
 
 app.config['BABEL_DEFAULT_LOCALE'] = 'en'
-#app.run(debug=True, host='192.168.200.131')
+
+
+# app.run(debug=True, host='192.168.200.131')
 
 @babel.localeselector
 def get_locale():
@@ -76,7 +78,8 @@ def news():
 @app.route('/get_paints', methods=['GET'])
 def get_paints():
     try:
-        file_paints = [str(f) for f in listdir('static/images/quadri/web') if isfile(join('static/images/quadri/web', f))]
+        file_paints = [str(f) for f in listdir('static/images/quadri/web') if
+                       isfile(join('static/images/quadri/web', f))]
     except FileNotFoundError:
         return {'ret': False, 'content': None}
     return {'ret': True, 'content': file_paints}
