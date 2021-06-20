@@ -1,3 +1,6 @@
+import json
+import os
+
 from flask import Flask, render_template, request, session, redirect, url_for
 from os import listdir
 from os.path import isfile, join
@@ -54,6 +57,15 @@ def index():
 @app.route('/about')
 def about():
     return render_template('about.html')
+
+
+@app.route('/about/get_descriptions', methods=['GET'])
+def get_descriptions():
+    data = {}
+    if os.path.exists('paintings_descriptions.json'):
+        with open('paintings_descriptions.json') as json_file:
+            data = json.load(json_file)
+    return {'res': data}
 
 
 @app.route('/news')

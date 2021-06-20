@@ -293,8 +293,6 @@
         </div>
 
 
-
-
         <div class="row">
             <div class="col-md-12">
                 <br>
@@ -1201,20 +1199,23 @@
 <script>
     $(document).ready(function () {
 
-        let temp = {}
-        $('img').each(function () {
-            temp[$(this).attr('src')] = '';
+        window.descriptions = {}
 
+        $.ajax({
+            url: '/about/get_descriptions',
+            type: 'GET',
+            dataType: 'json',
+            success: function (data) {
+                window.descriptions = data['res'];
+            }
         })
-
-        console.log(temp);
 
         $('.with-full-size').find('img').on('click', function () {
             $('.img-full-width').removeClass('hidden');
             $('.img-full-width').find('img').attr('src', $(this).attr('src'))
             let splitted_path = $(this).attr('src').replaceAll("_", " ").split("/");
-            let title = splitted_path[splitted_path.length - 1].split(".png")[0].replace(".jpg", "").replace(".jpeg", "").replace(/file\d{1,}/g, "")
-            $('.img-full-width').find('.caption').html('')
+            let title = window.descriptions[$(this).attr('src')];
+            $('.img-full-width').find('.caption').html(title)
         })
         $('.close-full-width-image').on('click', function () {
             $(this).parent().addClass('hidden')
