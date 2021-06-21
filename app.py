@@ -56,6 +56,16 @@ def index():
     return render_template('index.html')
 
 
+@app.route('/contacts')
+def contacts():
+    return render_template('contacts.html')
+
+
+@app.route('/contacts/submit_contact', methods=['POST'])
+def submit_contact():
+    return {'res': True}
+
+
 @app.route('/about')
 def about():
     return render_template('about.html')

@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+
+{% block css_header %}
+<link rel="stylesheet" href="https://use.typekit.net/rmd7deq.css">
+<link rel="stylesheet" type="text/css" href="../static/css/index.css">
+<link rel="stylesheet" type="text/css" href="../static/css/contacts.css">
+{% endblock %}
+
+{% block content %}
+<!--https://tympanus.net/codrops/2020/12/08/horizontal-smooth-scroll-layouts/-->
+<div id="contact-modal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" style="font-size: 40px">{{_('Contact Us!')}}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="#" id="submit-contact">
+                    <label for="name">{{_('Name')}}</label>
+                    <input type="text" class="form-control" name="name" id="name">
+                    <label for="surname">{{_('Surame')}}</label>
+                    <input type="text" class="form-control" name="surname" id="surname">
+                    <label for="email">{{_('Email')}}</label>
+                    <input type="email" class="form-control" name="email" id="email">
+                    <label for="description">{{_('Your request')}}</label>
+                    <textarea type="text" class="form-control" name="description" id="description"></textarea>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Send</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 text-center heading-title">
+            <h3 onclick="location.href='/'">{{ _('Home') }}</h3>
+            <h1>{{ _('Contacts') }}</h1>
+            <h3 onclick="location.href='about'">{{ _('About') }}</h3>
+            <hr>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid container-news">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1>{{_('Are you interested in the artworks of Renée Stotijn. Or do you have questions about it?')}}</h1>
+        </div>
+        <div class="col-md-12 text-center mt-5">
+            <h2>{{_('Please feel free to contact us! We are happy to help you')}}</h2>
+        </div>
+
+        <div class="col-md-12 text-center mt-5">
+            <a class="mailto" href="mailto:kunst.stotijn@gmail.com">kunst.stotijn@gmail.com</a>
+        </div>
+
+        <div class="col-md-12 text-center mt-5">
+            <img class="heart-btn" style="width: 8vw" src="/static/images/heart.png" alt="">
+        </div>
+
+        <div class="col-md-12 text-center mt-5">
+            <h3>{{_('Presented lovingly by her daughters,')}}</h3>
+            <h4>Zaphira en Esmee Bor (Stotijn)</h4>
+        </div>
+
+    </div>
+
+    <div class="row mt-5 collage">
+        <div class="col-md-6 text-center">
+            <img src="/static/images/1.JPG" alt="">
+        </div>
+        <div class="col-md-6 text-center">
+            <img src="/static/images/2.JPG" alt="">
+        </div>
+        <div class="col-md-6 text-center">
+            <img src="/static/images/3.JPG" alt="">
+        </div>
+        <div class="col-md-6 text-center">
+            <img src="/static/images/4.JPG" alt="">
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
+
+{% block script_footer %}
+<script>
+    $(document).ready(function () {
+        $('.heart-btn').on('click', function () {
+            $('#contact-modal').modal('toggle')
+        });
+
+        $('.mailto').on('click', function () {
+            $('#contact-modal').modal('toggle')
+        })
+
+        $('#submit-contact').on('submit', function (e) {
+            e.preventDefault();
+            $.ajax({
+                url: '/contacts/submit_contact',
+                type: 'POST',
+                dataType: 'json',
+                success: function (data) {
+                    window.descriptions = data['res'];
+                }
+            })
+        })
+    })
+</script>
+{% endblock %}
