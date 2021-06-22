@@ -5,6 +5,11 @@
     src: url('../fonts/belinda_script.ttf') format('truetype');
 }
 
+.jconfirm-title, .jconfirm-content {
+    font-size: 28px !important;
+    letter-spacing: 3px
+}
+
 body .container-news {
     font-family: belinda_script, serif !important;
 }

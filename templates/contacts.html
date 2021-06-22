@@ -4,6 +4,11 @@
 <link rel="stylesheet" href="https://use.typekit.net/rmd7deq.css">
 <link rel="stylesheet" type="text/css" href="../static/css/index.css">
 <link rel="stylesheet" type="text/css" href="../static/css/contacts.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+{% endblock %}
+
+{% block script_header %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
 {% endblock %}
 
 {% block content %}
@@ -30,7 +35,7 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Send</button>
+                <button type="button" class="btn btn-primary btn-submit">Send</button>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
         </div>
@@ -102,14 +107,33 @@
             $('#contact-modal').modal('toggle')
         })
 
+        $('.btn-submit').on('click', function () {
+            $('#submit-contact').trigger('submit')
+        })
+
         $('#submit-contact').on('submit', function (e) {
             e.preventDefault();
             $.ajax({
                 url: '/contacts/submit_contact',
+                data: {
+                    'form': JSON.stringify($('#submit-contact').serializeArray())
+                },
                 type: 'POST',
                 dataType: 'json',
                 success: function (data) {
-                    window.descriptions = data['res'];
+                    if (data['res'] === true) {
+                        $.alert({
+                            title: "{{ _('Thank you :)') }}",
+                            type: 'green',
+                            content: "{{ _('You will receive an answer as soon as possible') }}",
+                        });
+                    } else {
+                        $.alert({
+                            title: "{{ _('Error: Something went wrong :(') }}",
+                            type: 'red',
+                            content: data['msg'],
+                        });
+                    }
                 }
             })
         })

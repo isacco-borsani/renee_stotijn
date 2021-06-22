@@ -1,5 +1,6 @@
 import json
 import os
+from datetime import datetime
 
 from flask import Flask, render_template, request, session, redirect, url_for
 from os import listdir
@@ -18,6 +19,8 @@ app.config['BABEL_DEFAULT_LOCALE'] = 'en'
 babel = Babel(app)
 
 app.config['BABEL_DEFAULT_LOCALE'] = 'en'
+QUESTIONS_FOLDER = os.path.join(app.root_path, 'questions')
+app.config['QUESTIONS_FOLDER'] = QUESTIONS_FOLDER
 
 
 # app.run(debug=True, host='192.168.200.131')
@@ -63,7 +66,25 @@ def contacts():
 
 @app.route('/contacts/submit_contact', methods=['POST'])
 def submit_contact():
-    return {'res': True}
+    params = {}
+    for a in json.loads(request.form['form']):
+        params[a['name']] = a['value']
+
+    if request.method == "POST" and (("name" in params) and ("surname" in params) and (
+            "email" in params) and ("description" in params)):
+        if not os.path.exists(app.config['QUESTIONS_FOLDER']):
+            os.makedirs(app.config['QUESTIONS_FOLDER'])
+        if not os.path.exists(os.path.join(app.config['QUESTIONS_FOLDER'], datetime.today().strftime('%Y%m%d'))):
+            os.makedirs(os.path.join(app.config['QUESTIONS_FOLDER'], datetime.today().strftime('%Y%m%d')))
+        if os.path.exists(os.path.join(app.config['QUESTIONS_FOLDER'], datetime.today().strftime('%Y%m%d'),
+                             params['email'] + '.json')):
+            return {'res': False, 'msg': gettext("You already sent a question with this email, try tomorrow :)")}
+        with open(
+                os.path.join(app.config['QUESTIONS_FOLDER'], datetime.today().strftime('%Y%m%d'),
+                             params['email'] + '.json'), 'w', encoding='utf-8') as f:
+            json.dump(params, f, ensure_ascii=False, indent=4)
+        return {'res': True}
+    return {'res': False, 'msg': gettext('General error')}
 
 
 @app.route('/about')
