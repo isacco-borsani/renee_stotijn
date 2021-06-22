@@ -6,6 +6,7 @@ from flask import Flask, render_template, request, session, redirect, url_for
 from os import listdir
 from os.path import isfile, join
 from flask_babel import Babel, gettext
+from flask_mail import Mail, Message
 
 app = Flask(__name__)
 app.secret_key = 'super secret key'
@@ -15,6 +16,23 @@ app.config['LANGUAGES'] = {
     'nl': 'Dutch'
 }
 
+data = {}
+if os.path.exists('data.json'):
+    with open('data.json') as json_file:
+        data = json.load(json_file)
+
+mail_settings = {
+    "MAIL_SERVER": 'smtp.gmail.com',
+    "MAIL_PORT": 465,
+    "MAIL_USE_TLS": False,
+    "MAIL_USE_SSL": True,
+    "MAIL_USERNAME": data['email'],
+    "MAIL_PASSWORD": data['pass']
+}
+
+app.config.update(mail_settings)
+mail = Mail(app)
+
 app.config['BABEL_DEFAULT_LOCALE'] = 'en'
 babel = Babel(app)
 
@@ -23,7 +41,7 @@ QUESTIONS_FOLDER = os.path.join(app.root_path, 'questions')
 app.config['QUESTIONS_FOLDER'] = QUESTIONS_FOLDER
 
 
-# app.run(debug=True, host='192.168.200.131')
+
 
 @babel.localeselector
 def get_locale():
@@ -64,10 +82,14 @@ def contacts():
     return render_template('contacts.html')
 
 
-@app.route('/contacts/send_email', methods=['POST'])
+@app.route('/contacts/send_email', methods=['POST', 'GET'])
 def send_email():
-    #TODO: https://www.twilio.com/blog/2018/03/send-email-programmatically-with-gmail-python-and-flask.html
-    return True
+    msg = Message(subject="Hello",
+                  sender=app.config.get("MAIL_USERNAME"),
+                  recipients=['isacco.borsani@gmail.com'],  # replace with your email for testing
+                  body="This is a test email I sent with Gmail and Python!")
+    mail.send(msg)
+    return {'res': True}
 
 
 @app.route('/contacts/submit_contact', methods=['POST'])
