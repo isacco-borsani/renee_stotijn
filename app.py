@@ -68,7 +68,8 @@ def contacts():
 def submit_contact():
     params = {}
     for a in json.loads(request.form['form']):
-        params[a['name']] = a['value']
+        if len(a['value']) > 0 != '':
+            params[a['name']] = a['value']
 
     if request.method == "POST" and (("name" in params) and ("surname" in params) and (
             "email" in params) and ("description" in params)):

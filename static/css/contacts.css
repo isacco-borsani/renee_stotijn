@@ -6,8 +6,7 @@
 }
 
 .jconfirm-title, .jconfirm-content {
-    font-size: 28px !important;
-    letter-spacing: 3px
+    font-family: serif !important
 }
 
 body .container-news {
