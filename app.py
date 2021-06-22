@@ -64,6 +64,12 @@ def contacts():
     return render_template('contacts.html')
 
 
+@app.route('/contacts/send_email', methods=['POST'])
+def send_email():
+    #TODO: https://www.twilio.com/blog/2018/03/send-email-programmatically-with-gmail-python-and-flask.html
+    return True
+
+
 @app.route('/contacts/submit_contact', methods=['POST'])
 def submit_contact():
     params = {}
