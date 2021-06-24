@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-06-07 11:23+0200\n"
-"PO-Revision-Date: 2021-06-20 18:16+0200\n"
+"POT-Creation-Date: 2021-06-24 18:12+0200\n"
+"PO-Revision-Date: 2021-06-24 18:29+0200\n"
 "Last-Translator: \n"
 "Language: nl\n"
 "Language-Team: nl <LL@li.org>\n"
@@ -19,18 +19,59 @@ msgstr ""
 "Generated-By: Babel 2.8.0\n"
 "X-Generator: Poedit 2.4.2\n"
 
-#: templates/about.html:48
-msgid "Test"
-msgstr ""
+#: app.py:129
+msgid "General error"
+msgstr "Algemene fout"
 
-#: templates/about.html:65
+#: templates/about.html:51
+msgid "Youth"
+msgstr "Jeugd"
+
+#: templates/about.html:53 templates/about.html:196
+msgid "Art Academy"
+msgstr "Kunstacademie"
+
+#: templates/about.html:54 templates/about.html:331
+msgid "Dolls"
+msgstr "Poppen"
+
+#: templates/about.html:55
+msgid "Amsterdam"
+msgstr "Amsterdam"
+
+#: templates/about.html:56
+msgid "Landscapes"
+msgstr "Landschappen en dorpstaferelen"
+
+#: templates/about.html:57
+msgid "Still Lives"
+msgstr "Stillevens"
+
+#: templates/about.html:59 templates/about.html:664
+msgid "Relationship and posters"
+msgstr "Relatie en posters"
+
+#: templates/about.html:60 templates/about.html:831
+msgid "Portraits"
+msgstr "Portretten"
+
+#: templates/about.html:61
+msgid "Later Work"
+msgstr "Later werk"
+
+#: templates/about.html:62 templates/about.html:1028
+msgid "Artworks"
+msgstr "Kunstwerken"
+
+#: templates/about.html:75
 msgid "Photo by: Jeroen Koning."
 msgstr "Foto door: Jeroen Koning."
 
-#: templates/about.html:85
+#: templates/about.html:95
 msgid ""
 "Renée Stotijn is born on February 7, 1940 in Hilversum, as the eldest "
-"daughter in a family of\n"
+"daughter in a family\n"
+"                        of\n"
 "                        four children. Soon after her birth Renée’s "
 "parents move to the south of Amsterdam, and come\n"
 "                        to live behind the Concertgebouw (concert hall). "
@@ -62,32 +103,29 @@ msgstr ""
 "naar Amsterdam-Zuid, vlak\n"
 "achter het Concertgebouw. Dit is een praktische keuze voor het gezin, "
 "aangezien vader Haakon\n"
-"Stotijn in datzelfde jaar een aanstelling krijgt als solo-hoboïst van "
-"het Concertgebouworkest.\n"
+"Stotijn in datzelfde jaar een aanstelling krijgt als solo-hoboïst van het "
+"Concertgebouworkest.\n"
 "Renée begint op haar vijfde te tekenen nadat ze van haar vader een boek "
 "over Italiaanse\n"
 "schilderkunst uit de vroege renaissance krijgt. Ze heeft een fascinatie "
 "voor deze kunst en leert alle\n"
 "schilders uit haar hoofd. Dan al staat haar besluit vast; zij zal gaan "
 "schilderen.\n"
-"Helaas ontstaan er problemen in het gezin en scheiden de ouders van "
-"Renée in 1952 als zij 12 jaar is.\n"
+"Helaas ontstaan er problemen in het gezin en scheiden de ouders van Renée "
+"in 1952 als zij 12 jaar is.\n"
 "Renée is vastbesloten om met haar vader mee te gaan omdat de relatie "
 "tussen haar en haar moeder\n"
 "niet goed is. Haar zusje Marion besluit om met hen mee te gaan. "
 "Vervolgens verblijven de zusjes bij\n"
 "wisselende verzorgsters op verschillende huisadressen. Na een jarenlange "
 "zwerftocht vestigen\n"
-"Haakon en zijn twee dochters zich in 1957 op de Weesperzijde in "
-"Amsterdam-Oost."
+"Haakon en zijn twee dochters zich in 1957 op de Weesperzijde in Amsterdam-"
+"Oost."
 
-#: templates/about.html:157
-msgid "Art Academy"
-msgstr "Kunstacademie"
-
-#: templates/about.html:162
+#: templates/about.html:201
 msgid ""
-"After her graduation at the Montessori Lyceum, Renée Stotijn takes six\n"
+"After her graduation at the Montessori Lyceum, Renée Stotijn takes\n"
+"                    six\n"
 "                    years of\n"
 "                    intensive\n"
 "                    lessons at the Rijksacademie (art academy) in "
@@ -97,7 +135,7 @@ msgstr ""
 "intensieve\n"
 "lessen aan de Rijksacademie in Amsterdam."
 
-#: templates/about.html:186
+#: templates/about.html:226
 msgid ""
 "She takes various subjects such\n"
 "                    as letter drawing and costume drawing, art and style "
@@ -110,7 +148,7 @@ msgstr ""
 "uitzonderlijk\n"
 "getalenteerde studente krijgt Renée beschikking over een ‘loge’."
 
-#: templates/about.html:209
+#: templates/about.html:264
 msgid ""
 "That is a private studio at the\n"
 "                    top of the academy building.\n"
@@ -126,7 +164,7 @@ msgstr ""
 "vervolgens zes jaar als restauratrice bij het Centraal Laboratorium van "
 "het Rijksmuseum."
 
-#: templates/about.html:235
+#: templates/about.html:300
 msgid ""
 "At the same time,\n"
 "                    she is teaching and gives guided tours in the "
@@ -137,10 +175,10 @@ msgstr ""
 "Museum, het Van\n"
 "Gogh Museum en het Rijksmuseum, aan zowel kinderen als volwassenen."
 
-#: templates/about.html:271
+#: templates/about.html:336
 msgid ""
-"Throughout her life Renée maintains a great passion for antique dolls. "
-"She\n"
+"Throughout her life Renée maintains a great passion for antique\n"
+"                    dolls. She\n"
 "                    has a small collection\n"
 "                    of dolls in her house in closed glass display cases. "
 "In 1970, an article about Renée's love for\n"
@@ -153,10 +191,10 @@ msgstr ""
 "antieke poppen met een\n"
 "aantal bijzondere foto’s."
 
-#: templates/about.html:292
+#: templates/about.html:361
 msgid ""
-"The way in which Renée portrays the dolls is remarkable. It seems like "
-"the\n"
+"The way in which Renée portrays the dolls is remarkable. It seems\n"
+"                    like the\n"
 "                    dolls have been given\n"
 "                    souls. Because of the facial expressions and the way "
 "in which the dolls are positioned, they\n"
@@ -179,19 +217,24 @@ msgstr ""
 "zij, het is een onderwerp\n"
 "dat zij vele malen op verschillende manieren uitbeeldt."
 
-#: templates/about.html:362
+#: templates/about.html:397
+msgid "Article"
+msgstr "Artikel"
+
+#: templates/about.html:435
 msgid ""
-"Although born in Hilversum, Renée Stotijn is an ‘Amsterdammer’ in heart\n"
+"Although born in Hilversum, Renée Stotijn is an ‘Amsterdammer’ in\n"
+"                    heart\n"
 "                    and soul. She loves\n"
 "                    the city very much and also fights for the "
 "preservation of her ‘Mokum.’"
 msgstr ""
-"Renée Stotijn is, hoewel in Hilversum geboren, een Amsterdamse in hart "
-"en nieren. Ze houdt\n"
+"Renée Stotijn is, hoewel in Hilversum geboren, een Amsterdamse in hart en "
+"nieren. Ze houdt\n"
 "van de stad. Haar liefde gaat zo ver dat ze strijdt voor het behoud van "
 "haar Mokum."
 
-#: templates/about.html:382
+#: templates/about.html:456
 msgid ""
 "She organizes\n"
 "                    neighbourhood campaigns and writes appeals against, "
@@ -205,9 +248,10 @@ msgstr ""
 "Oosterparkstraat en het deel van de Weesperzijde dat bekend staat als "
 "‘het Streekje’."
 
-#: templates/about.html:403
+#: templates/about.html:477
 msgid ""
-"Thanks to her, houses that would be demolished are actually restored in\n"
+"Thanks to her, houses that would be demolished are actually restored\n"
+"                    in\n"
 "                    modern style. Renée's\n"
 "                    greatest victory is the preservation of the New "
 "Amstel Bridge by the architects Leguyt and\n"
@@ -220,24 +264,24 @@ msgstr ""
 "Amstelbrug van de\n"
 "architecten Leguyt en Berlage."
 
-#: templates/about.html:424
+#: templates/about.html:499
 msgid ""
 "Thanks to her, the bridge continues to exist and is not replaced by a\n"
 "                    modern variant.\n"
 "                    Her love for the nineteenth century is immense"
 msgstr ""
 "Zij zorgt ervoor dat de oorspronkelijke brug blijft bestaan en niet\n"
-"vervangen wordt door een moderne variant. Haar liefde voor de "
-"negentiende eeuw is groot."
+"vervangen wordt door een moderne variant. Haar liefde voor de negentiende "
+"eeuw is groot."
 
-#: templates/about.html:453
+#: templates/about.html:528
 msgid "Landscapes and village scenes"
 msgstr "Landschappen en dorpsgezichten"
 
-#: templates/about.html:458
+#: templates/about.html:533
 msgid ""
-"Renée goes out every now and then to visit other cities and landscapes "
-"in\n"
+"Renée goes out every now and then to visit other cities and\n"
+"                    landscapes in\n"
 "                    the\n"
 "                    Netherlands. In the open air she mainly paints "
 "watercolours. She is fond of the colours\n"
@@ -251,10 +295,10 @@ msgstr ""
 "het licht van het Hollandse landschap, dat ze probeert te vatten in een "
 "rijk kleurenpalet."
 
-#: templates/about.html:482
+#: templates/about.html:558
 msgid ""
-"She adores Durgerdam and Marken and has a fascination for the "
-"traditional\n"
+"She adores Durgerdam and Marken and has a fascination for the\n"
+"                    traditional\n"
 "                    costumes\n"
 "                    from those villages. She also visits abroad. France "
 "and Italy are very dear to her and were\n"
@@ -265,25 +309,26 @@ msgid ""
 msgstr ""
 "Ze is erg gesteld op Durgerdam en Marken en heeft een fascinatie voor de "
 "klederdrachten\n"
-"uit die plaatsen. Ze bezoekt ook het buitenland. Frankrijk en Italië "
-"zijn haar zeer dierbaar\n"
+"uit die plaatsen. Ze bezoekt ook het buitenland. Frankrijk en Italië zijn "
+"haar zeer dierbaar\n"
 "en vormden een bron van inspiratie. Wegens een gebrek aan financiële "
 "middelen lukt het\n"
-"haar echter niet vaak om daar heen te gaan, in elk geval niet zo vaak "
-"als ze had gewenst."
+"haar echter niet vaak om daar heen te gaan, in elk geval niet zo vaak als "
+"ze had gewenst."
 
-#: templates/about.html:516
+#: templates/about.html:593
 msgid "Still lives"
 msgstr "Still lives"
 
-#: templates/about.html:521
+#: templates/about.html:598
 msgid ""
-"Renée makes countless still lives from objects in her own home such as\n"
+"Renée makes countless still lives from objects in her own home such\n"
+"                    as\n"
 "                    vases, fans and\n"
 "                    hats. She often places these objects on a wooden "
 "table. One such table is the one that she\n"
-"                    received from acquaintances from Schoorl. Flowers "
-"are her favourite subject. She paints\n"
+"                    received from acquaintances from Schoorl. Flowers are "
+"her favourite subject. She paints\n"
 "                    and draws flowers of all shapes and sizes with "
 "different materials. This subject will continue\n"
 "                    to play a major role in her oeuvre until the end of "
@@ -299,10 +344,10 @@ msgstr ""
 "leven een grote rol\n"
 "blijven spelen in haar oeuvre."
 
-#: templates/about.html:552
+#: templates/about.html:630
 msgid ""
-"Remarkable are Renée's often dynamic compositions and rich use of "
-"colour.\n"
+"Remarkable are Renée's often dynamic compositions and rich use of\n"
+"                    colour.\n"
 "                    There always\n"
 "                    seems to be movement in the works. Her still lives "
 "are anything but static."
@@ -312,16 +357,12 @@ msgstr ""
 "Er lijkt altijd beweging in de werken te zitten. Statisch zijn haar "
 "stillevens allerminst."
 
-#: templates/about.html:585
-msgid "Relationship and posters"
-msgstr "Relatie en posters"
-
-#: templates/about.html:590
+#: templates/about.html:669
 msgid ""
 "Starting in the 1970s, Renée has a relationship with violinist and\n"
 "                    concertmaster Dick Bor\n"
-"                    (1944-2007). Together they form a well-known "
-"artistic couple and they are the first couple\n"
+"                    (1944-2007). Together they form a well-known artistic "
+"couple and they are the first couple\n"
 "                    who have a LAT (living apart together) relationship "
 "in the Netherlands. This means that they\n"
 "                    deliberately do not live together and are not "
@@ -341,10 +382,10 @@ msgstr ""
 "enkele artikelen in de krant, waarin de aandacht ook uitgaat naar hun "
 "artistieke projecten."
 
-#: templates/about.html:615
+#: templates/about.html:694
 msgid ""
-"In 1978 Dick and Renée organize a concert series in the Concertgebouw "
-"with\n"
+"In 1978 Dick and Renée organize a concert series in the Concertgebouw\n"
+"                    with\n"
 "                    the name\n"
 "                    ‘Scherts Concerts’ in which Dick presents jokes and "
 "oddities on stage together with Polo de\n"
@@ -364,7 +405,7 @@ msgstr ""
 "een expositie van Renées werk plaats. Renée exposeert daarna nog in "
 "beperkte mate."
 
-#: templates/about.html:641
+#: templates/about.html:721
 msgid ""
 "Renée designs the posters for Dick's concerts. She does this in an old-"
 "fashioned way in\n"
@@ -373,29 +414,39 @@ msgid ""
 "                    and Escher cuts the letters. Subsequently, the "
 "posters are screen printed."
 msgstr ""
-"Renée ontwerpt de affiches voor de concerten van Dick. Dat doet zij op "
-"de ouderwetse manier\n"
+"Renée ontwerpt de affiches voor de concerten van Dick. Dat doet zij op de "
+"ouderwetse manier\n"
 "in samenwerking met Gielijn (Ghislain) Escher. Tijdens deze samenwerking "
 "maakt Renée het\n"
 "ontwerp en snijdt Escher de letters. Vervolgens worden de affiches "
 "gezeefdrukt."
 
-#: templates/about.html:658
+#: templates/about.html:738
 msgid "Photo’s Renée Stotijn and Dick Bor"
 msgstr "Foto’s Renée Stotijn en Dick Bor"
 
-#: templates/about.html:694
+#: templates/about.html:769
+msgid "Photo’s exhibition and concert Spiegelzaal - Concertgebouw"
+msgstr "Foto’s expositie en concert Spiegelzaal - Concertgebouw"
+
+#: templates/about.html:800
+msgid "Articles Dick Bor and Renée Stotijn"
+msgstr "Artikels Renée Stotijn en Dick Bor"
+
+#: templates/about.html:836
 msgid ""
-"The greatest discovery in Renée's house are the countless portraits she "
-"painted, most of them with oil\n"
-"paint. Nobody, knew about the portraits, or could imagine the vast "
-"amount. The artworks have spent\n"
-"decades laying in the tops of cabinets in the kitchen. They lay between "
-"double ceilings and in cavities\n"
-"within the wall that turned out to be several meters deep. When closets "
-"were emptied by her\n"
-"daughters, they found one surprise after another. It was as if a "
-"treasure had been discovered."
+"The greatest discovery in Renée's house are the countless portraits\n"
+"                    she painted, most of them with oil\n"
+"                    paint. Nobody, knew about the portraits, or could "
+"imagine the vast amount. The artworks have spent\n"
+"                    decades laying in the tops of cabinets in the "
+"kitchen. They lay between double ceilings and in\n"
+"                    cavities\n"
+"                    within the wall that turned out to be several meters "
+"deep. When closets were emptied by her\n"
+"                    daughters, they found one surprise after another. It "
+"was as if a treasure had been\n"
+"                    discovered."
 msgstr ""
 "De grootste ontdekking in het huis van Renée zijn de talloze portretten "
 "die ze heeft geschilderd.\n"
@@ -409,17 +460,19 @@ msgstr ""
 "alsof er een schat werd\n"
 "ontdekt."
 
-#: templates/about.html:731
+#: templates/about.html:876
 msgid ""
-"It is very likely that Renée made these portraits at the Rijksacademie. "
-"In one of the few interviews she\n"
-"gives, she refers to the portraits she painted in the ‘loge’ that was "
-"assigned to her. Here she had all\n"
-"the materials available. Who the models are ultimately remains a guess, "
-"just like the answers to many\n"
-"other questions about the how, what, where and when with regard to her "
-"artworks. These answers\n"
-"are left up to the imagination."
+"It is very likely that Renée made these portraits at the\n"
+"                    Rijksacademie. In one of the few interviews she\n"
+"                    gives, she refers to the portraits she painted in the "
+"‘loge’ that was assigned to her. Here she had\n"
+"                    all\n"
+"                    the materials available. Who the models are "
+"ultimately remains a guess, just like the answers to\n"
+"                    many\n"
+"                    other questions about the how, what, where and when "
+"with regard to her artworks. These answers\n"
+"                    are left up to the imagination."
 msgstr ""
 "Het is zeer aannemelijk dat Renée deze portretten op de Rijksacademie "
 "heeft gemaakt. In een van de\n"
@@ -429,25 +482,22 @@ msgstr ""
 "modellen exact waren\n"
 "blijft gissen, net als naar de antwoorden op vele andere vragen over het "
 "hoe, wat, waar en wanneer\n"
-"ten aanzien van de kunstwerken. We zullen er zelf onze fantasie op "
-"moeten loslaten."
+"ten aanzien van de kunstwerken. We zullen er zelf onze fantasie op moeten "
+"loslaten."
 
-#: templates/about.html:773
-msgid "Photo’s exhibition and concert Spiegelzaal - Concertgebouw"
-msgstr "Foto’s expositie en concert Spiegelzaal - Concertgebouw"
+#: templates/about.html:927
+msgid "Later work"
+msgstr "Later werk"
 
-#: templates/about.html:804
-msgid "Articles Dick Bor and Renée Stotijn"
-msgstr "Artikels Renée Stotijn en Dick Bor"
-
-#: templates/about.html:840
+#: templates/about.html:932
 msgid ""
-"There is an unfortunate event in Renée's life that causes a change: she "
-"gets sick. In 1972, at the age\n"
-"of 32, she is diagnosed with breast cancer. She has surgery, but "
-"afterwards she is in so much pain\n"
-"that she is unable to use her arm, let alone paint, for a long time. "
-"This is a nightmare for Renée."
+"There is an unfortunate event in Renée's life that causes a change:\n"
+"                    she gets sick. In 1972, at the age\n"
+"                    of 32, she is diagnosed with breast cancer. She has "
+"surgery, but afterwards she is in so much pain\n"
+"                    that she is unable to use her arm, let alone paint, "
+"for a long time. This is a nightmare for\n"
+"                    Renée."
 msgstr ""
 "Er is in het leven van Renée een belangrijke gebeurtenis die zorgt voor "
 "een kentering: ze wordt\n"
@@ -457,15 +507,15 @@ msgstr ""
 "staat is om haar arm te\n"
 "gebruiken, laat staan te schilderen. Dit is een nachtmerrie voor Renée."
 
-#: templates/about.html:863
+#: templates/about.html:957
 msgid ""
-"After a while she tries to pick it up again, and makes drawings, pastels "
-"and watercolours, though at\n"
-"an admittedly slower pace than before. Due to the hard labour and "
-"process required to create an\n"
-"oil painting, she is no longer able to make them. Her style is clearly "
-"recognizable in her newer\n"
-"works."
+"After a while she tries to pick it up again, and makes drawings,\n"
+"                    pastels and watercolours, though at\n"
+"                    an admittedly slower pace than before. Due to the "
+"hard labour and process required to create an\n"
+"                    oil painting, she is no longer able to make them. Her "
+"style is clearly recognizable in her newer\n"
+"                    works."
 msgstr ""
 "Na verloop van tijd probeert ze het tekenen en schilderen weer op te "
 "pakken en maakt ze,\n"
@@ -477,15 +527,16 @@ msgstr ""
 "weer duidelijk herkenbaar in\n"
 "haar nieuwere werken."
 
-#: templates/about.html:895
+#: templates/about.html:990
 msgid ""
-"In the period after the operation, Renée mainly works on subjects she "
-"loves. In France at ‘the\n"
-"Bastide’ she creates watercolours of the area. She is also frequently "
-"engaged in watercolours of\n"
-"peonies, especially in the last years of her life. Finally, she portrays "
-"her grandchildren with much\n"
-"love and is often inspired by the works of Peter Paul Rubens."
+"In the period after the operation, Renée mainly works on subjects she\n"
+"                loves. In France at ‘the\n"
+"                Bastide’ she creates watercolours of the area. She is "
+"also frequently engaged in watercolours of\n"
+"                peonies, especially in the last years of her life. "
+"Finally, she portrays her grandchildren with much\n"
+"                love and is often inspired by the works of Peter Paul "
+"Rubens."
 msgstr ""
 "Renée werkt in de periode na de operatie vooral aan door haar geliefde "
 "onderwerpen. Zo maakt\n"
@@ -495,19 +546,84 @@ msgstr ""
 "liefde en veelal\n"
 "geïnspireerd op de werken van Peter Paul Rubens haar kleinkinderen."
 
-#: templates/index.html:96 templates/news.html:17
+#: templates/contacts.html:20
+msgid "Contact Us!"
+msgstr "Neem contact op!"
+
+#: templates/contacts.html:27
+msgid "Name"
+msgstr "Naam"
+
+#: templates/contacts.html:29
+msgid "Surame"
+msgstr "Suram"
+
+#: templates/contacts.html:31
+msgid "Email"
+msgstr "E-mail"
+
+#: templates/contacts.html:33
+msgid "Your request"
+msgstr "Uw verzoek"
+
+#: templates/contacts.html:38
+msgid "Send"
+msgstr "Sturen"
+
+#: templates/contacts.html:39
+msgid "Close"
+msgstr "Dichtbij"
+
+#: templates/contacts.html:48 templates/news.html:15
+msgid "Home"
+msgstr "Homepage"
+
+#: templates/contacts.html:49 templates/index.html:99
+msgid "Contacts"
+msgstr "Contacten"
+
+#: templates/contacts.html:50 templates/index.html:97 templates/news.html:17
 msgid "About"
 msgstr "Over"
 
-#: templates/index.html:97
+#: templates/contacts.html:59
+msgid ""
+"Are you interested in the artworks of Renée Stotijn. Or do you have "
+"questions about it?"
+msgstr ""
+"Ben je geïnteresseerd in de kunstwerken van Renée Stotijn? Of heb je er "
+"vragen over?"
+
+#: templates/contacts.html:62
+msgid "Please feel free to contact us! We are happy to help you"
+msgstr ""
+"Voel je vrij om contact met ons op te nemen! We helpen je graag verder"
+
+#: templates/contacts.html:74
+msgid "Presented lovingly by her daughters,"
+msgstr "Veel liefs namens haar dochters,"
+
+#: templates/contacts.html:130
+msgid "Thank you :)"
+msgstr "Dank u :)"
+
+#: templates/contacts.html:132
+msgid "You will receive an answer as soon as possible"
+msgstr "Je krijgt zo snel mogelijk antwoord"
+
+#: templates/contacts.html:136
+msgid "Error: Something went wrong :("
+msgstr "Fout: Er is iets misgegaan :("
+
+#: templates/index.html:98
 msgid "News"
 msgstr "Nieuws"
 
-#: templates/index.html:99
+#: templates/index.html:101
 msgid "Instagram"
 msgstr "Instagram"
 
-#: templates/index.html:110
+#: templates/index.html:112
 msgid "FIRST_INTRO"
 msgstr ""
 "Decennialang waren de kunstwerken van Renée Stotijn niet zichtbaar. Noch "
@@ -520,21 +636,21 @@ msgstr ""
 "bijzonderder dan de\n"
 "andere."
 
-#: templates/index.html:137
+#: templates/index.html:142
 msgid "FIRST_TITLE_HORIZONTAL_SCROLL"
 msgstr "Talloze tekeningen, pastellen, aquarellen en olieverfschilderijen"
 
-#: templates/index.html:153
+#: templates/index.html:162
 msgid "SECOND_TITLE_HORIZONTAL_SCROLL"
 msgstr ""
 "hadden verborgen gelegen in\n"
 "kasten, achter muren en tussen dubbele plafonds."
 
-#: templates/index.html:168
+#: templates/index.html:180
 msgid "THIRD_TITLE_HORIZONTAL_SCROLL"
 msgstr "De vondst was zo bijzonder, dat moest gedeeld worden!"
 
-#: templates/index.html:175
+#: templates/index.html:188
 msgid "SECOND_INTRO"
 msgstr ""
 "Op 7 februari 1940 wordt Renée Stotijn geboren in Hilversum, als oudste "
@@ -543,24 +659,24 @@ msgstr ""
 "naar Amsterdam-Zuid, vlak\n"
 "achter het Concertgebouw. Dit is een praktische keuze voor het gezin, "
 "aangezien vader Haakon\n"
-"Stotijn in datzelfde jaar een aanstelling krijgt als solo-hoboïst van "
-"het Concertgebouworkest."
+"Stotijn in datzelfde jaar een aanstelling krijgt als solo-hoboïst van het "
+"Concertgebouworkest."
 
-#: templates/index.html:222
+#: templates/index.html:236
 msgid "FIRST_BIG_TITLE_HORIZONTAL_SCROLL"
 msgstr "Renée begint op haar vijfde"
 
-#: templates/index.html:226
+#: templates/index.html:240
 msgid "SECOND_BIG_TITLE_HORIZONTAL_SCROLL"
 msgstr ""
 "te tekenen nadat ze van haar vader een boek over Italiaanse\n"
 "schilderkunst uit de vroege renaissance krijgt."
 
-#: templates/index.html:236
+#: templates/index.html:250
 msgid "THIRD_INTRO"
 msgstr ""
-"De eerste fysieke tentoonstelling in Amsterdam van de verborgen kunst "
-"van Renée Stotijn vindt\n"
+"De eerste fysieke tentoonstelling in Amsterdam van de verborgen kunst van "
+"Renée Stotijn vindt\n"
 "plaats van 25 juni t/m 19 september 2021. De bezoeker ervaart de "
 "kunstwerken zoals ze eruitzagen toen\n"
 "ze werden gevonden. Her en der zullen strepen, stof, deukjes, "
@@ -568,10 +684,329 @@ msgstr ""
 "zichtbaar zijn. Er is een selectie gemaakt van de kunstwerken in hun "
 "puurste vorm: "
 
-#: templates/news.html:15
-msgid "Home"
-msgstr "Homepage"
-
 #: templates/news.html:16
 msgid "Latest News and Events"
 msgstr "Laatste nieuws en evenementen"
+
+#~ msgid ""
+#~ "Renée Stotijn is born on February 7, 1940 in Hilversum, as the eldest "
+#~ "daughter in a family of\n"
+#~ "                        four children. Soon after her birth Renée’s "
+#~ "parents move to the south of Amsterdam, and come\n"
+#~ "                        to live behind the Concertgebouw (concert "
+#~ "hall). It is a practical choice for the family, as her\n"
+#~ "                        father, Haakon Stotijn, is appointed as a solo "
+#~ "oboist in the Concertgebouw orchestra.\n"
+#~ "                        Renée starts drawing at the age of five after "
+#~ "receiving a book from her father on early\n"
+#~ "                        renaissance Italian painting. She is "
+#~ "fascinated by this art and memorizes all the painters.\n"
+#~ "                        At this point already she has made up her "
+#~ "mind; she will become a painter.\n"
+#~ "                        Unfortunately, problems arise in the family "
+#~ "and her parents divorce in 1952 when she is 12\n"
+#~ "                        years old. Renée is determined to leave with "
+#~ "her father because of a difficult relationship\n"
+#~ "                        between her mother and herself. Her younger "
+#~ "sister Marion decides to go with Renee and her\n"
+#~ "                        father. They wander across the city for years "
+#~ "in search of accommodation. At this time Renée\n"
+#~ "                        and Marion stay with various caretakers at "
+#~ "different addresses. In 1957 Haakon and his two\n"
+#~ "                        daughters eventually settle on the "
+#~ "Weesperzijde in the east of Amsterdam."
+#~ msgstr ""
+#~ "Op 7 februari 1940 wordt Renée Stotijn geboren in Hilversum, als "
+#~ "oudste dochter in een gezin van\n"
+#~ "vier kinderen. Spoedig na haar geboorte verhuizen de ouders van Renée "
+#~ "naar Amsterdam-Zuid, vlak\n"
+#~ "achter het Concertgebouw. Dit is een praktische keuze voor het gezin, "
+#~ "aangezien vader Haakon\n"
+#~ "Stotijn in datzelfde jaar een aanstelling krijgt als solo-hoboïst van "
+#~ "het Concertgebouworkest.\n"
+#~ "Renée begint op haar vijfde te tekenen nadat ze van haar vader een "
+#~ "boek over Italiaanse\n"
+#~ "schilderkunst uit de vroege renaissance krijgt. Ze heeft een "
+#~ "fascinatie voor deze kunst en leert alle\n"
+#~ "schilders uit haar hoofd. Dan al staat haar besluit vast; zij zal gaan "
+#~ "schilderen.\n"
+#~ "Helaas ontstaan er problemen in het gezin en scheiden de ouders van "
+#~ "Renée in 1952 als zij 12 jaar is.\n"
+#~ "Renée is vastbesloten om met haar vader mee te gaan omdat de relatie "
+#~ "tussen haar en haar moeder\n"
+#~ "niet goed is. Haar zusje Marion besluit om met hen mee te gaan. "
+#~ "Vervolgens verblijven de zusjes bij\n"
+#~ "wisselende verzorgsters op verschillende huisadressen. Na een "
+#~ "jarenlange zwerftocht vestigen\n"
+#~ "Haakon en zijn twee dochters zich in 1957 op de Weesperzijde in "
+#~ "Amsterdam-Oost."
+
+#~ msgid ""
+#~ "After her graduation at the Montessori Lyceum, Renée Stotijn takes "
+#~ "six\n"
+#~ "                    years of\n"
+#~ "                    intensive\n"
+#~ "                    lessons at the Rijksacademie (art academy) in "
+#~ "Amsterdam."
+#~ msgstr ""
+#~ "Na haar eindexamen op het Montessori Lyceum volgt Renée Stotijn zes "
+#~ "jaar intensieve\n"
+#~ "lessen aan de Rijksacademie in Amsterdam."
+
+#~ msgid ""
+#~ "Throughout her life Renée maintains a great passion for antique dolls. "
+#~ "She\n"
+#~ "                    has a small collection\n"
+#~ "                    of dolls in her house in closed glass display "
+#~ "cases. In 1970, an article about Renée's love for\n"
+#~ "                    antique dolls with a number of remarkable photos "
+#~ "was published in Panorama magazine."
+#~ msgstr ""
+#~ "Renée heeft gedurende haar leven een grote voorliefde voor antieke "
+#~ "poppen. In 1970 verschijnt\n"
+#~ "in het tijdschrift Panorama een artikel over Renées voorliefde voor "
+#~ "antieke poppen met een\n"
+#~ "aantal bijzondere foto’s."
+
+#~ msgid ""
+#~ "The way in which Renée portrays the dolls is remarkable. It seems like "
+#~ "the\n"
+#~ "                    dolls have been given\n"
+#~ "                    souls. Because of the facial expressions and the "
+#~ "way in which the dolls are positioned, they\n"
+#~ "                    almost resemble people in a lively scene: busy "
+#~ "conversing, pondering or enthusiastic. It remains\n"
+#~ "                    unclear where her love for dolls comes from. "
+#~ "Perhaps it stems from a longing in her childhood. Be\n"
+#~ "                    that as it may, it is a subject that she portrays "
+#~ "many times in different ways."
+#~ msgstr ""
+#~ "De wijze waarop Renée de poppen uitbeeldt is opmerkelijk. De poppen "
+#~ "lijken door haar van een\n"
+#~ "ziel te zijn voorzien. Vanwege de gezichtsuitdrukkingen en de wijze "
+#~ "waarop de poppen zijn\n"
+#~ "gepositioneerd, lijken ze haast mensen die zich in een levendige scène "
+#~ "bevinden: druk\n"
+#~ "converserend, peinzend of enthousiast. Waar haar liefde voor poppen "
+#~ "vandaan komt blijft gissen.\n"
+#~ "Wellicht komt dit voort uit een verlangen uit haar jeugd. Hoe het ook "
+#~ "zij, het is een onderwerp\n"
+#~ "dat zij vele malen op verschillende manieren uitbeeldt."
+
+#~ msgid ""
+#~ "Although born in Hilversum, Renée Stotijn is an ‘Amsterdammer’ in "
+#~ "heart\n"
+#~ "                    and soul. She loves\n"
+#~ "                    the city very much and also fights for the "
+#~ "preservation of her ‘Mokum.’"
+#~ msgstr ""
+#~ "Renée Stotijn is, hoewel in Hilversum geboren, een Amsterdamse in hart "
+#~ "en nieren. Ze houdt\n"
+#~ "van de stad. Haar liefde gaat zo ver dat ze strijdt voor het behoud "
+#~ "van haar Mokum."
+
+#~ msgid ""
+#~ "Thanks to her, houses that would be demolished are actually restored "
+#~ "in\n"
+#~ "                    modern style. Renée's\n"
+#~ "                    greatest victory is the preservation of the New "
+#~ "Amstel Bridge by the architects Leguyt and\n"
+#~ "                    Berlage."
+#~ msgstr ""
+#~ "Door\n"
+#~ "haar toedoen worden huizen die eigenlijk gesloopt zouden worden in "
+#~ "moderne stijl\n"
+#~ "gerestaureerd. Renées grootste overwinning is het behoud van de Nieuwe "
+#~ "Amstelbrug van de\n"
+#~ "architecten Leguyt en Berlage."
+
+#~ msgid ""
+#~ "Renée goes out every now and then to visit other cities and landscapes "
+#~ "in\n"
+#~ "                    the\n"
+#~ "                    Netherlands. In the open air she mainly paints "
+#~ "watercolours. She is fond of the colours\n"
+#~ "                    and light of the Dutch landscape, which she tries "
+#~ "to capture in a rich colour palette."
+#~ msgstr ""
+#~ "Renée trekt er zo nu en dan op uit om andere steden en landschappen in "
+#~ "Nederland te\n"
+#~ "bezoeken. In de buitenlucht maakt ze voornamelijk aquarellen. Ze is "
+#~ "dol op de kleuren en\n"
+#~ "het licht van het Hollandse landschap, dat ze probeert te vatten in "
+#~ "een rijk kleurenpalet."
+
+#~ msgid ""
+#~ "She adores Durgerdam and Marken and has a fascination for the "
+#~ "traditional\n"
+#~ "                    costumes\n"
+#~ "                    from those villages. She also visits abroad. "
+#~ "France and Italy are very dear to her and were\n"
+#~ "                    a source of inspiration. However, due to a lack of "
+#~ "financial resources, she does not\n"
+#~ "                    manage to go there often, at least not as often as "
+#~ "she would have liked."
+#~ msgstr ""
+#~ "Ze is erg gesteld op Durgerdam en Marken en heeft een fascinatie voor "
+#~ "de klederdrachten\n"
+#~ "uit die plaatsen. Ze bezoekt ook het buitenland. Frankrijk en Italië "
+#~ "zijn haar zeer dierbaar\n"
+#~ "en vormden een bron van inspiratie. Wegens een gebrek aan financiële "
+#~ "middelen lukt het\n"
+#~ "haar echter niet vaak om daar heen te gaan, in elk geval niet zo vaak "
+#~ "als ze had gewenst."
+
+#~ msgid ""
+#~ "Renée makes countless still lives from objects in her own home such "
+#~ "as\n"
+#~ "                    vases, fans and\n"
+#~ "                    hats. She often places these objects on a wooden "
+#~ "table. One such table is the one that she\n"
+#~ "                    received from acquaintances from Schoorl. Flowers "
+#~ "are her favourite subject. She paints\n"
+#~ "                    and draws flowers of all shapes and sizes with "
+#~ "different materials. This subject will continue\n"
+#~ "                    to play a major role in her oeuvre until the end "
+#~ "of her life."
+#~ msgstr ""
+#~ "Renée maakt talloze stillevens van voorwerpen die in haar eigen huis "
+#~ "staan zoals vazen,\n"
+#~ "waaiers en hoeden. Ze legt deze voorwerpen vaak op een houten "
+#~ "tafeltje. Bloemen zijn\n"
+#~ "haar favoriete onderwerp. Ze schildert en tekent bloemen in alle "
+#~ "soorten en maten met\n"
+#~ "verschillende materialen. Dit onderwerp zal tot aan het eind van haar "
+#~ "leven een grote rol\n"
+#~ "blijven spelen in haar oeuvre."
+
+#~ msgid ""
+#~ "Remarkable are Renée's often dynamic compositions and rich use of "
+#~ "colour.\n"
+#~ "                    There always\n"
+#~ "                    seems to be movement in the works. Her still lives "
+#~ "are anything but static."
+#~ msgstr ""
+#~ "Opvallend zijn de vaak dynamische composities en het rijke "
+#~ "kleurgebruik van Renée.\n"
+#~ "Er lijkt altijd beweging in de werken te zitten. Statisch zijn haar "
+#~ "stillevens allerminst."
+
+#~ msgid ""
+#~ "In 1978 Dick and Renée organize a concert series in the Concertgebouw "
+#~ "with\n"
+#~ "                    the name\n"
+#~ "                    ‘Scherts Concerts’ in which Dick presents jokes "
+#~ "and oddities on stage together with Polo de\n"
+#~ "                    Haas and other musicians. In combination with the "
+#~ "concerts, an exhibition of Renée's work\n"
+#~ "                    takes place in the Spiegelzaal of the "
+#~ "Concertgebouw. Renée then exhibits her work a few more\n"
+#~ "                    times, including in 1994 in the artists' society "
+#~ "De Kring."
+#~ msgstr ""
+#~ "In 1978 organiseren Dick en Renée in Het Concertgebouw een "
+#~ "concertreeks onder de naam\n"
+#~ "‘Schertsconcerten’ waarin Dick samen met Polo de Haas en andere musici "
+#~ "grappen en\n"
+#~ "rariteiten op het podium presenteert. In combinatie met de concerten "
+#~ "vindt in de Spiegelzaal\n"
+#~ "een expositie van Renées werk plaats. Renée exposeert daarna nog in "
+#~ "beperkte mate."
+
+#~ msgid ""
+#~ "The greatest discovery in Renée's house are the countless portraits "
+#~ "she painted, most of them with oil\n"
+#~ "paint. Nobody, knew about the portraits, or could imagine the vast "
+#~ "amount. The artworks have spent\n"
+#~ "decades laying in the tops of cabinets in the kitchen. They lay "
+#~ "between double ceilings and in cavities\n"
+#~ "within the wall that turned out to be several meters deep. When "
+#~ "closets were emptied by her\n"
+#~ "daughters, they found one surprise after another. It was as if a "
+#~ "treasure had been discovered."
+#~ msgstr ""
+#~ "De grootste ontdekking in het huis van Renée zijn de talloze "
+#~ "portretten die ze heeft geschilderd.\n"
+#~ "Niemand wist van de portretten af, laat staan van de hoeveelheid. De "
+#~ "kunstwerken hebben\n"
+#~ "decennialang in kasten bovenin de keuken gelegen, die zich bevonden "
+#~ "tussen dubbele plafonds en in\n"
+#~ "ruimtes achter de muur. De ruimtes bleken meters diep te zijn. Toen de "
+#~ "kasten door haar dochters\n"
+#~ "werden leeggehaald vielen zij van de ene verbazing in de andere. Het "
+#~ "was alsof er een schat werd\n"
+#~ "ontdekt."
+
+#~ msgid ""
+#~ "It is very likely that Renée made these portraits at the "
+#~ "Rijksacademie. In one of the few interviews she\n"
+#~ "gives, she refers to the portraits she painted in the ‘loge’ that was "
+#~ "assigned to her. Here she had all\n"
+#~ "the materials available. Who the models are ultimately remains a "
+#~ "guess, just like the answers to many\n"
+#~ "other questions about the how, what, where and when with regard to her "
+#~ "artworks. These answers\n"
+#~ "are left up to the imagination."
+#~ msgstr ""
+#~ "Het is zeer aannemelijk dat Renée deze portretten op de Rijksacademie "
+#~ "heeft gemaakt. In een van de\n"
+#~ "weinige interviews die ze heeft gegeven refereert ze aan de portretten "
+#~ "die ze schilderde in de ‘loge’\n"
+#~ "die haar was toegewezen. Hier had ze alle materialen voor handen. Wie "
+#~ "de modellen exact waren\n"
+#~ "blijft gissen, net als naar de antwoorden op vele andere vragen over "
+#~ "het hoe, wat, waar en wanneer\n"
+#~ "ten aanzien van de kunstwerken. We zullen er zelf onze fantasie op "
+#~ "moeten loslaten."
+
+#~ msgid ""
+#~ "There is an unfortunate event in Renée's life that causes a change: "
+#~ "she gets sick. In 1972, at the age\n"
+#~ "of 32, she is diagnosed with breast cancer. She has surgery, but "
+#~ "afterwards she is in so much pain\n"
+#~ "that she is unable to use her arm, let alone paint, for a long time. "
+#~ "This is a nightmare for Renée."
+#~ msgstr ""
+#~ "Er is in het leven van Renée een belangrijke gebeurtenis die zorgt "
+#~ "voor een kentering: ze wordt\n"
+#~ "ziek. Op 32-jarige leeftijd, in 1972, wordt er borstkanker bij haar "
+#~ "geconstateerd.\n"
+#~ "Ze wordt geopereerd, maar heeft zoveel pijn dat ze lange tijd niet in "
+#~ "staat is om haar arm te\n"
+#~ "gebruiken, laat staan te schilderen. Dit is een nachtmerrie voor Renée."
+
+#~ msgid ""
+#~ "After a while she tries to pick it up again, and makes drawings, "
+#~ "pastels and watercolours, though at\n"
+#~ "an admittedly slower pace than before. Due to the hard labour and "
+#~ "process required to create an\n"
+#~ "oil painting, she is no longer able to make them. Her style is clearly "
+#~ "recognizable in her newer\n"
+#~ "works."
+#~ msgstr ""
+#~ "Na verloop van tijd probeert ze het tekenen en schilderen weer op te "
+#~ "pakken en maakt ze,\n"
+#~ "weliswaar in een minder hoog tempo dan voorheen, weer tekeningen, "
+#~ "pastellen en aquarellen.\n"
+#~ "Wegens de zware arbeid en het proces dat het maken van een "
+#~ "olieverfschilderij vergen, is zij niet\n"
+#~ "langer in staat om dergelijke schilderijen te maken. Wel is haar stijl "
+#~ "weer duidelijk herkenbaar in\n"
+#~ "haar nieuwere werken."
+
+#~ msgid ""
+#~ "In the period after the operation, Renée mainly works on subjects she "
+#~ "loves. In France at ‘the\n"
+#~ "Bastide’ she creates watercolours of the area. She is also frequently "
+#~ "engaged in watercolours of\n"
+#~ "peonies, especially in the last years of her life. Finally, she "
+#~ "portrays her grandchildren with much\n"
+#~ "love and is often inspired by the works of Peter Paul Rubens."
+#~ msgstr ""
+#~ "Renée werkt in de periode na de operatie vooral aan door haar geliefde "
+#~ "onderwerpen. Zo maakt\n"
+#~ "ze in Frankrijk op ‘de Bastide’ aquarellen van de omgeving. Ook houdt "
+#~ "ze zich veelvuldig bezig\n"
+#~ "met het aquarelleren van pioenrozen. Ten slotte portretteert ze met "
+#~ "veel liefde en veelal\n"
+#~ "geïnspireerd op de werken van Peter Paul Rubens haar kleinkinderen."
