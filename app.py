@@ -1,6 +1,6 @@
 import json
 import os
-from datetime import datetime
+from datetime import datetime, timedelta
 
 from flask import Flask, render_template, request, session, redirect, url_for
 from os import listdir
@@ -39,8 +39,6 @@ babel = Babel(app)
 app.config['BABEL_DEFAULT_LOCALE'] = 'en'
 QUESTIONS_FOLDER = os.path.join(app.root_path, 'questions')
 app.config['QUESTIONS_FOLDER'] = QUESTIONS_FOLDER
-
-
 
 
 @babel.localeselector
@@ -82,14 +80,32 @@ def contacts():
     return render_template('contacts.html')
 
 
-@app.route('/contacts/send_email', methods=['POST', 'GET'])
+@app.route('/contacts/send_email', methods=['POST'])
 def send_email():
-    msg = Message(subject="Hello",
-                  sender=app.config.get("MAIL_USERNAME"),
-                  recipients=['isacco.borsani@gmail.com'],  # replace with your email for testing
-                  body="This is a test email I sent with Gmail and Python!")
-    mail.send(msg)
-    return {'res': True}
+    if request.form['username'] == data['username'] and request.form['pass_email'] == data['pass_email']:
+        questions_to_send = []
+        yesterday = datetime.today() - timedelta(days=1)
+        path_to_exam = os.path.join(app.config['QUESTIONS_FOLDER'], yesterday.strftime('%Y%m%d'))
+
+        if os.path.exists(path_to_exam):
+            questions = os.listdir(path_to_exam)
+            for f in questions:
+                with open(os.path.join(app.config['QUESTIONS_FOLDER'], yesterday.strftime('%Y%m%d'), f)) as json_file:
+                    questions_to_send.append(json.load(json_file))
+
+        msg_text = ''
+        for single in questions_to_send:
+            for key,val in single.items():
+                msg_text += str(key) + ": " + str(val) + "\n"
+            msg_text += "\n\n\n"
+
+        msg = Message(subject="Ciao Zaphi, ecco le richieste di ieri :) <3",
+                      sender=app.config.get("MAIL_USERNAME"),
+                      recipients=['isacco.borsani@gmail.com'],  # replace with your email for testing
+                      body=msg_text)
+        mail.send(msg)
+        return {'res': True}
+    return {'res': False}
 
 
 @app.route('/contacts/submit_contact', methods=['POST'])
@@ -106,7 +122,7 @@ def submit_contact():
         if not os.path.exists(os.path.join(app.config['QUESTIONS_FOLDER'], datetime.today().strftime('%Y%m%d'))):
             os.makedirs(os.path.join(app.config['QUESTIONS_FOLDER'], datetime.today().strftime('%Y%m%d')))
         if os.path.exists(os.path.join(app.config['QUESTIONS_FOLDER'], datetime.today().strftime('%Y%m%d'),
-                             params['email'] + '.json')):
+                                       params['email'] + '.json')):
             return {'res': False, 'msg': gettext("You already sent a question with this email, try tomorrow :)")}
         with open(
                 os.path.join(app.config['QUESTIONS_FOLDER'], datetime.today().strftime('%Y%m%d'),
