@@ -1,3 +1,5 @@
 Home
 	|News
-	|Social
+	|About
+	|Contacts
+	|Instagram
