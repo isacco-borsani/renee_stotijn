@@ -1,12 +1,12 @@
 import json
 import os
+import time
 from datetime import datetime, timedelta
 
 from flask import Flask, render_template, request, session, redirect, url_for
 from os import listdir
 from os.path import isfile, join
 from flask_babel import Babel, gettext
-from flask_mail import Mail, Message
 
 app = Flask(__name__)
 app.secret_key = 'super secret key'
@@ -21,24 +21,18 @@ if os.path.exists('data.json'):
     with open('data.json') as json_file:
         data = json.load(json_file)
 
-mail_settings = {
-    "MAIL_SERVER": 'smtp.gmail.com',
-    "MAIL_PORT": 465,
-    "MAIL_USE_TLS": False,
-    "MAIL_USE_SSL": True,
-    "MAIL_USERNAME": data['email'],
-    "MAIL_PASSWORD": data['pass']
-}
-
-app.config.update(mail_settings)
-mail = Mail(app)
-
 app.config['BABEL_DEFAULT_LOCALE'] = 'en'
 babel = Babel(app)
 
 app.config['BABEL_DEFAULT_LOCALE'] = 'en'
 QUESTIONS_FOLDER = os.path.join(app.root_path, 'questions')
 app.config['QUESTIONS_FOLDER'] = QUESTIONS_FOLDER
+BACKUP_FOLDER = os.path.join(app.root_path, 'static', 'backups')
+app.config['BACKUP_FOLDER'] = BACKUP_FOLDER
+
+
+def current_milli_time():
+    return round(time.time() * 1000)
 
 
 @babel.localeselector
@@ -80,8 +74,8 @@ def contacts():
     return render_template('contacts.html')
 
 
-@app.route('/contacts/send_email', methods=['POST'])
-def send_email():
+@app.route('/contacts/prepare_backup', methods=['POST'])
+def prepare_backup():
     if request.form['username'] == data['username'] and request.form['pass_email'] == data['pass_email']:
         questions_to_send = []
         yesterday = datetime.today() - timedelta(days=1)
@@ -95,15 +89,17 @@ def send_email():
 
         msg_text = ''
         for single in questions_to_send:
-            for key,val in single.items():
+            for key, val in single.items():
                 msg_text += str(key) + ": " + str(val) + "\n"
             msg_text += "\n\n\n"
 
-        msg = Message(subject="Ciao Zaphi, ecco le richieste di ieri :) <3",
-                      sender=app.config.get("MAIL_USERNAME"),
-                      recipients=['isacco.borsani@gmail.com'],  # replace with your email for testing
-                      body=msg_text)
-        mail.send(msg)
+        if not os.path.exists(os.path.join(app.config['BACKUP_FOLDER'], yesterday.strftime('%Y%m%d'))):
+            os.makedirs(os.path.join(app.config['BACKUP_FOLDER'], yesterday.strftime('%Y%m%d')))
+
+        f = open(os.path.join(app.config['BACKUP_FOLDER'], yesterday.strftime('%Y%m%d'), 'backup.txt'), "w+")
+        f.write(msg_text)
+        f.close()
+
         return {'res': True}
     return {'res': False}
 
@@ -121,12 +117,13 @@ def submit_contact():
             os.makedirs(app.config['QUESTIONS_FOLDER'])
         if not os.path.exists(os.path.join(app.config['QUESTIONS_FOLDER'], datetime.today().strftime('%Y%m%d'))):
             os.makedirs(os.path.join(app.config['QUESTIONS_FOLDER'], datetime.today().strftime('%Y%m%d')))
-        if os.path.exists(os.path.join(app.config['QUESTIONS_FOLDER'], datetime.today().strftime('%Y%m%d'),
-                                       params['email'] + '.json')):
-            return {'res': False, 'msg': gettext("You already sent a question with this email, try tomorrow :)")}
+        # if os.path.exists(os.path.join(app.config['QUESTIONS_FOLDER'], datetime.today().strftime('%Y%m%d'),
+        #                                params['email'] + '.json')):
+        #     return {'res': False, 'msg': gettext("You already sent a question with this email, try tomorrow :)")}
+        millis = current_milli_time()
         with open(
                 os.path.join(app.config['QUESTIONS_FOLDER'], datetime.today().strftime('%Y%m%d'),
-                             params['email'] + '.json'), 'w', encoding='utf-8') as f:
+                             str(millis) + '.json'), 'w', encoding='utf-8') as f:
             json.dump(params, f, ensure_ascii=False, indent=4)
         return {'res': True}
     return {'res': False, 'msg': gettext('General error')}
