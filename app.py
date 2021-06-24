@@ -27,7 +27,7 @@ babel = Babel(app)
 app.config['BABEL_DEFAULT_LOCALE'] = 'en'
 QUESTIONS_FOLDER = os.path.join(app.root_path, 'questions')
 app.config['QUESTIONS_FOLDER'] = QUESTIONS_FOLDER
-BACKUP_FOLDER = os.path.join(app.root_path, 'static', 'backups')
+BACKUP_FOLDER = os.path.join(app.root_path, 'backups')
 app.config['BACKUP_FOLDER'] = BACKUP_FOLDER
 
 
