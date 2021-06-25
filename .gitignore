@@ -3,3 +3,4 @@ backups
 questions
 .idea
 __pycache__
+.idea/*
