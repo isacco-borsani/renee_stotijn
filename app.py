@@ -3,7 +3,7 @@ import os
 import time
 from datetime import datetime, timedelta
 
-from flask import Flask, render_template, request, session, redirect, url_for
+from flask import Flask, render_template, request, session, redirect, url_for, send_from_directory
 from os import listdir
 from os.path import isfile, join
 from flask_babel import Babel, gettext
@@ -62,6 +62,13 @@ def set_language(language=None):
     else:
         redirect(url_for('index'))
     return redirect(request.referrer)
+
+
+@app.route('/favicon.ico')
+@app.route('/robots.txt')
+@app.route('/sitemap.txt')
+def static_from_root():
+    return send_from_directory(app.static_folder, request.path[1:])
 
 
 @app.route('/')

@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Allow: /contacts
+Allow: /about
+Allow: /news
+Disallow: /*.json
+Disallow: /*.py
+Disallow: /*.cfg
