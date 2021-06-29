@@ -47,6 +47,10 @@ body {
     padding: 14px;
 }
 
+.row * {
+    overflow: hidden !important
+}
+
 .row.with-full-size.grid * {
     overflow: hidden;
 }

@@ -1211,9 +1211,23 @@
 
         $('.with-full-size').find('img').on('click', function () {
             $('.img-full-width').removeClass('hidden');
-            $('.img-full-width').find('img').attr('src', $(this).attr('src').replace("_compressed", ""))
-            $('.img-full-width').find('img').attr('src', $(this).attr('src').replace("/compressed", ""))
-            let splitted_path = $(this).attr('src').replaceAll("_", " ").split("/");
+            let no_compressed_src = $(this).attr('src')
+                .replaceAll("amsterdam_compressed/", "amsterdam/")
+                .replaceAll("art_academy_compressed/", "art_academy/")
+                .replaceAll("articles_compressed/", "articles/")
+                .replaceAll("dolls_compressed/", "dolls/")
+                .replaceAll("extra_compressed/", "extra/")
+                .replaceAll("landscapes_compressed/", "landscapes/")
+                .replaceAll("later_work_compressed/", "later_work/")
+                .replaceAll("portraits_compressed/", "portraits/")
+                .replaceAll("relationship_and_posters_compressed/", "relationship_and_posters/")
+                .replaceAll("rene_concert_gebouw_compressed/", "rene_concert_gebouw/")
+                .replaceAll("rene_dick_articles_compressed/", "rene_dick_articles/")
+                .replaceAll("rene_dick_compressed/", "rene_dick/")
+                .replaceAll("still_lives_compressed/", "still_lives/")
+                .replaceAll("compressed/", "")
+
+            $('.img-full-width').find('img').attr('src', no_compressed_src)
             let title = window.descriptions[$(this).attr('src')];
             $('.img-full-width').find('.caption').html(title)
         })
