@@ -158,8 +158,8 @@ def news():
 @app.route('/get_paints', methods=['GET'])
 def get_paints():
     try:
-        file_paints = [str(f) for f in listdir('static/images/quadri/web') if
-                       isfile(join('static/images/quadri/web', f))]
+        file_paints = [str(f) for f in listdir('static/images/quadri/web/compressed') if
+                       isfile(join('static/images/quadri/web/compressed', f))]
     except FileNotFoundError:
         return {'ret': False, 'content': None}
     return {'ret': True, 'content': file_paints}
