@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-06-24 18:12+0200\n"
-"PO-Revision-Date: 2021-06-24 18:29+0200\n"
+"PO-Revision-Date: 2021-07-01 14:30+0200\n"
 "Last-Translator: \n"
 "Language: nl\n"
 "Language-Team: nl <LL@li.org>\n"
@@ -580,7 +580,7 @@ msgstr "Homepage"
 
 #: templates/contacts.html:49 templates/index.html:99
 msgid "Contacts"
-msgstr "Contacten"
+msgstr "Contact"
 
 #: templates/contacts.html:50 templates/index.html:97 templates/news.html:17
 msgid "About"
