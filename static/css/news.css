@@ -14,6 +14,15 @@ a:hover, img:hover, li:hover {
     color: #202020 !important
 }
 
+.dekring-title {
+    font-family: 'span';
+    font-size: 7vh;
+    letter-spacing: 22px;
+    margin-bottom: 0;
+    position: relative;
+    top: -20px
+}
+
 .heading-title h1 {
     margin-left: 40px;
     margin-right: 40px;
