@@ -29,6 +29,8 @@ QUESTIONS_FOLDER = os.path.join(app.root_path, 'questions')
 app.config['QUESTIONS_FOLDER'] = QUESTIONS_FOLDER
 BACKUP_FOLDER = os.path.join(app.root_path, 'backups')
 app.config['BACKUP_FOLDER'] = BACKUP_FOLDER
+STATIC_FOLDER = os.path.join(app.root_path, 'static')
+app.config['STATIC_FOLDER'] = STATIC_FOLDER
 
 
 def current_milli_time():
@@ -153,6 +155,17 @@ def get_descriptions():
 @app.route('/news')
 def news():
     return render_template('news.html')
+
+
+@app.route('/news/lindapdf')
+def lindapdf():
+    path_to_file = os.path.join(app.config['STATIC_FOLDER'], 'documents', 'new')
+    if not os.path.exists(path_to_file):
+        return redirect(url_for('news'))
+
+    return send_from_directory(directory=path_to_file,
+                               filename='linda.pdf',
+                               mimetype='application/pdf')
 
 
 @app.route('/get_paints', methods=['GET'])

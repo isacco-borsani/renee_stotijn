@@ -22,21 +22,20 @@
 
 <div class="container-fluid container-news">
 
-    <div class="row nopadding">
+    <div class="row nopadding linda-container">
         <div class="col-md-3 text-center">
             <p style="font-family: 'span';font-size: 5vh">Ons Amsterdam</p>
-            <img src="/static/documents/new/Ons_Amsterdam_frontpage1.jpeg" width="100%" alt="">
+            <img src="/static/documents/new/Ons_Amsterdam_frontpage1.jpeg" width="98%" alt="">
         </div>
         <div class="col-md-6 text-center">
-            <p onclick="window.location.href='https://www.linda.nl/nieuws/interview/dochters-renee-stotijn-kunstwerken-muren-verstopt-gevonden/'"
+            <p class="scalable" onclick="window.location.href='https://www.linda.nl/nieuws/interview/dochters-renee-stotijn-kunstwerken-muren-verstopt-gevonden/'"
                style="cursor:pointer; font-family: 'span';font-size: 5vh">LINDA NL</p>
-            <object data="/static/documents/new/linda.pdf#toolbar=0" type="application/pdf" width="100%" height="700px">
-                <p>Alternative text - include a link <a href="/static/documents/new/linda.pdf">to the PDF!</a></p>
-            </object>
+            <a href="{{url_for('lindapdf')}}"><img class="lindaimg" src="/static/documents/new/linda.png" width="45%" alt=""></a>
+            <a href="{{url_for('lindapdf')}}"><img class="lindaimg" src="/static/documents/new/linda2.png" width="45%" alt=""></a>
         </div>
         <div class="col-md-3 text-center">
             <p style="font-family: 'span';font-size: 5vh">Voorpagina</p>
-            <img src="/static/documents/new/Voorpagina_1.jpeg" width="100%" alt="">
+            <img src="/static/documents/new/Voorpagina_1.jpeg" width="98%" alt="">
         </div>
 
     </div>
@@ -47,10 +46,10 @@
         </div>
     </div>
 
-    <div class="row nopadding">
+    <div class="row nopadding de-kring-container">
         <div class="col-md-12 text-center">
             <p class="dekring-title">De Kring</p>
-            <img onclick="window.location.href='https://www.kring.nl/nieuws/de-verborgen-schilderijen-van-kringlid-renee-stotijn-1940-2020 '"
+            <img class="scalable" onclick="window.location.href='https://www.kring.nl/nieuws/de-verborgen-schilderijen-van-kringlid-renee-stotijn-1940-2020 '"
                  src="/static/documents/new/kring.png" width="10%" alt="">
         </div>
     </div>
@@ -61,15 +60,15 @@
         </div>
     </div>
 
-    <div class="row nopadding">
-        <div class="col-md-3"><img src="/static/documents/new/at5logo.png" width="70%" alt=""></div>
+    <div class="row nopadding at5-container">
+        <div class="col-md-3 text-center"><img src="/static/documents/new/at5logo.png" width="70%" alt=""></div>
         <div class="col-md-6 text-center">
-            <iframe width="100%" height="400" src="https://www.youtube.com/embed/OP3W26CfjgU"
+            <iframe class="scalable" width="100%" height="400" src="https://www.youtube.com/embed/OP3W26CfjgU"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
         </div>
-        <div class="col-md-3 text-right"><img src="/static/documents/new/at5logo.png" width="70%" alt=""></div>
+        <div class="col-md-3 text-center"><img src="/static/documents/new/at5logo.png" width="70%" alt=""></div>
     </div>
 
     <div class="row">
@@ -78,10 +77,10 @@
         </div>
     </div>
 
-    <div class="row nopadding">
+    <div class="row nopadding ons-amsterdam-container">
         <div class="col-md-12 text-center">
             <p class="dekring-title">Ons Amsterdam</p>
-            <img onclick="window.location.href='https://onsamsterdam.nl/bijzondere-stadsgezichten-ontdekt-van-renee-stotijn?fbclid=IwAR2xYcFuUgCpL79aBQTk1pGQHTZItoe7RppQa8jnDK1PMKb6rxQUB0UBuag'"
+            <img class="scalable" onclick="window.location.href='https://onsamsterdam.nl/bijzondere-stadsgezichten-ontdekt-van-renee-stotijn?fbclid=IwAR2xYcFuUgCpL79aBQTk1pGQHTZItoe7RppQa8jnDK1PMKb6rxQUB0UBuag'"
                  src="/static/documents/new/ons.png" width="10%" alt="">
         </div>
     </div>
@@ -92,18 +91,24 @@
         </div>
     </div>
 
-    <div class="row nopadding">
+    <div class="row nopadding interview-container">
         <div class="col-md-12 text-center">
             <p class="dekring-title">Interviews</p>
         </div>
-        <div class="col-md-4">
-            <img src="/static/documents/new/interview1.png" onclick="window.location.href='https://www.nporadio1.nl/fragmenten/spraakmakers/ba783ce6-5d88-498b-bc47-2f0e2564c648/2021-06-24-null'" style="width: 133%;" alt="">
+        <div class="col-md-4 text-center">
+            <img class="scalable" src="/static/documents/new/interview1.png"
+                 onclick="window.location.href='https://www.nporadio1.nl/fragmenten/spraakmakers/ba783ce6-5d88-498b-bc47-2f0e2564c648/2021-06-24-null'"
+                 style="width: 133%;" alt="">
         </div>
-        <div class="col-md-4">
-            <img src="/static/documents/new/interview2.png" onclick="window.location.href='https://www.at5.nl/artikelen/209692/dochters-onthullen-verborgen-kunst-van-overleden-moeder-in-de-beurs-van-berlage?fbclid=IwAR2tgk82cG4ISeWNRldMUEMW8oEn2LrFNF2-JeVhhLcmXd8viQNyIw16CYw'" width="100%" alt="">
+        <div class="col-md-4 text-center">
+            <img class="scalable" src="/static/documents/new/interview2.png"
+                 onclick="window.location.href='https://www.at5.nl/artikelen/209692/dochters-onthullen-verborgen-kunst-van-overleden-moeder-in-de-beurs-van-berlage?fbclid=IwAR2tgk82cG4ISeWNRldMUEMW8oEn2LrFNF2-JeVhhLcmXd8viQNyIw16CYw'"
+                 width="100%" alt="">
         </div>
-        <div class="col-md-4">
-            <img src="/static/documents/new/interview3.png" onclick="window.location.href='https://www.nporadio4.nl/fragmenten/audio/2021-06-25-familie-vindt-verborgen-kunst-van-overleden-moeder'" width="100%" alt="">
+        <div class="col-md-4 text-center">
+            <img class="scalable" src="/static/documents/new/interview3.png"
+                 onclick="window.location.href='https://www.nporadio4.nl/fragmenten/audio/2021-06-25-familie-vindt-verborgen-kunst-van-overleden-moeder'"
+                 width="100%" alt="">
         </div>
     </div>
 
@@ -135,7 +140,7 @@
     <div class="row nopadding">
         <div class="col-md-4 news-big">
             <a href="https://beursvanberlage.com/nl/tentoonstelling/renee-stotijn-verborgen-kunst-onthuld/"
-               target="_blank"><img src="static/documents/flyer_front.png" alt="Flyer Beurs"></a>
+               target="_blank"><img class="scalable" src="static/documents/flyer_front.png" alt="Flyer Beurs"></a>
             <a target="_blank" class="main-link"
                href="https://beursvanberlage.com/nl/tentoonstelling/renee-stotijn-verborgen-kunst-onthuld/">https://beursvanberlage.com/nl/tentoonstelling/renee-stotijn-verborgen-kunst-onthuld/</a>
         </div>
@@ -152,7 +157,7 @@
         </div>
         <div class="col-md-5 news-side text-center">
             <a href="https://www.nrc.nl/nieuws/2021/03/19/tweeduizend-verborgen-schilderijen-a4036009"
-               target="_blank"><img src="static/documents/nrc_preview.jpeg" alt="Nrc article"></a>
+               target="_blank"><img class="scalable" src="static/documents/nrc_preview.jpeg" alt="Nrc article"></a>
         </div>
     </div>
 
@@ -164,8 +169,8 @@
 
     <div class="row couple-images">
         <div class="col-md-6 text-center">
-            <a href="https://www.parool.nl/ps/dochters-vinden-verstopte-werken-van-kunstenaar-renee-stotijn-de-wereld-moet-dit-zien~b2bda0eb/?referrer=https%3A%2F%2Fwww.google.com%2F"
-               target="_blank"><img src="static/documents/parool_preview.png" style="width: 50%"
+            <a href="https://www.parool.nl/ps/dochters-vinden-verstopte-werken-van-kunstenaar-renee-stotijn-de-wereld-moet-dit-zien~b2bda0eb/"
+               target="_blank"><img class="scalable" src="static/documents/parool_preview.png" style="width: 50%"
                                     alt="Parool article"></a>
         </div>
         <div class="col-md-6 text-center">
@@ -252,7 +257,7 @@
             </svg>
         </div>
         <div class="col-md-8 text-center">
-            <iframe width="100%" height="400" src="https://www.youtube.com/embed/wKoDilqO0l8"
+            <iframe class="scalable" width="100%" height="400" src="https://www.youtube.com/embed/wKoDilqO0l8"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -320,5 +325,10 @@
 
 {% endblock %}
 
+{% block script_footer %}
+<script>
+    $(document).ready(function() {
 
-renéestotijn.nl
+    })
+</script>
+{% endblock %}
