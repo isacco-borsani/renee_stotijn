@@ -22,20 +22,50 @@
 
 <div class="container-fluid container-news">
 
+    <div class="row nopadding">
+        <div class="col-md-4 news-big">
+            <a href="https://beursvanberlage.com/nl/tentoonstelling/renee-stotijn-verborgen-kunst-onthuld/"
+               target="_blank"><img class="scalable" src="static/documents/flyer_front.png" alt="Flyer Beurs"></a>
+            <a target="_blank" class="main-link"
+               href="https://beursvanberlage.com/nl/tentoonstelling/renee-stotijn-verborgen-kunst-onthuld/">https://beursvanberlage.com/nl/tentoonstelling/renee-stotijn-verborgen-kunst-onthuld/</a>
+        </div>
+        <div class="col-md-3 news-big">
+            <h2>Tentoonstelling</h2>
+            <h1>Renée Stotijn</h1>
+            <h2>verborgen kunst onthuld</h2>
+            <p><b>25 juni - 19 september 2021</b> <a href="https://beursvanberlage.com/">beursvanberlage.com</a></p>
+            <p>Kende u de naam Renée Stotijn al? Een Amsterdamse kunstenares? Waarschijnlijk niet. Tot enkele maanden
+                geleden waren haar werken niet zichtbaar, noch voor publiek, noch voor bekenden. Zelfs haar dochters
+                hadden geen flauw benul van de omvangrijke collectie. Toen Renée afgelopen jaar overleed, wisten zij
+                niet wat hen overkwam: ze ontdekten in hun ouderlijk huis een schat aan kunstwerken, de een nog
+                bijzonderder dan de andere…</p>
+        </div>
+        <div class="col-md-5 news-side text-center">
+            <a href="https://www.nrc.nl/nieuws/2021/03/19/tweeduizend-verborgen-schilderijen-a4036009"
+               target="_blank"><img class="scalable" src="static/documents/nrc_preview.jpeg" alt="Nrc article"></a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <hr>
+        </div>
+    </div>
+
     <div class="row nopadding linda-container">
         <div class="col-md-3 text-center">
             <p style="font-family: 'span';font-size: 5vh">Ons Amsterdam</p>
-            <img src="/static/documents/new/Ons_Amsterdam_frontpage1.jpeg" width="98%" alt="">
+            <a target="_blank" href="https://onsamsterdam.nl/bijzondere-stadsgezichten-ontdekt-van-renee-stotijn?fbclid=IwAR2xYcFuUgCpL79aBQTk1pGQHTZItoe7RppQa8jnDK1PMKb6rxQUB0UBuag"><img class="scalable" src="/static/documents/new/Ons_Amsterdam_frontpage1.jpeg" width="98%" alt=""></a>
         </div>
         <div class="col-md-6 text-center">
             <p class="scalable" onclick="window.location.href='https://www.linda.nl/nieuws/interview/dochters-renee-stotijn-kunstwerken-muren-verstopt-gevonden/'"
                style="cursor:pointer; font-family: 'span';font-size: 5vh">LINDA NL</p>
-            <a href="{{url_for('lindapdf')}}"><img class="lindaimg" src="/static/documents/new/linda.png" width="45%" alt=""></a>
-            <a href="{{url_for('lindapdf')}}"><img class="lindaimg" src="/static/documents/new/linda2.png" width="45%" alt=""></a>
+            <a href="{{url_for('lindapdf')}}"><img class="lindaimg scalable" src="/static/documents/new/linda.png" width="45%" alt=""></a>
+            <a href="{{url_for('lindapdf')}}"><img class="lindaimg scalable" src="/static/documents/new/linda2.png" width="45%" alt=""></a>
         </div>
         <div class="col-md-3 text-center">
-            <p style="font-family: 'span';font-size: 5vh">Voorpagina</p>
-            <img src="/static/documents/new/Voorpagina_1.jpeg" width="98%" alt="">
+            <img src="/static/documents/new/zkrankt.png" class="zkrankt" width="28%" alt="">
+            <a href="{{url_for('nrzpdf')}}"><img class="scalable" src="/static/documents/new/Voorpagina_1.jpeg" width="98%" alt=""></a>
         </div>
 
     </div>
@@ -93,19 +123,15 @@
 
     <div class="row nopadding interview-container">
         <div class="col-md-12 text-center">
-            <p class="dekring-title">Interviews</p>
+            <p class="dekring-title">{{_('Radio Interviews')}}</p>
         </div>
-        <div class="col-md-4 text-center">
+        <div class="col-md-6 text-center">
             <img class="scalable" src="/static/documents/new/interview1.png"
                  onclick="window.location.href='https://www.nporadio1.nl/fragmenten/spraakmakers/ba783ce6-5d88-498b-bc47-2f0e2564c648/2021-06-24-null'"
                  style="width: 133%;" alt="">
         </div>
-        <div class="col-md-4 text-center">
-            <img class="scalable" src="/static/documents/new/interview2.png"
-                 onclick="window.location.href='https://www.at5.nl/artikelen/209692/dochters-onthullen-verborgen-kunst-van-overleden-moeder-in-de-beurs-van-berlage?fbclid=IwAR2tgk82cG4ISeWNRldMUEMW8oEn2LrFNF2-JeVhhLcmXd8viQNyIw16CYw'"
-                 width="100%" alt="">
-        </div>
-        <div class="col-md-4 text-center">
+
+        <div class="col-md-6 text-center">
             <img class="scalable" src="/static/documents/new/interview3.png"
                  onclick="window.location.href='https://www.nporadio4.nl/fragmenten/audio/2021-06-25-familie-vindt-verborgen-kunst-van-overleden-moeder'"
                  width="100%" alt="">
@@ -120,44 +146,13 @@
 
     <div class="row nopadding">
         <div class="col-md-12 text-center">
-            <p style="font-family: 'span';
-    font-size: 6vh">Artikel</p>
+            <img src="/static/documents/new/zkrankt.png" style="margin-bottom: 60px" width="10%" alt="">
         </div>
         <div class="col-md-6">
-            <img src="/static/documents/new/Artikel_pagina1.jpg" width="100%" alt="">
+            <a href="{{url_for('nrzpdf')}}"><img src="/static/documents/new/Artikel_pagina1.jpg" class="scalable" width="100%" alt=""></a>
         </div>
         <div class="col-md-6">
-            <img src="/static/documents/new/Artikel_pagina2.jpg" width="100%" alt="">
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-12">
-            <hr>
-        </div>
-    </div>
-
-    <div class="row nopadding">
-        <div class="col-md-4 news-big">
-            <a href="https://beursvanberlage.com/nl/tentoonstelling/renee-stotijn-verborgen-kunst-onthuld/"
-               target="_blank"><img class="scalable" src="static/documents/flyer_front.png" alt="Flyer Beurs"></a>
-            <a target="_blank" class="main-link"
-               href="https://beursvanberlage.com/nl/tentoonstelling/renee-stotijn-verborgen-kunst-onthuld/">https://beursvanberlage.com/nl/tentoonstelling/renee-stotijn-verborgen-kunst-onthuld/</a>
-        </div>
-        <div class="col-md-3 news-big">
-            <h2>Tentoonstelling</h2>
-            <h1>Renée Stotijn</h1>
-            <h2>verborgen kunst onthuld</h2>
-            <p><b>25 juni - 19 september 2021</b> <a href="https://beursvanberlage.com/">beursvanberlage.com</a></p>
-            <p>Kende u de naam Renée Stotijn al? Een Amsterdamse kunstenares? Waarschijnlijk niet. Tot enkele maanden
-                geleden waren haar werken niet zichtbaar, noch voor publiek, noch voor bekenden. Zelfs haar dochters
-                hadden geen flauw benul van de omvangrijke collectie. Toen Renée afgelopen jaar overleed, wisten zij
-                niet wat hen overkwam: ze ontdekten in hun ouderlijk huis een schat aan kunstwerken, de een nog
-                bijzonderder dan de andere…</p>
-        </div>
-        <div class="col-md-5 news-side text-center">
-            <a href="https://www.nrc.nl/nieuws/2021/03/19/tweeduizend-verborgen-schilderijen-a4036009"
-               target="_blank"><img class="scalable" src="static/documents/nrc_preview.jpeg" alt="Nrc article"></a>
+            <a href="{{url_for('nrzpdf')}}"><img src="/static/documents/new/Artikel_pagina2.jpg" class="scalable" width="100%" alt=""></a>
         </div>
     </div>
 
@@ -188,9 +183,9 @@
 
     <div class="row nopadding ">
         <div class="col-md-12 text-center">
-            <img width="80%"
+            <a href="https://magazine.artland.com/unveiling-renee-stotijn-hidden-art/" target="_blank"><img class="scalable" width="80%"
                  src="https://cdn.shortpixel.ai/client/q_lossy,ret_img,w_2880,h_268/https://magazine.artland.com/wp-content/uploads/2017/01/Artland_logo_full_pos3-1-uai-2880x268.png"
-                 alt="">
+                    alt=""></a>
 
         </div>
     </div>
@@ -198,6 +193,7 @@
     <div class="row nopadding pt50">
         <div class="col-md-12">
             <hr>
+        </div>
         </div>
     </div>
 

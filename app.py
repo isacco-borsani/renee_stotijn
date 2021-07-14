@@ -168,6 +168,17 @@ def lindapdf():
                                as_attachment=True)
 
 
+@app.route('/news/nrz')
+def nrzpdf():
+    path_to_file = os.path.join(app.config['STATIC_FOLDER'], 'documents', 'new')
+    if not os.path.exists(path_to_file):
+        return redirect(url_for('news'))
+
+    return send_from_directory(path_to_file,
+                               'NRZ.pdf',
+                               as_attachment=True)
+
+
 @app.route('/get_paints', methods=['GET'])
 def get_paints():
     try:

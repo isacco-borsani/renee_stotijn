@@ -4,6 +4,11 @@ body .container-news {
     font-family: Merriweather, serif !important;
 }
 
+.zkrankt {
+    margin-bottom: 20px;
+    width: 23%
+}
+
 .scalable {
     transition: transform .2s; /* Animation */
     cursor: pointer;
