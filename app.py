@@ -163,9 +163,9 @@ def lindapdf():
     if not os.path.exists(path_to_file):
         return redirect(url_for('news'))
 
-    return send_from_directory(directory=path_to_file,
-                               filename='linda.pdf',
-                               mimetype='application/pdf')
+    return send_from_directory(path_to_file,
+                               'linda.pdf',
+                               as_attachment=True)
 
 
 @app.route('/get_paints', methods=['GET'])
