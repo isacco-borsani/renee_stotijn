@@ -33,7 +33,8 @@
 {% block content %}
 <body>
 
-<a class="anchortop btn btn-primary scrollTo" href="#start" data-target="#start"><img src="/static/images/up.png" alt=""></a>
+<a class="anchortop btn btn-primary scrollTo" href="#start" data-target="#start"><img src="/static/images/up.png"
+                                                                                      alt=""></a>
 
 <div class="img-full-width hidden">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -1196,8 +1197,15 @@
 
 {% block script_footer %}
 <script>
-    $(document).ready(function () {
+    function escapeRegExp(string) {
+        return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
+    }
 
+    function replaceAllOccurencies(str, match, replacement) {
+        return str.replace(new RegExp(escapeRegExp(match), 'g'), () => replacement);
+    }
+
+    $(document).ready(function () {
         window.descriptions = {}
 
         $.ajax({
@@ -1210,23 +1218,55 @@
         })
 
         $('.with-full-size').find('img').on('click', function () {
-            $('.img-full-width').removeClass('hidden');
-            let no_compressed_src = $(this).attr('src')
-                .replaceAll("amsterdam_compressed/", "amsterdam/")
-                .replaceAll("art_academy_compressed/", "art_academy/")
-                .replaceAll("articles_compressed/", "articles/")
-                .replaceAll("dolls_compressed/", "dolls/")
-                .replaceAll("extra_compressed/", "extra/")
-                .replaceAll("landscapes_compressed/", "landscapes/")
-                .replaceAll("later_work_compressed/", "later_work/")
-                .replaceAll("portraits_compressed/", "portraits/")
-                .replaceAll("relationship_and_posters_compressed/", "relationship_and_posters/")
-                .replaceAll("rene_concert_gebouw_compressed/", "rene_concert_gebouw/")
-                .replaceAll("rene_dick_articles_compressed/", "rene_dick_articles/")
-                .replaceAll("rene_dick_compressed/", "rene_dick/")
-                .replaceAll("still_lives_compressed/", "still_lives/")
-                .replaceAll("compressed/", "")
+            console.log(replaceAllOccurencies('a.b.c.d.e', '.', '__'));
 
+            let key_val_replacement = {
+                "amsterdam_compressed": "amsterdam",
+                "art_academy_compressed": "art_academy",
+                "articles_compressed": "articles",
+                "dolls_compressed": "dolls",
+                "extra_compressed/": "extra",
+                "landscapes_compressed": "landscapes",
+                "later_work_compressed": "later_work",
+                "portraits_compressed": "portraits",
+                "relationship_and_posters_compressed": "relationship_and_posters",
+                "rene_concert_gebouw_compressed": "rene_concert_gebouw",
+                "rene_dick_articles_compressed": "rene_dick_articles",
+                "rene_dick_compressed": "rene_dick",
+                "still_lives_compressed": "still_lives",
+                "compressed": ""
+            }
+
+            $('.img-full-width').removeClass('hidden');
+            let no_compressed_src = ""
+            let _this = $(this)
+            if ($(this).attr('src') === 'compressed') {
+                no_compressed_src = $(this).attr('src').replace("compressed", "")
+            } else {
+                no_compressed_src = _this.attr('src').replace("_compressed", "")
+            }
+
+
+            /*$.each(key_val_replacement, function (key, val) {
+                no_compressed_src = replaceAllOccurencies(_this.attr('src'), key, val)
+            })*/
+            /*let no_compressed_src = replaceAllOccurencies($(this).attr('src'), "amsterdam_compressed/", "amsterdam/")
+                .replaceAll($(this).attr('src'), )
+                .replaceAll($(this).attr('src'), )
+                .replaceAll($(this).attr('src'), )
+                .replaceAll($(this).attr('src'), )
+                .replaceAll($(this).attr('src'), )
+                .replaceAll($(this).attr('src'), )
+                .replaceAll($(this).attr('src'), )
+                .replaceAll($(this).attr('src'), )
+                .replaceAll($(this).attr('src'), )
+                .replaceAll($(this).attr('src'), )
+                .replaceAll($(this).attr('src'), )
+                .replaceAll($(this).attr('src'),)
+                .replaceAll($(this).attr('src'), )*/
+
+
+            console.log(no_compressed_src.replace("_", ""))
             $('.img-full-width').find('img').attr('src', no_compressed_src)
             let title = window.descriptions[$(this).attr('src')];
             $('.img-full-width').find('.caption').html(title)
