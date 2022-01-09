@@ -9,6 +9,23 @@ body .container-news {
     width: 23%
 }
 
+.articula-container {
+    padding-top: 0 !important;
+    position: relative;
+    top: -15px;
+    margin: 0 auto
+}
+
+.articula-container div:first-child {
+    border-right: 2px solid #ccc;
+    border-radius: 35px;
+}
+
+.articula-container div {
+    overflow: hidden !important;
+    padding: 47px;
+}
+
 .scalable {
     transition: transform .2s; /* Animation */
     cursor: pointer;
@@ -194,6 +211,56 @@ body .container-news {
     .row a, .row h2, .row h1, .row p {
         margin-top: 30px;
         margin-bottom: 30px
+    }
+
+
+    /*.articula-container div:first-child {
+        text-align: center !important
+    }
+
+    .articula-container div {
+        width: fit-content !important;
+        display: inline-block;
+        padding: 0;
+    }
+
+    .articula-container div img {
+        width: 30%;
+    }
+
+    .row.articula-container .col-md-3, .row .col-md-4, .row .col-md-5 {
+        width: fit-content !important;
+        display: inline-block;
+    }*/
+    .articula-container div:first-child {
+        border-right: none
+    }
+}
+
+@media screen and (min-width: 850px) and (max-width: 1400px) {
+
+    .articula-container div:first-child img {
+        width: 120% !important
+    }
+
+    .articula-container div img {
+        width: 100% !important
+    }
+
+    .row.articula-container .col-md-3 {
+        width: 33% !important;
+        max-width: fit-content !important;
+        display: inline-block;
+    }
+
+    .row.articula-container .col-md-4, .row.articula-container .col-md-5 {
+        width: 66% !important
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .articula-container div img {
+        width: 100% !important
     }
 }
 
