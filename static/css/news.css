@@ -54,6 +54,7 @@ body .container-news {
 
 .heading-title h1, .heading-title h3 {
     display: inline-block;
+    cursor: pointer
 }
 
 .heading-title h1:after, .heading-title h1:before {
