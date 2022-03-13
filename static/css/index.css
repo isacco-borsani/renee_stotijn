@@ -62,6 +62,12 @@ div.marginsH80 {
     margin-top: 215px
 }
 
+@media screen and (min-width: 1000px) {
+    .main-ul-rene li:first-child {
+        margin-left: 14vh
+    }
+}
+
 .fix-width {
     width: 100% !important;
     max-width: 100% !important;
@@ -110,7 +116,7 @@ div.marginsH80 {
 }
 
 .main-ul-rene li:hover, .lang-drop li:hover {
-    transform: scale(1.1);
+
 }
 
 body #cdawrap {
@@ -329,25 +335,6 @@ main {
     --tiles-height: 65vw;
 }
 
-.lang-drop {
-    list-style: none;
-    margin-right: 20px;
-    margin-top: 10px
-}
-
-.lang-drop li {
-    display: inline-block;
-    /* border: 5px solid #ccc; */
-    /* border-radius: 100px; */
-    overflow: hidden;
-    margin-right: 5px;
-    transition: transform .5s
-}
-
-
-.flag {
-    width: 30px;
-}
 
 .tiles--perspective {
     overflow: visible;
@@ -521,6 +508,7 @@ main {
     align-items: flex-start;
     justify-content: flex-start;
 }
+
 
 .tiles__title--right {
     justify-content: flex-end;
@@ -713,6 +701,10 @@ html.has-scroll-dragging {
     .content__text {
         font-size: 6vw;
     }
+
+    .tiles__title--intro {
+        padding-top: 14vh
+    }
 }
 
 @media screen and (min-width: 601px) and (max-width: 767px) {
@@ -761,8 +753,7 @@ html.has-scroll-dragging {
 
 .sign-image {
     width: 100%;
-    position: relative;
-    top: -10vw
+    position: relative
 }
 
 .text-container {

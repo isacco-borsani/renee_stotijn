@@ -11,6 +11,7 @@
 
 body .container-news {
     font-family: belinda_script, serif !important;
+    margin-top: 45px
 }
 
 a, img, li, .heading-title h3 {
@@ -24,18 +25,22 @@ a, img, li, .heading-title h3 {
     margin-bottom: 20px
 }
 
+#contact-modal {
+    top: 75px
+}
+
 #contact-modal .modal-body * {
     font-size: 26px
 }
 
 a.mailto, a.mailto:hover {
+    font-family: auto;
     font-size: 50px;
     color: #695a8cdb !important;
     text-decoration: underline
 }
 
 a:hover, img:hover, li:hover {
-    transform: scale(1.1);
     color: #202020 !important
 }
 

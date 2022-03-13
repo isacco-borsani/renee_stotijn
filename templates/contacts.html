@@ -42,7 +42,7 @@
     </div>
 </div>
 
-<div class="container-fluid">
+<!--<div class="container-fluid">
     <div class="row">
         <div class="col-md-12 text-center heading-title">
             <h3 onclick="location.href='/'">{{ _('Home') }}</h3>
@@ -51,7 +51,7 @@
             <hr>
         </div>
     </div>
-</div>
+</div>-->
 
 <div class="container-fluid container-news">
     <div class="row">
@@ -63,7 +63,7 @@
         </div>
 
         <div class="col-md-12 text-center mt-5">
-            <a class="mailto" href="mailto:kunst.stotijn@gmail.com">kunst.stotijn@gmail.com</a>
+            <a class="mailto" href="mailto: kunst.stotijn@gmail.com">kunst.stotijn@gmail.com</a>
         </div>
 
         <div class="col-md-12 text-center mt-5">
@@ -106,10 +106,6 @@
         $('.heart-btn').on('click', function () {
             $('#contact-modal').modal('toggle')
         });
-
-        $('.mailto').on('click', function () {
-            $('#contact-modal').modal('toggle')
-        })
 
         $('.btn-submit').on('click', function () {
             $('#submit-contact').trigger('submit')

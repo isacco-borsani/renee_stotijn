@@ -2,11 +2,13 @@ import json
 import os
 import time
 from datetime import datetime, timedelta
+from gevent.pywsgi import WSGIServer
 
 from flask import Flask, render_template, request, session, redirect, url_for, send_from_directory
 from os import listdir
 from os.path import isfile, join
 from flask_babel import Babel, gettext
+from werkzeug.middleware.proxy_fix import ProxyFix
 
 app = Flask(__name__)
 app.secret_key = 'super secret key'
@@ -31,7 +33,6 @@ BACKUP_FOLDER = os.path.join(app.root_path, 'backups')
 app.config['BACKUP_FOLDER'] = BACKUP_FOLDER
 STATIC_FOLDER = os.path.join(app.root_path, 'static')
 app.config['STATIC_FOLDER'] = STATIC_FOLDER
-
 
 def current_milli_time():
     return round(time.time() * 1000)
@@ -187,3 +188,10 @@ def get_paints():
     except FileNotFoundError:
         return {'ret': False, 'content': None}
     return {'ret': True, 'content': file_paints}
+
+
+if __name__ == "__main__":
+    # app.run('0.0.0.0', 5000, True)
+    app.wsgi_app = ProxyFix(app.wsgi_app, x_proto=1, x_host=1)
+    http_server = WSGIServer(('0.0.0.0', 5000), app)
+    http_server.serve_forever()

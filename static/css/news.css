@@ -2,6 +2,7 @@
 
 body .container-news {
     font-family: Merriweather, serif !important;
+    margin-top: 125px
 }
 
 .zkrankt {
@@ -32,7 +33,7 @@ body .container-news {
 }
 
 .scalable:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
     color: #202020 !important
 }
 
@@ -71,12 +72,16 @@ body .container-news {
 
 
 .news-big img {
-    width: 100%;
+    width: 50%;
 }
 
 .news-big p {
     font-family: 'span', serif;
     font-size: 3vh
+}
+
+h1, h2 {
+    font-family: 'span', serif;
 }
 
 .news-big h2 {
@@ -209,7 +214,7 @@ body .container-news {
         font-size: 3vw;
     }
 
-    .row a, .row h2, .row h1, .row p {
+    .container-news .row a, .container-news .row h2, .container-news .row h1, .container-news .row p {
         margin-top: 30px;
         margin-bottom: 30px
     }
@@ -260,8 +265,22 @@ body .container-news {
 }
 
 @media screen and (max-width: 850px) {
+
+    .dekring-expo img.first {
+        width: 35%;
+        margin-right: 10px !important
+    }
+
+    .dekring-expo img.second {
+        width: 45%
+    }
+
     .articula-container div img {
         width: 100% !important
+    }
+    .news-big.text-right, .news-big.text-left {
+        text-align: center !important;
+        margin-bottom: 20px
     }
 }
 

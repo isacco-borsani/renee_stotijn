@@ -7,20 +7,27 @@
 {% endblock %}
 
 {% block content %}
-<!--https://tympanus.net/codrops/2020/12/08/horizontal-smooth-scroll-layouts/-->
 
-<div class="container-fluid">
+<div class="container-fluid container-news">
+
+    <div class="row nopadding">
+        <div class="col-md-12 text-center dekring-expo">
+            <p class="dekring-title">Te zien op Expositie</p>
+            <img class="scalable first" style="margin-right: 70px"
+                 onclick="window.location.href='https://www.kring.nl/'"
+                 src="/static/documents/new/kring.png" width="10%" alt="">
+            <img class="scalable second"
+                 onclick="window.location.href='https://www.kring.nl/'"
+                 src="/static/images/news/drkring_expo.jpeg" width="15%" alt="">
+        </div>
+    </div>
+
     <div class="row">
-        <div class="col-md-12 text-center heading-title">
-            <h3 onclick="location.href='/'">{{ _('Home') }}</h3>
-            <h1>{{ _('Latest News and Events') }}</h1>
-            <h3 onclick="location.href='about'">{{ _('About') }}</h3>
+        <div class="col-md-12">
             <hr>
         </div>
     </div>
-</div>
 
-<div class="container-fluid container-news">
     <div class="row nopadding">
         <div class="col-md-12 text-center">
             <p style="    font-family: 'span', serif;font-size: 3vh">{{_("New article about the discovery of Renée
@@ -29,7 +36,7 @@
             <br>
         </div>
     </div>
-    <div class="row articula-container">
+    <div class="row articula-container" style="padding-bottom: 0 !important">
         <div class="col-md-3 col-sm-3">
             <a href="static/documents/new2022/articula_0001.jpg"
                target="_blank"><img class="scalable" width="100%" src="static/documents/new2022/articula_0001.jpg"
@@ -46,34 +53,37 @@
                                     alt="Articula"></a>
         </div>
 
-        <div class="col-md-12">
+        <div class="col-md-12 nopadding">
             <hr>
         </div>
 
     </div>
 
     <div class="row nopadding">
-        <div class="col-md-4 news-big">
+
+        <div class="col-md-12" style="margin-bottom: 45px">
+            <h1 class="text-center pointer"
+                onclick="window.location.href='https://beursvanberlage.com/nl/tentoonstelling/renee-stotijn-verborgen-kunst-onthuld/'">
+                {{_('Previous exhibition at Beurs van Berlage')}}</h1>
+        </div>
+        <div class="col-md-6 news-big text-right">
             <a href="https://beursvanberlage.com/nl/tentoonstelling/renee-stotijn-verborgen-kunst-onthuld/"
-               target="_blank"><img class="scalable" src="static/documents/flyer_front.png" alt="Flyer Beurs"></a>
-            <a target="_blank" class="main-link"
-               href="https://beursvanberlage.com/nl/tentoonstelling/renee-stotijn-verborgen-kunst-onthuld/">https://beursvanberlage.com/nl/tentoonstelling/renee-stotijn-verborgen-kunst-onthuld/</a>
+               target="_blank">
+                <img class="scalable" src="static/documents/flyer_front.png" alt="Flyer Beurs">
+            </a>
         </div>
-        <div class="col-md-3 news-big">
-            <h2>Tentoonstelling</h2>
-            <h1>Renée Stotijn</h1>
-            <h2>verborgen kunst onthuld</h2>
-            <p><b>25 juni - 19 september 2021</b> <a href="https://beursvanberlage.com/">beursvanberlage.com</a></p>
-            <p>Kende u de naam Renée Stotijn al? Een Amsterdamse kunstenares? Waarschijnlijk niet. Tot enkele maanden
-                geleden waren haar werken niet zichtbaar, noch voor publiek, noch voor bekenden. Zelfs haar dochters
-                hadden geen flauw benul van de omvangrijke collectie. Toen Renée afgelopen jaar overleed, wisten zij
-                niet wat hen overkwam: ze ontdekten in hun ouderlijk huis een schat aan kunstwerken, de een nog
-                bijzonderder dan de andere…</p>
+
+        <div class="col-md-6 news-big text-left">
+            <a href="https://beursvanberlage.com/nl/tentoonstelling/renee-stotijn-verborgen-kunst-onthuld/"
+               target="_blank">
+                <img class="scalable" src="static/documents/flyer_back.png" alt="Flyer Beurs">
+            </a>
         </div>
-        <div class="col-md-5 news-side text-center">
+
+        <!--<div class="col-md-6 news-side text-center">
             <a href="https://www.nrc.nl/nieuws/2021/03/19/tweeduizend-verborgen-schilderijen-a4036009"
                target="_blank"><img class="scalable" src="static/documents/nrc_preview.jpeg" alt="Nrc article"></a>
-        </div>
+        </div>-->
     </div>
 
     <div class="row">
