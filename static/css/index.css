@@ -22,7 +22,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     counter-reset: contentSection;
-    font-family: neuzeit-grotesk, sans-serif;
+    font-family: 'span', serif, sans-serif;
 }
 
 @font-face {
@@ -59,7 +59,7 @@ div.marginsH80 {
 .main-ul-rene {
     list-style: none;
     text-align: center;
-    margin-top: 215px
+    margin-top: 120px
 }
 
 @media screen and (min-width: 1000px) {
@@ -270,11 +270,10 @@ main {
 }
 
 .content__text {
-    font-size: 2.25rem;
-    font-size: clamp(1rem, 4vw, 2.25rem);
-    line-height: 10vh;
-    letter-spacing: 2px;
-    font-size: 35px
+    font-family: 'span', serif;
+    line-height: 11vh;
+    font-size: 26px;
+    text-align: justify
 }
 
 .content__text--right {

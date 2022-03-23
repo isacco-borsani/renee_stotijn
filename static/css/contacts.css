@@ -10,13 +10,17 @@
 }
 
 body .container-news {
-    font-family: belinda_script, serif !important;
+    font-family: 'span', serif;
     margin-top: 45px
 }
 
 a, img, li, .heading-title h3 {
     transition: transform .2s; /* Animation */
     cursor: pointer;
+}
+
+.collage {
+    padding-top: 0 !important;
 }
 
 .collage img {
@@ -35,7 +39,8 @@ a, img, li, .heading-title h3 {
 
 a.mailto, a.mailto:hover {
     font-family: auto;
-    font-size: 50px;
+    font-size: 5vh;
+    word-break: break-all;
     color: #695a8cdb !important;
     text-decoration: underline
 }
@@ -161,7 +166,7 @@ a:hover, img:hover, li:hover {
         font-size: 3vw;
     }
 
-    .row a, .row h2, .row h1, .row p {
+    .container-news .row a, .container-news .row h2, .container-news .row h1, .container-news .row p {
         margin-top: 30px;
         margin-bottom: 30px
     }

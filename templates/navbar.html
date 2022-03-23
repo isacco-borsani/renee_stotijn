@@ -6,10 +6,26 @@
                 <li><a href="/language/en"> <img src="/static/images/flags/en.svg" alt="en" class="flag"></a></li>
             </ul>
             <ul class="lang-drop float-right">
+                {% if url_for(request.endpoint) != '/' %}
+                <li class="mr-15" style="border-right: 1px solid #898989; padding-right: 26px">
+                    <a href="/">
+                        Home
+                    </a>
+                </li>
+                {% endif %}
                 <li class="mr-15" style="border-right: 1px solid #898989; padding-right: 26px">
                     <a href="/contacts">
                         Contact
-                        <!--<img width="40px" src="/static/images/send.png" alt="Instagram Rene Stotijn">-->
+                    </a>
+                </li>
+                <li class="mr-15" style="border-right: 1px solid #898989; padding-right: 26px">
+                    <a href="/about">
+                        {{_('Life')}}
+                    </a>
+                </li>
+                <li class="mr-15" style="border-right: 1px solid #898989; padding-right: 26px">
+                    <a href="/news">
+                        {{_('News')}}
                     </a>
                 </li>
                 <li>

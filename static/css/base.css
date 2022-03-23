@@ -5,6 +5,7 @@ body {
 .navbar-rene {
     position: fixed;
     width: 100%;
+    overflow: hidden;
     top: 0;
     height: 70px !important;
     background: #e9ced3e8;
@@ -13,7 +14,7 @@ body {
 }
 
 .navbar-rene * {
-    font-family: 'neuzeit-grotesk';
+    font-family: 'span', serif;
     color: #2e2e2e;
     text-decoration: none;
     font-size: 24px
@@ -66,7 +67,7 @@ body {
 
 .img-full-width {
     position: fixed;
-    z-index: 99999;
+    z-index: 9999999999;
     width: 100%;
     text-align: center;
     background: #000000bd;
@@ -134,7 +135,7 @@ body {
     position: absolute;
     width: 100%;
     color: white;
-    font-family: 'neuzeit-grotesk';
+    font-family: 'span', serif;
     font-size: 25px;
     margin-top: 15px;
     cursor: default;
