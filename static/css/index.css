@@ -270,8 +270,7 @@ main {
 }
 
 .content__text {
-    font-family: 'span', serif;
-    line-height: 11vh;
+    font-family: 'neuzeit-grotesk';
     font-size: 26px;
     text-align: justify
 }
@@ -702,7 +701,7 @@ html.has-scroll-dragging {
     }
 
     .tiles__title--intro {
-        padding-top: 14vh
+        padding-top: 5vh
     }
 }
 

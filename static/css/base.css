@@ -2,25 +2,29 @@ body {
     overflow-x: hidden !important
 }
 
-.navbar-rene {
-    position: fixed;
-    width: 100%;
-    overflow: hidden;
-    top: 0;
-    height: 70px !important;
+.navbar-light {
     background: #e9ced3e8;
     z-index: 999999999999;
     box-shadow: 1px 1px 5px 0 #cfb6ba
 }
 
-.navbar-rene * {
-    font-family: 'span', serif;
+.navbar-light * {
+    font-family: 'neuzeit-grotesk';
     color: #2e2e2e;
     text-decoration: none;
     font-size: 24px
 }
 
-.navbar-rene .lang-drop {
+.navbar-light .language-menu {
+    list-style: none;
+    margin-right: 10px;
+    margin-top: 14px;
+    margin-bottom: 7px;
+    padding-left: 20px;
+    width: 80%
+}
+
+.navbar-light .lang-drop {
     list-style: none;
     margin-right: 10px;
     margin-top: 14px;
@@ -28,7 +32,12 @@ body {
     padding-left: 20px
 }
 
-.navbar-rene .lang-drop li {
+.navbar-light .lang-drop li {
+    border-right: 1px solid #898989;
+    padding-right: 26px
+}
+
+.navbar-light .lang-drop li, .navbar-light .language-menu li {
     display: inline-block;
     /* border: 5px solid #ccc; */
     /* border-radius: 100px; */
@@ -38,17 +47,17 @@ body {
 }
 
 
-.navbar-rene .flag {
+.navbar-light .flag {
     width: 40px;
     height: 40px
 }
 
 
-.navbar-rene a:hover {
+.navbar-light a:hover {
     color: #2e2e2e
 }
 
-.navbar-rene .row {
+.navbar-light .row {
     padding: 0
 }
 
@@ -79,9 +88,12 @@ body {
 }
 
 
-
 .nopadding {
     padding: 0 !important
+}
+
+.mb100 {
+    margin-bottom: 100px !important
 }
 
 .mr-15 {
@@ -158,8 +170,40 @@ svg.bi-x {
     max-height: 788px;
 }
 
-@media screen and (max-width: 765px) {
+.navbar-light .language-menu li:first-child {
+        display: none;
+
+    }
+
+
+@media screen and (max-width: 767px) {
     .img-full-width img {
         width: 85%
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .navbar-light .language-menu {
+        width: auto
+    }
+
+    .navbar-light .ig-button-container-desktop {
+        display: none !important
+    }
+
+    .navbar-light .language-menu li:first-child {
+        display: inline-block;
+        margin-right: 25px;
+        border-right: 2px solid #e5bac4;
+        padding-right: 15px
+    }
+
+    .navbar-light .lang-drop {
+        width: 100%;
+        text-align: center
+    }
+
+    .navbar-light .lang-drop li {
+        border: none
     }
 }
