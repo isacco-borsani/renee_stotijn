@@ -4,7 +4,7 @@
     padding: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: 'Cormorant Garamond';
+    font-family: 'neuzeit-grotesk';
     overflow-x: hidden !important;
 }
 
@@ -60,7 +60,7 @@
 }
 
 #start a:hover {
-    transform: scale(1.1)
+    transform: scale(1.03)
 }
 
 .about-container {
