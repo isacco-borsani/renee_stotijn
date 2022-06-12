@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400,400i,700");
 
 body .container-news {
-    font-family: Merriweather, serif !important;
+    font-family: 'neuzeit-grotesk', serif !important;
     margin-top: 125px
 }
 
@@ -39,7 +39,7 @@ body .container-news {
 
 
 .dekring-title {
-    font-family: 'span', serif;
+    font-family: 'neuzeit-grotesk', serif;
     font-size: 7vh;
     letter-spacing: 22px;
     margin-bottom: 0;
@@ -76,12 +76,12 @@ body .container-news {
 }
 
 .news-big p {
-    font-family: 'span', serif;
+    font-family: 'neuzeit-grotesk', serif;
     font-size: 3vh
 }
 
 h1, h2 {
-    font-family: 'span', serif;
+    font-family: 'neuzeit-grotesk', serif;
 }
 
 .news-big h2 {
@@ -109,11 +109,11 @@ h1, h2 {
     text-decoration: none;
     font-size: 20px;
     color: #202020;
-    font-family: span, serif !important;
+    font-family: 'neuzeit-grotesk', serif !important
 }
 
 .main-link {
-    font-family: 'span', serif;
+    font-family: 'neuzeit-grotesk', serif;
     text-decoration: none;
     font-size: 1vw;
     line-height: 48px;

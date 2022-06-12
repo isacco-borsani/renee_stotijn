@@ -8,6 +8,10 @@
     overflow-x: hidden !important;
 }
 
+.ig-button-container-desktop img {
+    margin-left: 20px !important
+}
+
 .anchortop {
     position: fixed;
     bottom: 0;
@@ -199,9 +203,15 @@
     width: 80% !important
 }
 
+.first-gallery-images img {
+    width: auto !important;
+    margin: 0
+}
+
 
 .about-container .section-2 blockquote {
-    font-size: 5vmin;
+    font-size: 20px;
+text-align: center;
     padding: 16px 16px 0 16px;
 }
 
