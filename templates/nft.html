@@ -10,41 +10,52 @@
 {% block content %}
     <div class="container-fluid mt120 collection-container">
         <div class="row">
-            <div class="col-lg-3" onclick="window.open('https://opensea.io/collection/renees-drawings', '_blank')">
+            <div class="col text-center">
+                <p>{{_('Discover the new Renee NFT collection on ')}} <a href="https://opensea.io/">opensea.io</a><br>
+                    <small>{{_("You will be able to purchase Renee's art and claim the real paint! Don't miss out the opportunity to have this treasure in your house!")}}</small>
+                </p>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-xs-12 scalable" onclick="window.open('https://opensea.io/collection/renees-drawings', '_blank')">
                 <div class="frame-collection drawings">
                     <img src="/static/images/empty.png" alt="">
                     <h3>Drawings - charcoal</h3>
                 </div>
 
             </div>
-            <div class="col-lg-3" onclick="window.open('https://opensea.io/collection/renees-still-lives', '_blank')">
+            <div class="col-lg-4 col-xs-12 scalable" onclick="window.open('https://opensea.io/collection/renees-still-lives', '_blank')">
                 <div class="frame-collection stillives">
                     <img src="/static/images/empty.png" alt="">
                     <h3>Still lives</h3>
                 </div>
 
             </div>
-            <div class="col-lg-3" onclick="window.open('https://opensea.io/collection/renees-dolls', '_blank')">
+            <div class="col-lg-4 col-xs-12 scalable" onclick="window.open('https://opensea.io/collection/renees-dolls', '_blank')">
                 <div class="frame-collection dolls">
                     <img src="/static/images/empty.png" alt="">
                     <h3>Dolls</h3>
                 </div>
 
             </div>
-            <div class="col-lg-3" onclick="window.open('https://opensea.io/collection/renees-painted-portraits', '_blank')">
+        </div>
+        <div class="row second">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-4 col-xs-12 scalable" onclick="window.open('https://opensea.io/collection/renees-painted-portraits', '_blank')">
                 <div class="frame-collection portraits">
                     <img src="/static/images/empty.png" alt="">
                     <h3>Painted portraits</h3>
                 </div>
 
             </div>
-            <div class="col-lg-3" onclick="window.open('https://opensea.io/collection/renees-landscapes', '_blank')">
+            <div class="col-lg-4 col-xs-12 scalable" onclick="window.open('https://opensea.io/collection/renees-landscapes', '_blank')">
                 <div class="frame-collection landscapes">
                     <img src="/static/images/empty.png" alt="">
                     <h3>Landscapes</h3>
                 </div>
-
             </div>
+            <div class="col-lg-2"></div>
         </div>
     </div>
 {% endblock %}

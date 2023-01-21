@@ -27,17 +27,6 @@ body .container-news {
     padding: 47px;
 }
 
-.scalable {
-    transition: transform .2s; /* Animation */
-    cursor: pointer;
-}
-
-.scalable:hover {
-    transform: scale(1.03);
-    color: #202020 !important
-}
-
-
 .dekring-title {
     font-family: 'neuzeit-grotesk', serif;
     font-size: 7vh;

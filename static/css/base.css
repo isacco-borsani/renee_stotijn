@@ -136,6 +136,17 @@ nav.navbar {
     padding: 14px;
 }
 
+.scalable {
+    transition: transform .2s; /* Animation */
+    cursor: pointer;
+}
+
+.scalable:hover {
+    transform: scale(1.03);
+    color: #202020 !important
+}
+
+
 .row * {
     overflow: inherit !important
 }
