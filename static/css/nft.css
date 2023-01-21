@@ -5,14 +5,13 @@
 .frame-collection {
     text-align: center;
     color: white;
-    border-bottom-left-radius: 18px;
-    border-bottom-right-radius: 18px;
     height: auto;
-    border: 4px solid #cfd3d5;
     width: auto;
     background-position: center;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
     margin: 0 auto;
-    background-size: 110% !important;
+    background-size: cover !important;
 }
 
 .frame-collection.drawings {
@@ -43,5 +42,7 @@
 .frame-collection h3 {
     cursor: default;
     padding: 20px;
-    background-color: rgb(48 51 57)
+    background-color: rgb(48 51 57);
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px
 }
