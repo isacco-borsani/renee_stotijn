@@ -157,6 +157,10 @@ def get_descriptions():
 def news():
     return render_template('news.html')
 
+@app.route('/nft')
+def nft():
+    return render_template('nft.html')
+
 
 @app.route('/news/lindapdf')
 def lindapdf():
@@ -191,7 +195,7 @@ def get_paints():
 
 
 if __name__ == "__main__":
-    app.run('0.0.0.0', 5000, False)
+    app.run('0.0.0.0', 5000, True)
     # app.wsgi_app = ProxyFix(app.wsgi_app, x_proto=1, x_host=1)
     # http_server = WSGIServer(('0.0.0.0', 5000), app)
     # http_server.serve_forever()

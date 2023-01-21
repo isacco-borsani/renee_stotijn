@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block css_header %}
+<link rel="stylesheet" href="https://use.typekit.net/rmd7deq.css">
+<link rel="stylesheet" type="text/css" href="../static/css/index.css">
+<link rel="stylesheet" type="text/css" href="../static/css/nft.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+{% endblock %}
+
+{% block content %}
+    <div class="container-fluid mt120 collection-container">
+        <div class="row">
+            <div class="col-lg-3" onclick="window.open('https://opensea.io/collection/renees-drawings', '_blank')">
+                <div class="frame-collection drawings">
+                    <img src="/static/images/empty.png" alt="">
+                    <h3>Drawings - charcoal</h3>
+                </div>
+
+            </div>
+            <div class="col-lg-3" onclick="window.open('https://opensea.io/collection/renees-still-lives', '_blank')">
+                <div class="frame-collection">
+                    <h3>Still lives</h3>
+                    <img src="/static/images/empty.png" alt="">
+                </div>
+
+            </div>
+            <div class="col-lg-3" onclick="window.open('https://opensea.io/collection/renees-dolls', '_blank')">
+                <div class="frame-collection">
+                    <h3>Dolls</h3>
+                    <img src="/static/images/empty.png" alt="">
+                </div>
+
+            </div>
+            <div class="col-lg-3" onclick="window.open('https://opensea.io/collection/renees-painted-portraits', '_blank')">
+                <div class="frame-collection">
+                    <h3>Painted portraits</h3>
+                    <img src="/static/images/empty.png" alt="">
+                </div>
+
+            </div>
+            <div class="col-lg-3" onclick="window.open('https://opensea.io/collection/renees-landscapes', '_blank')">
+                <div class="frame-collection">
+                    <h3>Landscapes</h3>
+                    <img src="/static/images/empty.png" alt="">
+                </div>
+
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block script_footer %}
+<script>
+    $(document).ready(function () {
+
+    })
+</script>
+{% endblock %}

@@ -1,0 +1,47 @@
+.collection-container .col {
+    cursor: pointer
+}
+
+.frame-collection {
+    text-align: center;
+    color: white;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    height: auto;
+    border: 4px solid #cfd3d5;
+    width: auto;
+    background-position: center;
+    margin: 0 auto;
+    background-size: 110% !important;
+}
+
+.frame-collection.drawings {
+    background-image: url('/static/images/drawings.jpg');
+}
+
+.frame-collection.portraits {
+    background-image: url('/static/images/painted_portraits.jpg');
+}
+
+.frame-collection.dolls {
+    background-image: url('/static/images/dolls.jpg');
+}
+
+.frame-collection.landscapes {
+    background-image: url('/static/images/landscapes.jpg');
+}
+
+.frame-collection.stillives {
+    background-image: url('/static/images/stillifes.jpg');
+}
+
+.frame-collection img {
+    width: 100%;
+    height: 100%
+}
+
+.frame-collection h3 {
+    cursor: default;
+    padding: 20px;
+    background-color: rgb(48 51 57)
+}
