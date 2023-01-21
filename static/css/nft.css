@@ -1,5 +1,5 @@
 .collection-container .col {
-    cursor: pointer
+    cursor: default
 }
 
 .collection-container p {
@@ -11,6 +11,9 @@
     font-family: 'neuzeit-grotesk'
 }
 
+.collection-container i {
+    margin-right: 10px;
+}
 .collection-container p a {
     color: #007bff;
     text-decoration: none;
