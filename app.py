@@ -195,7 +195,7 @@ def get_paints():
 
 
 if __name__ == "__main__":
-    app.run('0.0.0.0', 5000, True)
+    app.run('0.0.0.0', 5000, False)
     # app.wsgi_app = ProxyFix(app.wsgi_app, x_proto=1, x_host=1)
     # http_server = WSGIServer(('0.0.0.0', 5000), app)
     # http_server.serve_forever()
