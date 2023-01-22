@@ -40,6 +40,7 @@
     border-bottom-right-radius: 18px;
     margin: 0 auto;
     background-size: cover !important;
+    box-shadow: 5px 6px 8px 1px #0000008a
 }
 
 .frame-collection.drawings {
