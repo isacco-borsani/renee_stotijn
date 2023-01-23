@@ -14,6 +14,7 @@
 .collection-container i {
     margin-right: 10px;
 }
+
 .collection-container p a {
     color: #007bff;
     text-decoration: none;
@@ -74,4 +75,10 @@
     background-color: rgb(48 51 57);
     border-bottom-left-radius: 18px;
     border-bottom-right-radius: 18px
+}
+
+@media screen and (max-width: 1080px) {
+    .frame-collection {
+        margin-bottom: 30px !important
+    }
 }
