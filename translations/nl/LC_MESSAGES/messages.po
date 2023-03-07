@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-01-09 14:01+0100\n"
-"PO-Revision-Date: 2023-01-22 18:55+0100\n"
+"POT-Creation-Date: 2023-03-07 11:19+0100\n"
+"PO-Revision-Date: 2023-03-07 11:28+0100\n"
 "Last-Translator: \n"
 "Language-Team: nl <LL@li.org>\n"
 "Language: nl\n"
@@ -16,58 +16,58 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Generated-By: Babel 2.8.0\n"
+"Generated-By: Babel 2.11.0\n"
 "X-Generator: Poedit 3.2.2\n"
 
-#: app.py:138
+#: app.py:139
 msgid "General error"
 msgstr "Algemene fout"
 
-#: templates/about.html:51
+#: templates/about.html:54
 msgid "Youth"
 msgstr "Jeugd"
 
-#: templates/about.html:53 templates/about.html:196
+#: templates/about.html:55 templates/about.html:198
 msgid "Art Academy"
 msgstr "Kunstacademie"
 
-#: templates/about.html:54 templates/about.html:331
+#: templates/about.html:56 templates/about.html:342
 msgid "Dolls"
 msgstr "Poppen"
 
-#: templates/about.html:55
+#: templates/about.html:57
 msgid "Amsterdam"
 msgstr "Amsterdam"
 
-#: templates/about.html:56
+#: templates/about.html:58
 msgid "Landscapes"
 msgstr "Landschappen"
 
-#: templates/about.html:57
+#: templates/about.html:59
 msgid "Still Lives"
 msgstr "Stillevens"
 
-#: templates/about.html:59 templates/about.html:664
-msgid "Relationship and posters"
-msgstr "Relatie en posters"
+#: templates/about.html:60
+msgid "Posters"
+msgstr "Affiches"
 
-#: templates/about.html:60 templates/about.html:831
+#: templates/about.html:61 templates/about.html:830
 msgid "Portraits"
 msgstr "Portretten"
 
-#: templates/about.html:61
+#: templates/about.html:62
 msgid "Later Work"
 msgstr "Later werk"
 
-#: templates/about.html:62 templates/about.html:1028
+#: templates/about.html:63 templates/about.html:1030
 msgid "Artworks"
 msgstr "Kunstwerken"
 
-#: templates/about.html:75
+#: templates/about.html:76
 msgid "Photo by: Jeroen Koning."
 msgstr "Foto door: Jeroen Koning."
 
-#: templates/about.html:95
+#: templates/about.html:96
 msgid ""
 "Renée Stotijn is born on February 7, 1940 in Hilversum, as the eldest "
 "daughter in a family\n"
@@ -122,7 +122,7 @@ msgstr ""
 "Haakon en zijn twee dochters zich in 1957 op de Weesperzijde in Amsterdam-"
 "Oost."
 
-#: templates/about.html:201
+#: templates/about.html:203
 msgid ""
 "After her graduation at the Montessori Lyceum, Renée Stotijn takes\n"
 "                    six\n"
@@ -134,7 +134,7 @@ msgstr ""
 "intensieve\n"
 "lessen aan de Rijksacademie in Amsterdam."
 
-#: templates/about.html:226
+#: templates/about.html:228
 msgid ""
 "She takes various subjects such\n"
 "                    as letter drawing and costume drawing, art and style "
@@ -147,7 +147,7 @@ msgstr ""
 "uitzonderlijk\n"
 "getalenteerde studente krijgt Renée beschikking over een ‘loge’."
 
-#: templates/about.html:264
+#: templates/about.html:266
 msgid ""
 "That is a private studio at the\n"
 "                    top of the academy building.\n"
@@ -163,7 +163,7 @@ msgstr ""
 "vervolgens zes jaar als restauratrice bij het Centraal Laboratorium van het "
 "Rijksmuseum."
 
-#: templates/about.html:300
+#: templates/about.html:303
 msgid ""
 "At the same time,\n"
 "                    she is teaching and gives guided tours in the Stedelijk "
@@ -174,7 +174,7 @@ msgstr ""
 "Museum, het Van\n"
 "Gogh Museum en het Rijksmuseum, aan zowel kinderen als volwassenen."
 
-#: templates/about.html:336
+#: templates/about.html:347
 msgid ""
 "Throughout her life Renée maintains a great passion for antique\n"
 "                    dolls. She\n"
@@ -190,7 +190,7 @@ msgstr ""
 "poppen met een\n"
 "aantal bijzondere foto’s."
 
-#: templates/about.html:361
+#: templates/about.html:374
 msgid ""
 "The way in which Renée portrays the dolls is remarkable. It seems\n"
 "                    like the\n"
@@ -216,11 +216,11 @@ msgstr ""
 "het is een onderwerp\n"
 "dat zij vele malen op verschillende manieren uitbeeldt."
 
-#: templates/about.html:397
+#: templates/about.html:412
 msgid "Article"
 msgstr "Artikel"
 
-#: templates/about.html:435
+#: templates/about.html:451
 msgid ""
 "Although born in Hilversum, Renée Stotijn is an ‘Amsterdammer’ in\n"
 "                    heart\n"
@@ -233,7 +233,7 @@ msgstr ""
 "van de stad. Haar liefde gaat zo ver dat ze strijdt voor het behoud van haar "
 "Mokum."
 
-#: templates/about.html:456
+#: templates/about.html:476
 msgid ""
 "She organizes\n"
 "                    neighbourhood campaigns and writes appeals against, "
@@ -247,37 +247,30 @@ msgstr ""
 "Oosterparkstraat en het deel van de Weesperzijde dat bekend staat als ‘het "
 "Streekje’."
 
-#: templates/about.html:477
+#: templates/about.html:506
 msgid ""
 "Thanks to her, houses that would be demolished are actually restored\n"
 "                    in\n"
 "                    modern style. Renée's\n"
 "                    greatest victory is the preservation of the New Amstel "
 "Bridge by the architects Leguyt and\n"
-"                    Berlage."
-msgstr ""
-"Door\n"
-"haar toedoen worden huizen die eigenlijk gesloopt zouden worden in moderne "
-"stijl\n"
-"gerestaureerd. Renées grootste overwinning is het behoud van de Nieuwe "
-"Amstelbrug van de\n"
-"architecten Leguyt en Berlage."
-
-#: templates/about.html:499
-msgid ""
-"Thanks to her, the bridge continues to exist and is not replaced by a\n"
+"                    Berlage. Thanks to her, the bridge continues to exist "
+"and is not replaced by a\n"
 "                    modern variant.\n"
 "                    Her love for the nineteenth century is immense"
 msgstr ""
-"Zij zorgt ervoor dat de oorspronkelijke brug blijft bestaan en niet\n"
+"Door haar toedoen worden huizen die eigenlijk gesloopt zouden worden in "
+"moderne stijl gerestaureerd. Renées grootste overwinning is het behoud van "
+"de Nieuwe Amstelbrug van de architecten Leguyt en Berlage.\n"
+"Zij zorgt ervoor dat de oorspronkelijke brug blijft bestaan en niet "
 "vervangen wordt door een moderne variant. Haar liefde voor de negentiende "
 "eeuw is groot."
 
-#: templates/about.html:528
+#: templates/about.html:542
 msgid "Landscapes and village scenes"
 msgstr "Landschappen"
 
-#: templates/about.html:533
+#: templates/about.html:547
 msgid ""
 "Renée goes out every now and then to visit other cities and\n"
 "                    landscapes in\n"
@@ -294,7 +287,7 @@ msgstr ""
 "het licht van het Hollandse landschap, dat ze probeert te vatten in een rijk "
 "kleurenpalet."
 
-#: templates/about.html:558
+#: templates/about.html:572
 msgid ""
 "She adores Durgerdam and Marken and has a fascination for the\n"
 "                    traditional\n"
@@ -315,11 +308,11 @@ msgstr ""
 "haar echter niet vaak om daar heen te gaan, in elk geval niet zo vaak als ze "
 "had gewenst."
 
-#: templates/about.html:593
+#: templates/about.html:607
 msgid "Still lives"
 msgstr "Still lives"
 
-#: templates/about.html:598
+#: templates/about.html:612
 msgid ""
 "Renée makes countless still lives from objects in her own home such\n"
 "                    as\n"
@@ -343,7 +336,7 @@ msgstr ""
 "een grote rol\n"
 "blijven spelen in haar oeuvre."
 
-#: templates/about.html:630
+#: templates/about.html:642
 msgid ""
 "Remarkable are Renée's often dynamic compositions and rich use of\n"
 "                    colour.\n"
@@ -356,7 +349,11 @@ msgstr ""
 "Er lijkt altijd beweging in de werken te zitten. Statisch zijn haar "
 "stillevens allerminst."
 
-#: templates/about.html:669
+#: templates/about.html:676
+msgid "Relationship and posters"
+msgstr "Relatie en posters"
+
+#: templates/about.html:681
 msgid ""
 "Starting in the 1970s, Renée has a relationship with violinist and\n"
 "                    concertmaster Dick Bor\n"
@@ -381,7 +378,7 @@ msgstr ""
 "enkele artikelen in de krant, waarin de aandacht ook uitgaat naar hun "
 "artistieke projecten."
 
-#: templates/about.html:694
+#: templates/about.html:710
 msgid ""
 "In 1978 Dick and Renée organize a concert series in the Concertgebouw\n"
 "                    with\n"
@@ -404,7 +401,7 @@ msgstr ""
 "een expositie van Renées werk plaats. Renée exposeert daarna nog in beperkte "
 "mate."
 
-#: templates/about.html:721
+#: templates/about.html:718
 msgid ""
 "Renée designs the posters for Dick's concerts. She does this in an old-"
 "fashioned way in\n"
@@ -420,19 +417,19 @@ msgstr ""
 "ontwerp en snijdt Escher de letters. Vervolgens worden de affiches "
 "gezeefdrukt."
 
-#: templates/about.html:738
-msgid "Photo’s Renée Stotijn and Dick Bor"
-msgstr "Foto’s Renée Stotijn en Dick Bor"
+#: templates/about.html:735
+msgid "Renée Stotijn and Dick Bor"
+msgstr "Renée Stotijn en Dick Bor"
 
-#: templates/about.html:769
-msgid "Photo’s exhibition and concert Spiegelzaal - Concertgebouw"
-msgstr "Foto’s expositie en concert Spiegelzaal - Concertgebouw"
+#: templates/about.html:767
+msgid "Exhibition Het Concertgebouw"
+msgstr "Tentoonstelling Het Concertgebouw"
 
-#: templates/about.html:800
-msgid "Articles Dick Bor and Renée Stotijn"
-msgstr "Artikels Renée Stotijn en Dick Bor"
+#: templates/about.html:799
+msgid "Articles"
+msgstr "Artikel"
 
-#: templates/about.html:836
+#: templates/about.html:835
 msgid ""
 "The greatest discovery in Renée's house are the countless portraits\n"
 "                    she painted, most of them with oil\n"
@@ -459,7 +456,7 @@ msgstr ""
 "alsof er een schat werd\n"
 "ontdekt."
 
-#: templates/about.html:876
+#: templates/about.html:875
 msgid ""
 "It is very likely that Renée made these portraits at the\n"
 "                    Rijksacademie. In one of the few interviews she\n"
@@ -484,11 +481,11 @@ msgstr ""
 "ten aanzien van de kunstwerken. We zullen er zelf onze fantasie op moeten "
 "loslaten."
 
-#: templates/about.html:927
+#: templates/about.html:932
 msgid "Later work"
 msgstr "Later werk"
 
-#: templates/about.html:932
+#: templates/about.html:937
 msgid ""
 "There is an unfortunate event in Renée's life that causes a change:\n"
 "                    she gets sick. In 1972, at the age\n"
@@ -506,7 +503,7 @@ msgstr ""
 "is om haar arm te\n"
 "gebruiken, laat staan te schilderen. Dit is een nachtmerrie voor Renée."
 
-#: templates/about.html:957
+#: templates/about.html:961
 msgid ""
 "After a while she tries to pick it up again, and makes drawings,\n"
 "                    pastels and watercolours, though at\n"
@@ -526,7 +523,7 @@ msgstr ""
 "duidelijk herkenbaar in\n"
 "haar nieuwere werken."
 
-#: templates/about.html:990
+#: templates/about.html:996
 msgid ""
 "In the period after the operation, Renée mainly works on subjects she\n"
 "                loves. In France at ‘the\n"
@@ -572,15 +569,15 @@ msgstr "Sturen"
 msgid "Close"
 msgstr "Dichtbij"
 
-#: templates/contacts.html:48 templates/news.html:15
+#: templates/contacts.html:48
 msgid "Home"
 msgstr "Homepage"
 
-#: templates/contacts.html:49 templates/index.html:99
+#: templates/contacts.html:49
 msgid "Contacts"
 msgstr "Contact"
 
-#: templates/contacts.html:50 templates/index.html:97 templates/news.html:17
+#: templates/contacts.html:50
 msgid "About"
 msgstr "Over"
 
@@ -600,27 +597,71 @@ msgstr "Voel je vrij om contact met ons op te nemen! We helpen je graag verder"
 msgid "Presented lovingly by her daughters,"
 msgstr "Veel liefs namens haar dochters,"
 
-#: templates/contacts.html:130
+#: templates/contacts.html:126
 msgid "Thank you :)"
 msgstr "Dank u :)"
 
-#: templates/contacts.html:132
+#: templates/contacts.html:128
 msgid "You will receive an answer as soon as possible"
 msgstr "Je krijgt zo snel mogelijk antwoord"
 
-#: templates/contacts.html:136
+#: templates/contacts.html:132
 msgid "Error: Something went wrong :("
 msgstr "Fout: Er is iets misgegaan :("
 
-#: templates/index.html:98
+#: templates/index.html:86 templates/navbar.html:29
+msgid "Life"
+msgstr "Leven"
+
+#: templates/index.html:87
+msgid "Art"
+msgstr "Kunst"
+
+#: templates/index.html:88 templates/navbar.html:34
 msgid "News"
 msgstr "Nieuws"
 
-#: templates/index.html:101
-msgid "Instagram"
-msgstr "Instagram"
+#: templates/index.html:89
+msgid "Nft"
+msgstr "Nft"
 
-#: templates/index.html:112
+#: templates/index.html:125
+msgid "FIRST_TITLE_HORIZONTAL_SCROLL"
+msgstr "Talloze tekeningen, pastellen, aquarellen en olieverfschilderijen"
+
+#: templates/index.html:145
+msgid "SECOND_TITLE_HORIZONTAL_SCROLL"
+msgstr ""
+"hadden verborgen gelegen in\n"
+"kasten, achter muren en tussen dubbele plafonds."
+
+#: templates/index.html:163
+msgid "THIRD_TITLE_HORIZONTAL_SCROLL"
+msgstr "De vondst was zo bijzonder, dat moest gedeeld worden!"
+
+#: templates/index.html:175
+msgid "SECOND_INTRO"
+msgstr ""
+"Op 7 februari 1940 wordt Renée Stotijn geboren in Hilversum, als oudste "
+"dochter in een gezin van\n"
+"vier kinderen. Spoedig na haar geboorte verhuizen de ouders van Renée naar "
+"Amsterdam-Zuid, vlak\n"
+"achter het Concertgebouw. Dit is een praktische keuze voor het gezin, "
+"aangezien vader Haakon\n"
+"Stotijn in datzelfde jaar een aanstelling krijgt als solo-hoboïst van het "
+"Concertgebouworkest."
+
+#: templates/index.html:223
+msgid "FIRST_BIG_TITLE_HORIZONTAL_SCROLL"
+msgstr "Renée begint op haar vijfde"
+
+#: templates/index.html:227
+msgid "SECOND_BIG_TITLE_HORIZONTAL_SCROLL"
+msgstr ""
+"te tekenen nadat ze van haar vader een boek over Italiaanse\n"
+"schilderkunst uit de vroege renaissance krijgt."
+
+#: templates/index.html:237
 msgid "FIRST_INTRO"
 msgstr ""
 "Decennialang waren de kunstwerken van Renée Stotijn niet zichtbaar. Noch "
@@ -633,59 +674,11 @@ msgstr ""
 "bijzonderder dan de\n"
 "andere."
 
-#: templates/index.html:142
-msgid "FIRST_TITLE_HORIZONTAL_SCROLL"
-msgstr "Talloze tekeningen, pastellen, aquarellen en olieverfschilderijen"
+#: templates/navbar.html:39
+msgid "NFT"
+msgstr "NFT"
 
-#: templates/index.html:162
-msgid "SECOND_TITLE_HORIZONTAL_SCROLL"
-msgstr ""
-"hadden verborgen gelegen in\n"
-"kasten, achter muren en tussen dubbele plafonds."
-
-#: templates/index.html:180
-msgid "THIRD_TITLE_HORIZONTAL_SCROLL"
-msgstr "De vondst was zo bijzonder, dat moest gedeeld worden!"
-
-#: templates/index.html:188
-msgid "SECOND_INTRO"
-msgstr ""
-"Op 7 februari 1940 wordt Renée Stotijn geboren in Hilversum, als oudste "
-"dochter in een gezin van\n"
-"vier kinderen. Spoedig na haar geboorte verhuizen de ouders van Renée naar "
-"Amsterdam-Zuid, vlak\n"
-"achter het Concertgebouw. Dit is een praktische keuze voor het gezin, "
-"aangezien vader Haakon\n"
-"Stotijn in datzelfde jaar een aanstelling krijgt als solo-hoboïst van het "
-"Concertgebouworkest."
-
-#: templates/index.html:236
-msgid "FIRST_BIG_TITLE_HORIZONTAL_SCROLL"
-msgstr "Renée begint op haar vijfde"
-
-#: templates/index.html:240
-msgid "SECOND_BIG_TITLE_HORIZONTAL_SCROLL"
-msgstr ""
-"te tekenen nadat ze van haar vader een boek over Italiaanse\n"
-"schilderkunst uit de vroege renaissance krijgt."
-
-#: templates/index.html:250
-msgid "THIRD_INTRO"
-msgstr ""
-"De eerste fysieke tentoonstelling in Amsterdam van de verborgen kunst van "
-"Renée Stotijn vindt\n"
-"plaats van 25 juni t/m 19 september 2021. De bezoeker ervaart de kunstwerken "
-"zoals ze eruitzagen toen\n"
-"ze werden gevonden. Her en der zullen strepen, stof, deukjes, vochtplekken "
-"en scheurtjes\n"
-"zichtbaar zijn. Er is een selectie gemaakt van de kunstwerken in hun puurste "
-"vorm: "
-
-#: templates/news.html:16
-msgid "Latest News and Events"
-msgstr "Laatste nieuws en evenementen"
-
-#: templates/news.html:26
+#: templates/news.html:33
 msgid ""
 "New article about the discovery of Renée\n"
 "                Stotijns art in Articula - magazine of Amsterdam\n"
@@ -694,9 +687,24 @@ msgstr ""
 "Nieuw artikel over de vondst van Renée Stotijns kunst in Articula - magazine "
 "van kunstenaarssociëteit ‘Arti et Amicitiae’"
 
-#: templates/news.html:164
+#: templates/news.html:67
+msgid "Previous exhibition at Beurs van Berlage"
+msgstr "Eerdere tentoonstelling in Beurs van Berlage"
+
+#: templates/news.html:174
 msgid "Radio Interviews"
 msgstr "Radio Interviews"
+
+#: templates/nft.html:14
+msgid "Discover the NFT collection of Renée Stotijn on "
+msgstr "Ontdek de NFT collectie van Renée Stotijn op "
+
+#: templates/nft.html:15
+msgid ""
+"You will be able to purchase Renée's art and claim the real paintings and "
+"drawings"
+msgstr ""
+"U kunt Renée's kunst kopen en de echte schilderijen en tekeningen opeisen..."
 
 #~ msgid ""
 #~ "Renée Stotijn is born on February 7, 1940 in Hilversum, as the eldest "
@@ -1016,3 +1024,35 @@ msgstr "Radio Interviews"
 #~ "met het aquarelleren van pioenrozen. Ten slotte portretteert ze met veel "
 #~ "liefde en veelal\n"
 #~ "geïnspireerd op de werken van Peter Paul Rubens haar kleinkinderen."
+
+#~ msgid ""
+#~ "Thanks to her, the bridge continues to exist and is not replaced by a\n"
+#~ "                    modern variant.\n"
+#~ "                    Her love for the nineteenth century is immense"
+#~ msgstr ""
+#~ "Zij zorgt ervoor dat de oorspronkelijke brug blijft bestaan en niet\n"
+#~ "vervangen wordt door een moderne variant. Haar liefde voor de negentiende "
+#~ "eeuw is groot."
+
+#~ msgid "Photo’s exhibition and concert Spiegelzaal - Concertgebouw"
+#~ msgstr "Foto’s expositie en concert Spiegelzaal - Concertgebouw"
+
+#~ msgid "Articles Dick Bor and Renée Stotijn"
+#~ msgstr "Artikels Renée Stotijn en Dick Bor"
+
+#~ msgid "Instagram"
+#~ msgstr "Instagram"
+
+#~ msgid "THIRD_INTRO"
+#~ msgstr ""
+#~ "De eerste fysieke tentoonstelling in Amsterdam van de verborgen kunst van "
+#~ "Renée Stotijn vindt\n"
+#~ "plaats van 25 juni t/m 19 september 2021. De bezoeker ervaart de "
+#~ "kunstwerken zoals ze eruitzagen toen\n"
+#~ "ze werden gevonden. Her en der zullen strepen, stof, deukjes, "
+#~ "vochtplekken en scheurtjes\n"
+#~ "zichtbaar zijn. Er is een selectie gemaakt van de kunstwerken in hun "
+#~ "puurste vorm: "
+
+#~ msgid "Latest News and Events"
+#~ msgstr "Laatste nieuws en evenementen"
