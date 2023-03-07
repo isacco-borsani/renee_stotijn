@@ -161,7 +161,7 @@ nav.navbar {
 
 
 .row * {
-    overflow: inherit !important
+    overflow: hidden !important
 }
 
 .relative {
