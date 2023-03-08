@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-03-08 10:45+0100\n"
-"PO-Revision-Date: 2023-03-08 10:45+0100\n"
+"POT-Creation-Date: 2023-03-08 12:20+0100\n"
+"PO-Revision-Date: 2023-03-08 12:20+0100\n"
 "Last-Translator: \n"
 "Language-Team: en <LL@li.org>\n"
 "Language: en\n"
@@ -566,20 +566,16 @@ msgid "About"
 msgstr "About"
 
 #: templates/contacts.html:59
-#, fuzzy
 msgid "Are you interested in the artworks of Renée Stotijn."
-msgstr ""
-"Are you interested in the artworks of Renée Stotijn. Or do you have "
-"questions about it?"
+msgstr "Are you interested in the artworks of Renée Stotijn."
 
 #: templates/contacts.html:60
 msgid "Or do you have questions about it?"
 msgstr "Or do you have questions about it?"
 
 #: templates/contacts.html:63
-#, fuzzy
 msgid "Please feel free to contact us!"
-msgstr "Please feel free to contact us! We are happy to help you"
+msgstr "Please feel free to contact us!"
 
 #: templates/contacts.html:64
 msgid "We are happy to help you"
@@ -666,9 +662,14 @@ msgstr ""
 msgid "NFT"
 msgstr "NFT"
 
-#: templates/news.html:33
+#: templates/news.html:15
+msgid "Artworks now available as NFT on"
+msgstr "Artworks now available as NFT on"
+
+#: templates/news.html:48
 msgid ""
-"New article about the discovery of Renée\n"
+"New article about the discovery of\n"
+"                Renée\n"
 "                Stotijns art in Articula - magazine of Amsterdam\n"
 "                artist association ‘Arti et Amicitiae’"
 msgstr ""
@@ -676,11 +677,11 @@ msgstr ""
 "                Stotijns art in Articula - magazine of Amsterdam\n"
 "                artist association ‘Arti et Amicitiae’"
 
-#: templates/news.html:67
+#: templates/news.html:83
 msgid "Previous exhibition at Beurs van Berlage"
 msgstr "Previous exhibition at Beurs van Berlage"
 
-#: templates/news.html:174
+#: templates/news.html:190
 msgid "Radio Interviews"
 msgstr "Radio Interviews"
 

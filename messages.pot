@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-03-08 10:45+0100\n"
+"POT-Creation-Date: 2023-03-08 12:20+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -502,18 +502,23 @@ msgstr ""
 msgid "NFT"
 msgstr ""
 
-#: templates/news.html:33
+#: templates/news.html:15
+msgid "Artworks now available as NFT on"
+msgstr ""
+
+#: templates/news.html:48
 msgid ""
-"New article about the discovery of Renée\n"
+"New article about the discovery of\n"
+"                Renée\n"
 "                Stotijns art in Articula - magazine of Amsterdam\n"
 "                artist association ‘Arti et Amicitiae’"
 msgstr ""
 
-#: templates/news.html:67
+#: templates/news.html:83
 msgid "Previous exhibition at Beurs van Berlage"
 msgstr ""
 
-#: templates/news.html:174
+#: templates/news.html:190
 msgid "Radio Interviews"
 msgstr ""
 
