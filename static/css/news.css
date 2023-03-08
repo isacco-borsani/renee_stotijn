@@ -2,7 +2,7 @@
 
 body .container-news {
     font-family: 'neuzeit-grotesk', serif !important;
-    margin-top: 125px
+    margin-top: 105px
 }
 
 .zkrankt {
@@ -27,10 +27,23 @@ body .container-news {
     padding: 47px;
 }
 
+.nft-opensea {
+    font-family: 'neuzeit-grotesk', serif;
+    font-size: 7vh;
+    letter-spacing: 15px;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.nft-opensea a {
+    color: #007bff;
+    text-decoration: none
+}
+
 .dekring-title {
     font-family: 'neuzeit-grotesk', serif;
     font-size: 7vh;
-    letter-spacing: 22px;
+    letter-spacing: 15px;
     margin-bottom: 0;
     position: relative;
     top: -20px
@@ -153,9 +166,9 @@ h1, h2 {
         width: 30%;
     }
 
-    .dekring-title {
+    /*.dekring-title {
         font-size: 8vw;
-    }
+    }*/
 
     .linda-container .col-md-6 {
         margin: 0 auto
