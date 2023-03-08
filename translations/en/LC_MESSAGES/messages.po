@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-03-08 10:29+0100\n"
-"PO-Revision-Date: 2023-03-08 10:41+0100\n"
+"POT-Creation-Date: 2023-03-08 10:45+0100\n"
+"PO-Revision-Date: 2023-03-08 10:45+0100\n"
 "Last-Translator: \n"
 "Language-Team: en <LL@li.org>\n"
 "Language: en\n"
@@ -566,30 +566,38 @@ msgid "About"
 msgstr "About"
 
 #: templates/contacts.html:59
-msgid ""
-"Are you interested in the artworks of Renée Stotijn. Or do you have "
-"questions about it?"
+#, fuzzy
+msgid "Are you interested in the artworks of Renée Stotijn."
 msgstr ""
 "Are you interested in the artworks of Renée Stotijn. Or do you have "
 "questions about it?"
 
-#: templates/contacts.html:62
-msgid "Please feel free to contact us! We are happy to help you"
+#: templates/contacts.html:60
+msgid "Or do you have questions about it?"
+msgstr "Or do you have questions about it?"
+
+#: templates/contacts.html:63
+#, fuzzy
+msgid "Please feel free to contact us!"
 msgstr "Please feel free to contact us! We are happy to help you"
 
-#: templates/contacts.html:74
+#: templates/contacts.html:64
+msgid "We are happy to help you"
+msgstr "We are happy to help you"
+
+#: templates/contacts.html:76
 msgid "Presented lovingly by her daughters,"
 msgstr "Presented lovingly by her daughters,"
 
-#: templates/contacts.html:126
+#: templates/contacts.html:128
 msgid "Thank you :)"
 msgstr "Thank you :)"
 
-#: templates/contacts.html:128
+#: templates/contacts.html:130
 msgid "You will receive an answer as soon as possible"
 msgstr "You will receive an answer as soon as possible"
 
-#: templates/contacts.html:132
+#: templates/contacts.html:134
 msgid "Error: Something went wrong :("
 msgstr "Error: Something went wrong :("
 
