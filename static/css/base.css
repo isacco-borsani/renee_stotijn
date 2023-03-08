@@ -5,7 +5,9 @@ body {
 nav.navbar {
     top: 0;
     position: fixed !important;
-    width: 100% !important
+    width: 100% !important;
+    -webkit-backdrop-filter: blur(5px) contrast(60%);
+    backdrop-filter: blur(5px) saturate(125%)
 }
 
 .navbar-light {
@@ -18,7 +20,7 @@ nav.navbar {
     font-family: 'neuzeit-grotesk';
     color: #2e2e2e;
     text-decoration: none;
-    font-size: 24px
+    font-size: 26px
 }
 
 .navbar-light .language-menu {
@@ -47,8 +49,22 @@ nav.navbar {
     /* border: 5px solid #ccc; */
     /* border-radius: 100px; */
     overflow: hidden;
+    /* margin-right: 5px; */
+    transition: transform .5s;
+    width: 106px;
+    text-align: center;
+
+}
+
+.navbar-light .language-menu li {
+
+    display: inline-block;
+    /* border: 5px solid #ccc; */
+    /* border-radius: 100px; */
+    overflow: hidden;
     margin-right: 5px;
-    transition: transform .5s
+    transition: transform .5s;
+    width: 50px;
 }
 
 
@@ -137,16 +153,31 @@ nav.navbar {
 }
 
 .bounce {
-  animation: bounce 1s ease infinite;
+    animation: bounce 1s ease infinite;
 }
+
 @keyframes bounce {
-    70% { transform:translateY(0%); }
-    80% { transform:translateY(-15%); }
-    90% { transform:translateY(0%); }
-    95% { transform:translateY(-7%); }
-    97% { transform:translateY(0%); }
-    99% { transform:translateY(-3%); }
-    100% { transform:translateY(0); }
+    70% {
+        transform: translateY(0%);
+    }
+    80% {
+        transform: translateY(-15%);
+    }
+    90% {
+        transform: translateY(0%);
+    }
+    95% {
+        transform: translateY(-7%);
+    }
+    97% {
+        transform: translateY(0%);
+    }
+    99% {
+        transform: translateY(-3%);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .scalable {
@@ -208,9 +239,9 @@ svg.bi-x {
 }
 
 .navbar-light .language-menu li:first-child {
-        display: none;
+    display: none;
 
-    }
+}
 
 
 @media screen and (max-width: 767px) {
