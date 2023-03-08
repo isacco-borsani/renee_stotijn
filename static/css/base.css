@@ -46,13 +46,10 @@ nav.navbar {
 
 .navbar-light .lang-drop li, .navbar-light .language-menu li {
     display: inline-block;
-    /* border: 5px solid #ccc; */
-    /* border-radius: 100px; */
     overflow: hidden;
-    /* margin-right: 5px; */
     transition: transform .5s;
-    width: 106px;
-    text-align: center;
+    width: 88px;
+    text-align: center
 
 }
 
