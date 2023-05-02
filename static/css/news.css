@@ -10,6 +10,16 @@ body .container-news {
     width: 23%
 }
 
+.vimeo p {
+    font-size: 5vh
+}
+
+.vimeo p a {
+    text-decoration: none;
+    color: #007bff;
+    word-break: break-word
+}
+
 .articula-container {
     padding-top: 0 !important;
     position: relative;
@@ -169,7 +179,6 @@ h1, h2 {
     /*.dekring-title {
         font-size: 8vw;
     }*/
-
     .linda-container .col-md-6 {
         margin: 0 auto
     }
@@ -280,6 +289,7 @@ h1, h2 {
     .articula-container div img {
         width: 100% !important
     }
+
     .news-big.text-right, .news-big.text-left {
         text-align: center !important;
         margin-bottom: 20px
