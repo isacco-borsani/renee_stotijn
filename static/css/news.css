@@ -10,11 +10,11 @@ body .container-news {
     width: 23%
 }
 
-.vimeo p {
-    font-size: 5vh
+.vimeo p, .banner p {
+    font-size: 4vh
 }
 
-.vimeo p a {
+.vimeo p a, .banner p a {
     text-decoration: none;
     color: #007bff;
     word-break: break-word
@@ -39,7 +39,7 @@ body .container-news {
 
 .nft-opensea {
     font-family: 'neuzeit-grotesk', serif;
-    font-size: 7vh;
+    font-size: 4vh;
     letter-spacing: 15px;
     margin-bottom: 0;
     position: relative;
@@ -52,11 +52,10 @@ body .container-news {
 
 .dekring-title {
     font-family: 'neuzeit-grotesk', serif;
-    font-size: 7vh;
+    font-size: 4vh;
     letter-spacing: 15px;
     margin-bottom: 0;
     position: relative;
-    top: -20px
 }
 
 .heading-title h1 {
@@ -149,6 +148,13 @@ h1, h2 {
 
 .pt50 {
     padding-top: 50px !important
+}
+
+@media screen and (max-width: 1180px) {
+    .banner img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 1540px) {
