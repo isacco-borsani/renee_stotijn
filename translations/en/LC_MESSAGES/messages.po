@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-03-08 12:20+0100\n"
-"PO-Revision-Date: 2023-03-08 12:20+0100\n"
+"POT-Creation-Date: 2023-06-07 10:38+0200\n"
+"PO-Revision-Date: 2023-06-07 10:40+0200\n"
 "Last-Translator: \n"
 "Language-Team: en <LL@li.org>\n"
 "Language: en\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.11.0\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.3.1\n"
 
 #: app.py:139
 msgid "General error"
@@ -662,11 +662,23 @@ msgstr ""
 msgid "NFT"
 msgstr "NFT"
 
-#: templates/news.html:15
+#: templates/news.html:17
+msgid "Now online!"
+msgstr "Now online!"
+
+#: templates/news.html:19
+msgid ""
+"Podcast about the discovery of the artworks of Renée Stotijn and the "
+"families Bor and Stotijn (Dutch)"
+msgstr ""
+"Podcast about the discovery of the artworks of Renée Stotijn and the "
+"families Bor and Stotijn (Dutch)"
+
+#: templates/news.html:74
 msgid "Artworks now available as NFT on"
 msgstr "Artworks now available as NFT on"
 
-#: templates/news.html:48
+#: templates/news.html:108
 msgid ""
 "New article about the discovery of\n"
 "                Renée\n"
@@ -677,11 +689,11 @@ msgstr ""
 "                Stotijns art in Articula - magazine of Amsterdam\n"
 "                artist association ‘Arti et Amicitiae’"
 
-#: templates/news.html:83
+#: templates/news.html:143
 msgid "Previous exhibition at Beurs van Berlage"
 msgstr "Previous exhibition at Beurs van Berlage"
 
-#: templates/news.html:190
+#: templates/news.html:250
 msgid "Radio Interviews"
 msgstr "Radio Interviews"
 
