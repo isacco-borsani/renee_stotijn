@@ -146,6 +146,12 @@ h1, h2 {
 }
 
 @media screen and (max-width: 1180px) {
+
+    .podcast .spotify-icon {
+        margin-top: 18px !important;
+        margin-bottom: 18px !important
+    }
+
     body .container-news {
         margin-top: 85px !important
     }
