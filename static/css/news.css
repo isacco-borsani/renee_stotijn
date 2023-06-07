@@ -2,7 +2,7 @@
 
 body .container-news {
     font-family: 'neuzeit-grotesk', serif !important;
-    margin-top: 105px
+    margin-top: 105px !important
 }
 
 .zkrankt {
@@ -10,9 +10,10 @@ body .container-news {
     width: 23%
 }
 
-.vimeo p, .banner p {
-    font-size: 4vh;
+.vimeo p, .banner p, .podcast p, .nft-opensea p, .dekring-expo p, .articula p, .previous-expo p, .linda-container p, .dekring-title, .previous-expo h1 {
+    font-size: 2.3rem;
     padding: 20px;
+    cursor: default;
 }
 
 .vimeo p a, .banner p a {
@@ -52,7 +53,6 @@ body .container-news {
 
 .dekring-title {
     font-family: 'neuzeit-grotesk', serif;
-    font-size: 4vh;
     margin-bottom: 0;
     position: relative;
 }
@@ -146,9 +146,16 @@ h1, h2 {
 }
 
 @media screen and (max-width: 1180px) {
-    .banner img {
+    body .container-news {
+        margin-top: 85px !important
+    }
+    .banner img, .podcast img.main-img {
         width: 100%;
         height: auto;
+    }
+
+    .vimeo p, .banner p, .podcast p, .nft-opensea p, .dekring-expo p, .articula p, .previous-expo p, .linda-container p, .dekring-title, .previous-expo h1 {
+        font-size: 1.6rem !important
     }
 }
 
