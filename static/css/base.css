@@ -196,6 +196,14 @@ nav.navbar {
     position: relative !important
 }
 
+.mt10 {
+    margin-top: 10px !important
+}
+
+.mt20 {
+    margin-top: 20px !important
+}
+
 .mt30 {
     margin-top: 30px !important
 }

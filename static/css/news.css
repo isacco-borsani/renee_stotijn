@@ -10,9 +10,10 @@ body .container-news {
     width: 23%
 }
 
-p.news-text.padded {
+p.news-text.fixed {
     padding-left: 115px;
     padding-right: 115px;
+    font-size: 35px;
 }
 
 .vimeo p, p.news-text, .banner p, .podcast p, .nft-opensea p, .dekring-expo p, .articula p, .previous-expo p, .linda-container p, .dekring-title, .previous-expo h1 {
