@@ -24,7 +24,9 @@ if os.path.exists('data.json'):
         data = json.load(json_file)
 
 app.config['BABEL_DEFAULT_LOCALE'] = 'en'
-babel = Babel(app)
+# Initialize Babel with a locale selector
+babel = Babel(app, locale_selector=lambda: session.get('language') or
+                               request.accept_languages.best_match(app.config['LANGUAGES'].keys()))
 
 app.config['BABEL_DEFAULT_LOCALE'] = 'en'
 QUESTIONS_FOLDER = os.path.join(app.root_path, 'questions')
@@ -34,21 +36,13 @@ app.config['BACKUP_FOLDER'] = BACKUP_FOLDER
 STATIC_FOLDER = os.path.join(app.root_path, 'static')
 app.config['STATIC_FOLDER'] = STATIC_FOLDER
 
+
+def get_locale():
+    return session.get('language') or request.accept_languages.best_match(app.config['LANGUAGES'].keys())
+
+
 def current_milli_time():
     return round(time.time() * 1000)
-
-
-@babel.localeselector
-def get_locale():
-    # if the user has set up the language manually it will be stored in the session,
-    # so we use the locale from the user settings
-    try:
-        language = session['language']
-    except KeyError:
-        language = "en"
-    if language is not None:
-        return language
-    return request.accept_languages.best_match(app.config['LANGUAGES'].keys())
 
 
 @app.context_processor
