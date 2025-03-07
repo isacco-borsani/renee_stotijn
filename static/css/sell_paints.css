@@ -1,0 +1,73 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(16vw, 1fr));
+    gap: 20px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.grid-container p, .grid-container small {
+    font-family: 'neuzeit-grotesk', serif;
+}
+
+.grid-container p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1080px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(18vw, 1fr));
+    }
+}
+.grid-container .grid-item {
+    background: white;
+    padding: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    position: relative;
+    margin-top: 40px;
+}
+
+.grid-container .grid-item a {
+    margin-bottom: 20px;
+    display: block
+}
+
+.grid-container .grid-item p:nth-child(3) {
+    opacity: 0.6
+}
+
+.grid-container .grid-item p:nth-child(5) {
+    color: #856565 !important;
+    font-size: 28px
+}
+
+.grid-container .grid-item:nth-child(odd) {
+    transform: translateY(-20px);
+}
+
+.grid-container .grid-item:nth-child(even) {
+    transform: translateY(20px);
+}
+
+.grid-container .grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.row * {
+    overflow: visible !important;
+}
+
+.grid-container .grid-item.landscape {
+    grid-column: span 2; /* Adjust the span as needed */
+}
+
+.grid-container .grid-item.portrait {
+    grid-column: span 1; /* Adjust the span as needed */
+}
