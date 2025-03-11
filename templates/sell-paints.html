@@ -18,7 +18,11 @@
             <div class="grid-container">
                 {% for paint in paints %}
                 <div class="grid-item {% if paint.sold %}sold{% endif %}">
-                    <a href="#"><img src="{{ paint.link }}" alt=""></a>
+                    {% if paint.link %}
+                    <a target="_blank" href="{{ paint.link }}"><img src="{{ paint['image-link'] }}" alt=""></a>
+                    {% else %}
+                    <img src="{{ paint['image-link'] }}" alt="">
+                    {% endif %}
                     <p class="nomargin">{{ paint.title }}</p>
                     <p class="nomargin">{{ paint.dimensions }}</p>
                     <br>
