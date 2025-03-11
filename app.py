@@ -188,7 +188,7 @@ def get_paints():
     return {'ret': True, 'content': file_paints}
 
 
-@app.route('/sell-paints', methods=['GET'])
+@app.route('/for-sale', methods=['GET'])
 def sell_paints():
     """Sell paints endpoint"""
     paints = [
@@ -196,7 +196,7 @@ def sell_paints():
             'link': 'https://www.babetteclaassen.nl/kunstaanbod/renee-stotijn-zomerse-bloei',
             'image-link': '/static/images/for_sale/Stotijn-stilleven.png',
             'title': 'Zomerse bloei',
-            'dimensions': '(44 cm X 35 cm)',
+            'dimensions': '(44 cm x 35 cm)',
             'price': '€ 850',
             'sold': False,
         },
@@ -212,7 +212,7 @@ def sell_paints():
             'link': 'https://www.babetteclaassen.nl/kunstaanbod/renee-stotijn-stilleven-met-hoed-en-kleed',
             'image-link': '/static/images/for_sale/Renee-Stotijn-hoed-aquarel.png',
             'title': 'Stilleven met hoed en kleed',
-            'dimensions': '(32 cm X 41.5 cm)',
+            'dimensions': '(32 cm x 41.5 cm)',
             'price': '€ 850',
             'sold': False
         },
@@ -220,7 +220,7 @@ def sell_paints():
             'link': 'https://www.babetteclaassen.nl/kunstaanbod/renee-stotijn-grachtenpand-in-een-onbekende-stad',
             'image-link': '/static/images/for_sale/IMG_6931-1-scaled.jpg',
             'title': 'Grachtenpand',
-            'dimensions': '(34 cm X 22,5 cm)',
+            'dimensions': '(34 cm x 22,5 cm)',
             'price': '€ 700',
             'sold': False
         },
@@ -244,7 +244,7 @@ def sell_paints():
             'link': 'https://www.babetteclaassen.nl/kunstaanbod/renee-stotijn-stilleven-met-vogel-en-groenten',
             'image-link': '/static/images/for_sale/Renee-Stotijn-vogel-olieverfschilderij.png',
             'title': ' Stilleven met fazant',
-            'dimensions': '(70 cm X 55 cm)',
+            'dimensions': '(70 cm x 55 cm)',
             'price': '€ 1150',
             'sold': False
         },
@@ -260,7 +260,7 @@ def sell_paints():
             'link': 'https://www.babetteclaassen.nl/kunstaanbod/renee-stotijn-stilleven-met-kleed-en-fruit',
             'image-link': '/static/images/for_sale/Renee-Stotijn-kleed-aquarel.png',
             'title': 'Stilleven met kleed en fruit',
-            'dimensions': '(53,5 cm X 36,5 cm)',
+            'dimensions': '(53,5 cm x 36,5 cm)',
             'price': '€ 900',
             'sold': False
         },
@@ -269,7 +269,7 @@ def sell_paints():
             'link': None,
             'image-link': '/static/images/for_sale/2. Renée Stotijn - Huizen aan de kade en zeilschip.jpg',
             'title': 'Huizen aan de kade en zeilschip',
-            'dimensions': '(40 cm X 49 cm)',
+            'dimensions': '(40 cm x 49 cm)',
             'price': '€ 975',
             'sold': True
         },

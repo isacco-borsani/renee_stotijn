@@ -17,6 +17,24 @@
     cursor: pointer;
 }
 
+@media screen and (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    .grid-container .grid-item.landscape {
+        grid-column: span 2 !important
+    }
+
+    .grid-container .grid-item.portrait {
+        grid-column: span 2 !important
+    }
+
+    .grid-container .grid-item:nth-child(odd),
+    .grid-container .grid-item:nth-child(even) {
+        transform: none;
+    }
+}
+
 @media screen and (min-width: 1080px) {
     .grid-container {
         grid-template-columns: repeat(auto-fill, minmax(18vw, 1fr));

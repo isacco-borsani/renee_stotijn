@@ -18,25 +18,30 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0 lang-drop float-right">
             {% if url_for(request.endpoint) != '/' %}
-            <li class="">
+            <li style="width: 120px" class="">
                 <a href="/">
                     Home
                 </a>
             </li>
             {% endif %}
-            <li class="">
+            <li style="width: 120px" class="">
                 <a href="/about">
                     {{_('Life')}}
                 </a>
             </li>
-            <li class="">
+            <li style="width: 120px" class="">
                 <a href="/news">
                     {{_('News')}}
                 </a>
             </li>
-            <li class="">
+            <li style="width: 120px" class="">
                 <a href="/nft">
                     {{_('NFT')}}
+                </a>
+            </li>
+            <li style="width: 120px" class="mr-15">
+                <a href="/for-sale">
+                    {{_('For Sale')}}
                 </a>
             </li>
             <li style="width: 120px" class="">
