@@ -47,6 +47,7 @@
     transition: transform 0.3s ease;
     position: relative;
     margin-top: 40px;
+    height: fit-content;
 }
 
 .grid-container .grid-item a {
