@@ -283,6 +283,14 @@ def sell_paints():
         },
         {
             'link': None,
+            'image-link': '/static/images/for_sale/8. Renée Stotijn - Roze en paarse bloemen in vaas.jpg',
+            'title': 'Roze en paarse bloemen in vaas',
+            'dimensions': '(34 cm x 24 cm)',
+            'price': '€ 450',
+            'sold': True
+        },
+        {
+            'link': None,
             'image-link': '/static/images/for_sale/4. Renée Stotijn - Kleurrijk stilleven met vazen.jpg',
             'title': 'Kleurrijk stilleven met vazen',
             'dimensions': '(32,5 cm x 39,5 cm)',
@@ -312,15 +320,7 @@ def sell_paints():
             'dimensions': '(36,5 cm x 44 cm)',
             'price': '€ 650',
             'sold': True
-        },
-        {
-            'link': None,
-            'image-link': '/static/images/for_sale/8. Renée Stotijn - Roze en paarse bloemen in vaas.jpg',
-            'title': 'Roze en paarse bloemen in vaas',
-            'dimensions': '(34 cm x 24 cm)',
-            'price': '€ 450',
-            'sold': True
-        },
+        }
     ]
 
 
