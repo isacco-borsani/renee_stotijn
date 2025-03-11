@@ -8,25 +8,26 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-01-18 18:09+0100\n"
+"POT-Creation-Date: 2025-03-11 11:57+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.16.0\n"
-"X-Generator: Poedit 3.5\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: app.py:133
 msgid "General error"
 msgstr ""
 
 #: env/lib/python3.13/site-packages/click/_termui_impl.py:556
+#, python-brace-format
 msgid "{editor}: Editing failed"
 msgstr ""
 
 #: env/lib/python3.13/site-packages/click/_termui_impl.py:560
+#, python-brace-format
 msgid "{editor}: Editing failed: {e}"
 msgstr ""
 
@@ -36,6 +37,7 @@ msgstr ""
 
 #: env/lib/python3.13/site-packages/click/core.py:1349
 #: env/lib/python3.13/site-packages/click/core.py:1379
+#, python-brace-format
 msgid "(Deprecated) {text}"
 msgstr ""
 
@@ -43,13 +45,15 @@ msgstr ""
 msgid "Options"
 msgstr ""
 
-#: env/lib/python3.13/site-packages/click/core.py:1424
+#: env/lib/python3.13/site-packages/click/core.py:1422
+#, python-brace-format
 msgid "Got unexpected extra argument ({args})"
 msgid_plural "Got unexpected extra arguments ({args})"
 msgstr[0] ""
 msgstr[1] ""
 
-#: env/lib/python3.13/site-packages/click/core.py:1437
+#: env/lib/python3.13/site-packages/click/core.py:1438
+#, python-brace-format
 msgid "DeprecationWarning: The command {name!r} is deprecated."
 msgstr ""
 
@@ -62,6 +66,7 @@ msgid "Missing command."
 msgstr ""
 
 #: env/lib/python3.13/site-packages/click/core.py:1755
+#, python-brace-format
 msgid "No such command {name!r}."
 msgstr ""
 
@@ -69,13 +74,15 @@ msgstr ""
 msgid "Value must be an iterable."
 msgstr ""
 
-#: env/lib/python3.13/site-packages/click/core.py:2336
+#: env/lib/python3.13/site-packages/click/core.py:2334
+#, python-brace-format
 msgid "Takes {nargs} values but 1 was given."
 msgid_plural "Takes {nargs} values but {len} were given."
 msgstr[0] ""
 msgstr[1] ""
 
 #: env/lib/python3.13/site-packages/click/core.py:2783
+#, python-brace-format
 msgid "env var: {var}"
 msgstr ""
 
@@ -84,6 +91,7 @@ msgid "(dynamic)"
 msgstr ""
 
 #: env/lib/python3.13/site-packages/click/core.py:2828
+#, python-brace-format
 msgid "default: {default}"
 msgstr ""
 
@@ -106,18 +114,22 @@ msgstr ""
 
 #: env/lib/python3.13/site-packages/click/exceptions.py:49
 #: env/lib/python3.13/site-packages/click/exceptions.py:88
+#, python-brace-format
 msgid "Error: {message}"
 msgstr ""
 
 #: env/lib/python3.13/site-packages/click/exceptions.py:80
+#, python-brace-format
 msgid "Try '{command} {option}' for help."
 msgstr ""
 
 #: env/lib/python3.13/site-packages/click/exceptions.py:129
+#, python-brace-format
 msgid "Invalid value: {message}"
 msgstr ""
 
 #: env/lib/python3.13/site-packages/click/exceptions.py:131
+#, python-brace-format
 msgid "Invalid value for {param_hint}: {message}"
 msgstr ""
 
@@ -134,18 +146,22 @@ msgid "Missing parameter"
 msgstr ""
 
 #: env/lib/python3.13/site-packages/click/exceptions.py:193
+#, python-brace-format
 msgid "Missing {param_type}"
 msgstr ""
 
 #: env/lib/python3.13/site-packages/click/exceptions.py:200
+#, python-brace-format
 msgid "Missing parameter: {param_name}"
 msgstr ""
 
 #: env/lib/python3.13/site-packages/click/exceptions.py:220
+#, python-brace-format
 msgid "No such option: {name}"
 msgstr ""
 
-#: env/lib/python3.13/site-packages/click/exceptions.py:234
+#: env/lib/python3.13/site-packages/click/exceptions.py:232
+#, python-brace-format
 msgid "Did you mean {possibility}?"
 msgid_plural "(Possible options: {possibilities})"
 msgstr[0] ""
@@ -156,6 +172,7 @@ msgid "unknown error"
 msgstr ""
 
 #: env/lib/python3.13/site-packages/click/exceptions.py:277
+#, python-brace-format
 msgid "Could not open file {filename!r}: {message}"
 msgstr ""
 
@@ -164,20 +181,23 @@ msgid "Usage:"
 msgstr ""
 
 #: env/lib/python3.13/site-packages/click/parser.py:233
+#, python-brace-format
 msgid "Argument {name!r} takes {nargs} values."
 msgstr ""
 
 #: env/lib/python3.13/site-packages/click/parser.py:415
+#, python-brace-format
 msgid "Option {name!r} does not take a value."
 msgstr ""
 
-#: env/lib/python3.13/site-packages/click/parser.py:475
+#: env/lib/python3.13/site-packages/click/parser.py:476
+#, python-brace-format
 msgid "Option {name!r} requires an argument."
 msgid_plural "Option {name!r} requires {nargs} arguments."
 msgstr[0] ""
 msgstr[1] ""
 
-#: env/lib/python3.13/site-packages/click/shell_completion.py:325
+#: env/lib/python3.13/site-packages/click/shell_completion.py:326
 msgid "Shell completion is not supported for Bash versions older than 4.4."
 msgstr ""
 
@@ -194,6 +214,7 @@ msgid "Error: The value you entered was invalid."
 msgstr ""
 
 #: env/lib/python3.13/site-packages/click/termui.py:176
+#, python-brace-format
 msgid "Error: {e.message}"
 msgstr ""
 
@@ -210,36 +231,43 @@ msgid "Press any key to continue..."
 msgstr ""
 
 #: env/lib/python3.13/site-packages/click/types.py:267
+#, python-brace-format
 msgid ""
 "Choose from:\n"
 "\t{choices}"
 msgstr ""
 
-#: env/lib/python3.13/site-packages/click/types.py:301
+#: env/lib/python3.13/site-packages/click/types.py:299
+#, python-brace-format
 msgid "{value!r} is not {choice}."
 msgid_plural "{value!r} is not one of {choices}."
 msgstr[0] ""
 msgstr[1] ""
 
-#: env/lib/python3.13/site-packages/click/types.py:395
+#: env/lib/python3.13/site-packages/click/types.py:393
+#, python-brace-format
 msgid "{value!r} does not match the format {format}."
 msgid_plural "{value!r} does not match the formats {formats}."
 msgstr[0] ""
 msgstr[1] ""
 
 #: env/lib/python3.13/site-packages/click/types.py:415
+#, python-brace-format
 msgid "{value!r} is not a valid {number_type}."
 msgstr ""
 
 #: env/lib/python3.13/site-packages/click/types.py:471
+#, python-brace-format
 msgid "{value} is not in the range {range}."
 msgstr ""
 
 #: env/lib/python3.13/site-packages/click/types.py:612
+#, python-brace-format
 msgid "{value!r} is not a valid boolean."
 msgstr ""
 
 #: env/lib/python3.13/site-packages/click/types.py:636
+#, python-brace-format
 msgid "{value!r} is not a valid UUID."
 msgstr ""
 
@@ -256,30 +284,37 @@ msgid "path"
 msgstr ""
 
 #: env/lib/python3.13/site-packages/click/types.py:881
+#, python-brace-format
 msgid "{name} {filename!r} does not exist."
 msgstr ""
 
 #: env/lib/python3.13/site-packages/click/types.py:890
+#, python-brace-format
 msgid "{name} {filename!r} is a file."
 msgstr ""
 
 #: env/lib/python3.13/site-packages/click/types.py:898
+#, python-brace-format
 msgid "{name} {filename!r} is a directory."
 msgstr ""
 
 #: env/lib/python3.13/site-packages/click/types.py:907
+#, python-brace-format
 msgid "{name} {filename!r} is not readable."
 msgstr ""
 
 #: env/lib/python3.13/site-packages/click/types.py:916
+#, python-brace-format
 msgid "{name} {filename!r} is not writable."
 msgstr ""
 
 #: env/lib/python3.13/site-packages/click/types.py:925
+#, python-brace-format
 msgid "{name} {filename!r} is not executable."
 msgstr ""
 
-#: env/lib/python3.13/site-packages/click/types.py:991
+#: env/lib/python3.13/site-packages/click/types.py:992
+#, python-brace-format
 msgid "{len_type} values are required, but {len_value} was given."
 msgid_plural "{len_type} values are required, but {len_value} were given."
 msgstr[0] ""
@@ -342,8 +377,8 @@ msgid ""
 "                            her\n"
 "                            father, Haakon Stotijn, is appointed as a "
 "solo oboist in the Concertgebouw orchestra.\n"
-"                            Renée starts drawing at the age of five "
-"after receiving a book from her father on early\n"
+"                            Renée starts drawing at the age of five after"
+" receiving a book from her father on early\n"
 "                            renaissance Italian painting. She is "
 "fascinated by this art and memorizes all the painters.\n"
 "                            At this point already she has made up her "
@@ -359,8 +394,8 @@ msgid ""
 "her father because of a difficult relationship\n"
 "                            between her mother and herself. Her younger "
 "sister Marion decides to go with Renee and her\n"
-"                            father. They wander across the city for "
-"years in search of accommodation. At this time Renée\n"
+"                            father. They wander across the city for years"
+" in search of accommodation. At this time Renée\n"
 "                            and Marion stay with various caretakers at "
 "different addresses. In 1957 Haakon and his two\n"
 "                            daughters eventually settle on the "
@@ -459,8 +494,8 @@ msgid ""
 "                    modern style. Renée's\n"
 "                    greatest victory is the preservation of the New "
 "Amstel Bridge by the architects Leguyt and\n"
-"                    Berlage. Thanks to her, the bridge continues to "
-"exist and is not replaced by a\n"
+"                    Berlage. Thanks to her, the bridge continues to exist"
+" and is not replaced by a\n"
 "                    modern variant.\n"
 "                    Her love for the nineteenth century is immense"
 msgstr ""
@@ -504,8 +539,8 @@ msgid ""
 "                    vases, fans and\n"
 "                    hats. She often places these objects on a wooden "
 "table. One such table is the one that she\n"
-"                    received from acquaintances from Schoorl. Flowers "
-"are her favourite subject. She paints\n"
+"                    received from acquaintances from Schoorl. Flowers are"
+" her favourite subject. She paints\n"
 "                    and draws flowers of all shapes and sizes with "
 "different materials. This subject will continue\n"
 "                    to play a major role in her oeuvre until the end of "
@@ -529,8 +564,8 @@ msgstr ""
 msgid ""
 "Starting in the 1970s, Renée has a relationship with violinist and\n"
 "                    concertmaster Dick Bor\n"
-"                    (1944-2007). Together they form a well-known "
-"artistic couple and they are the first couple\n"
+"                    (1944-2007). Together they form a well-known artistic"
+" couple and they are the first couple\n"
 "                    who have a LAT (living apart together) relationship "
 "in the Netherlands. This means that they\n"
 "                    deliberately do not live together and are not "
@@ -597,8 +632,8 @@ msgstr ""
 msgid ""
 "It is very likely that Renée made these portraits at the\n"
 "                    Rijksacademie. In one of the few interviews she\n"
-"                    gives, she refers to the portraits she painted in "
-"the ‘loge’ that was assigned to her. Here she had\n"
+"                    gives, she refers to the portraits she painted in the"
+" ‘loge’ that was assigned to her. Here she had\n"
 "                    all\n"
 "                    the materials available. Who the models are "
 "ultimately remains a guess, just like the answers to\n"
@@ -629,8 +664,8 @@ msgid ""
 "                    pastels and watercolours, though at\n"
 "                    an admittedly slower pace than before. Due to the "
 "hard labour and process required to create an\n"
-"                    oil painting, she is no longer able to make them. "
-"Her style is clearly recognizable in her newer\n"
+"                    oil painting, she is no longer able to make them. Her"
+" style is clearly recognizable in her newer\n"
 "                    works."
 msgstr ""
 
@@ -722,12 +757,12 @@ msgstr ""
 msgid "Life"
 msgstr ""
 
-#: templates/index.html:87
-msgid "Art"
+#: templates/index.html:87 templates/navbar.html:34
+msgid "News"
 msgstr ""
 
-#: templates/index.html:88 templates/navbar.html:34
-msgid "News"
+#: templates/index.html:88
+msgid "For Sale"
 msgstr ""
 
 #: templates/index.html:89
@@ -768,15 +803,15 @@ msgstr ""
 
 #: templates/news.html:16
 msgid ""
-"Art by Renée Stotijn at Naarden the Art Fair!!!  🌺 🌸 🏵️ 🎨 🤩  From "
-"January 23-26 you are welcome, the theme is 'In Full Bloom', for which "
-"we have put together a special selection of works is.m."
+"Art by Renée Stotijn at Naarden the Art Fair!!!  🌺 🌸 🏵️ 🎨 🤩  From January"
+" 23-26 you are welcome, the theme is 'In Full Bloom', for which we have "
+"put together a special selection of works is.m."
 msgstr ""
 
 #: templates/news.html:19
 msgid ""
-"It has been almost 5 years since our mother Renée Stotijn passed away "
-"and we found her paintings, hidden for years in the kitchen cabinets, "
+"It has been almost 5 years since our mother Renée Stotijn passed away and"
+" we found her paintings, hidden for years in the kitchen cabinets, "
 "between double walls and a secret ceiling...."
 msgstr ""
 
@@ -827,6 +862,7 @@ msgstr ""
 
 #: templates/nft.html:15
 msgid ""
-"You will be able to purchase Renée's art and claim the real paintings "
-"and drawings"
+"You will be able to purchase Renée's art and claim the real paintings and"
+" drawings"
 msgstr ""
+
