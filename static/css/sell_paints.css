@@ -71,3 +71,23 @@
 .grid-container .grid-item.portrait {
     grid-column: span 1; /* Adjust the span as needed */
 }
+
+.grid-container .grid-item.sold {
+    position: relative;
+    opacity: 0.5;
+}
+
+.grid-container .grid-item.sold::after {
+    content: "Sold";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: 700;
+    font-size: 3em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+}

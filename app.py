@@ -192,7 +192,67 @@ def get_paints():
 def sell_paints():
     """Sell paints endpoint"""
 
-    return render_template('sell-paints.html')
+    paints = [
+        {
+            'link': '/static/images/for_sale/Stotijn-stilleven.png',
+            'title': 'Zomerse bloei',
+            'dimensions': '(44cm X 35cm)',
+            'price': '€ 850',
+            'sold': False
+        },
+        {
+            'link': '/static/images/for_sale/Red-tulips-in-a-vase.-Ca.-1965.-Watercolor-on-paper.-Not-signed.-scaled.jpg',
+            'title': 'Rode tulpen in een vaas',
+            'dimensions': 'N/A',
+            'price': '€ 700',
+            'sold': False
+        },
+        {
+            'link': '/static/images/for_sale/Renee-Stotijn-hoed-aquarel.png',
+            'title': 'Stilleven met hoed en kleed',
+            'dimensions': '(50cm X 60 cm)',
+            'price': '€ 850',
+            'sold': True
+        },
+        {
+            'link': '/static/images/for_sale/IMG_6931-1-scaled.jpg',
+            'title': 'Grachtenpand',
+            'dimensions': '(Excl. lijst 34cm X 22,5 cm. Incl. lijst 51,5cm X 41,5 cm)',
+            'price': '€ 700',
+            'sold': False
+        },
+        {
+            'link': '/static/images/for_sale/IMG_6941-scaled.jpg',
+            'title': 'Vaas met roze en blauwe bloemen',
+            'dimensions': '(60cm x 50 cm)',
+            'price': '€ 800',
+            'sold': False
+        },
+        {
+            'link': '/static/images/for_sale/Bartholomeuskerk.png',
+            'title': 'Zicht op Sint-Bartholomeüskerk (Schoonhoven)',
+            'dimensions': 'N/A',
+            'price': '€ 900',
+            'sold': False
+        },
+        {
+            'link': '/static/images/for_sale/Renee-Stotijn-vogel-olieverfschilderij.png',
+            'title': ' Stilleven met fazant',
+            'dimensions': '(70cm X 55cm)',
+            'price': '€ 1150',
+            'sold': False
+        },
+        {
+            'link': '/static/images/for_sale/Renee-Stotijn-kleed-aquarel.png',
+            'title': 'Stilleven met kleed en fruit',
+            'dimensions': '(53,5cm X 36,5 cm)',
+            'price': '€ 900',
+            'sold': False
+        },
+        # Add more dictionaries for each paint
+    ]
+
+    return render_template('sell-paints.html', paints=paints)
 
 
 if __name__ == "__main__":

@@ -16,38 +16,15 @@
     <div class="row">
         <div class="col">
             <div class="grid-container">
-                <div class="grid-item">
-                    <a href="#"><img src="/static/images/for_sale/Stotijn-stilleven.png" alt=""></a>
-                    <p class="nomargin">Zomerse bloei</p>
-                    <p class="nomargin">(44cm X 35cm)</p>
+                {% for paint in paints %}
+                <div class="grid-item {% if paint.sold %}sold{% endif %}">
+                    <a href="#"><img src="{{ paint.link }}" alt=""></a>
+                    <p class="nomargin">{{ paint.title }}</p>
+                    <p class="nomargin">{{ paint.dimensions }}</p>
                     <br>
-                    <p class="nomargin">€ 850</p>
+                    <p class="nomargin">{{ paint.price }}</p>
                 </div>
-                <div class="grid-item">
-                    <a href="#"><img src="/static/images/for_sale/Bartholomeuskerk.png" alt=""></a>
-                    <p>Zicht op Sint-Bartholomeüskerk (Schoonhoven)</p>
-                </div>
-                <div class="grid-item">
-                    <a href="#"><img src="/static/images/for_sale/AJ-Zwart-Bij-de-Boerderij-zonnebloemen.jpg" alt=""></a>
-                </div>
-                <div class="grid-item">
-                    <a href="#"><img src="/static/images/for_sale/Foto-kunstwerk-Evert-Pieters-Vind.png" alt=""></a>
-                </div>
-                <div class="grid-item">
-                    <a href="#"><img src="/static/images/for_sale/IMG_0067-2-scaled.jpg" alt=""></a>
-                </div>
-                <div class="grid-item">
-                    <a href="#"><img src="/static/images/for_sale/IMG_1710-min.jpg" alt=""></a>
-                </div>
-                <div class="grid-item">
-                    <a href="#"><img src="/static/images/for_sale/IMG_6506-1-scaled.jpeg" alt=""></a>
-                </div>
-                <div class="grid-item">
-                    <a href="#"><img src="/static/images/for_sale/Renee-Stotijn-hoed-aquarel.png" alt=""></a>
-                </div>
-                <div class="grid-item">
-                    <a href="#"><img src="/static/images/for_sale/Sande-Bakhuyzen-2-scaled.jpg" alt=""></a>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </div>
