@@ -7,10 +7,16 @@
 {% endblock %}
 
 {% block content %}
+
+<div id="overlay" class="hidden">
+    <span id="close-overlay" class="close">&times;</span>
+    <img class="overlay-content" id="overlay-img">
+</div>
+
 <div class="container-fluid mt120 collection-container">
     <div class="row">
         <div class="col mt20">
-            <h1 class="text-center">For sale</h1>
+            <h1 class="text-center ft60">For sale</h1>
         </div>
     </div>
     <div class="row">
@@ -42,13 +48,19 @@
 
         gridItems.forEach(item => {
             const img = item.querySelector('img');
-            img.onload = function() {
+            const setClass = function() {
                 if (img.naturalWidth > img.naturalHeight) {
                     item.classList.add('landscape');
                 } else {
                     item.classList.add('portrait');
                 }
             };
+
+            if (img.complete) {
+                setClass();
+            } else {
+                img.onload = setClass;
+            }
         });
     });
 </script>

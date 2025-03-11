@@ -187,6 +187,9 @@ nav.navbar {
     color: #202020 !important
 }
 
+.ft60 {
+    font-size: 60px
+}
 
 .row * {
     overflow: hidden !important
